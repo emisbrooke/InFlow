@@ -8,10 +8,7 @@
 ---
 
 InFlow models transcriptional regulation inside cells using scRNAseq data.  
-It learns transcription-factor (TF)–TF and TF–target-gene (TG) couplings through an energy-based inference scheme,  
-computes mutual information (MI) to quantify information decay with age,  
-and performs *rejuvenation swaps* of TF distributions and gene-regulatory networks (GRNs)  
-to identify the source of information loss in cellular aging.
+It learns transcription-factor (TF)–TF and TF–target-gene (TG) couplings through an energy-based inference scheme,computes mutual information (MI) to quantify information decay with age, and performs *rejuvenation swaps* of TF distributions and gene-regulatory networks (GRNs) to identify the source of information loss in cellular aging.
 
 ---
 
