@@ -1,5 +1,11 @@
-# 🧠 InFlow
-**An information-theoretic framework for quantifying transcriptional information flow in aging**
+<p align="center">
+  <img src="assets/inflow_logo.png" alt="InFlow Logo" width="350"/>
+</p>
+
+<h1 align="center">InFlow</h1>
+<p align="center"><b>An information-theoretic framework for quantifying transcriptional information flow in aging</b></p>
+
+---
 
 InFlow models transcriptional regulation inside cells using scRNAseq data.  
 It learns transcription-factor (TF)–TF and TF–target-gene (TG) couplings through an energy-based inference scheme,  
