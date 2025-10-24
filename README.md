@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/inflow_logo.pdf" alt="InFlow Logo" width="350"/>
+  <img src="assets/inFlow_logo.pdf" alt="InFlow Logo" width="350"/>
 </p>
 
 <h1 align="center">InFlow</h1>
