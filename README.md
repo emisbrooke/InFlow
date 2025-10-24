@@ -9,7 +9,7 @@ to identify the source of information loss in cellular aging.
 
 ---
 
-### 🔍 Key Features
+### Key Features
 - **Energy-based GRN inference:** learns asymmetric TF–TF and TF–TG couplings and caputures higher order interactions.  
 - **Mutual-information quantification:** measures information flow from TF inputs to a TG output.  
 - **Rejuvenation swaps:** tests how restoring TF distributions or GRN wiring affects MI recovery.  
