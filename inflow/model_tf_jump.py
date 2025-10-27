@@ -1,7 +1,7 @@
 import torch 
 import numpy as np
 import time
-import inference_funcs_tf_final as tg
+import inference_funcs_tf as tg
 #import inference_funcs_tf as tf
 from importlib import reload
 from tqdm import tqdm
