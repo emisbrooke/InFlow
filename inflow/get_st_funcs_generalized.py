@@ -51,11 +51,17 @@ def load_h5_param(t, directory_path, age, lam, n_iters = 10):
 def correct_sparsity(theta_dense, theta_sparse, nTF, niters=100):
     '''
     Code to sparsify one matrix to match the other
-    theta_dense: a matrix with a lower sparsity then
-    theta_sparse: the matrix with higher sparsity
-    nTF: # of TFs (or genes) in the matrix
-    niters: # of iterations of sparsifying to avg to get out defree
-
+    Input:
+        theta_dense: a matrix with a lower sparsity then
+        theta_sparse: the matrix with higher sparsity
+        nTF: # of TFs (or genes) in the matrix
+        niters: # of iterations of sparsifying to avg to get out degree, default=100
+    Output:
+        theta_sp: the new sparsified theta 
+        out_deg_sp: the out degrees of the niters iterations of sparsifying 
+        out_deg_sp_eff: the effective out degree 
+        n0_diff: number of connection lost 
+        sp_new: sparsity after removing connections *should be the same as that of theta_sparse
     '''
     rng = np.random.default_rng()
     sp_dense = np.where(theta_dense != 0)[0].shape[0]/theta_dense.flatten().shape[0]
@@ -101,6 +107,9 @@ def get_null(theta_dense, theta_sparse, nTF, niters=100):
     '''
     code to calculate null model for literal out degree. This is only based on the sparsity of the most
     sparse of the ages. For effective null model, you have to consider each age seperately.
+
+    returns:
+        out_deg_null: an array of out degrees for the niters of trying null models
     '''
     rng = np.random.default_rng()
     out_deg_null = np.zeros((niters*2, nTF))
@@ -122,6 +131,376 @@ def get_null(theta_dense, theta_sparse, nTF, niters=100):
 
     return out_deg_null
 
+
+#############################################################
+#*******FUNCTIIONS FOR FINDING DIFFERENT MOTIFS*********
+#############################################################
+
+def find_two_cycles(G):
+    """
+    Return each 2-cycle once, as (u,v) with u < v and edges u->v and v->u.
+    """
+    cycles = set()
+    for A, B in G.edges():
+        if B in G.predecessors(A):
+            cycles.add((A, B))
+    return list(cycles)
+
+
+def find_two_cycles_no_parent(G):
+    """
+    Return each 2-cycle once, as (u,v) with u < v and edges u->v and v->u.
+    """
+    cycles = set()
+    count = 0
+    count1 = 0
+    for A, B in G.edges(): # A->B 
+        if G.has_edge(B, A): # and B->A
+            count1+=1
+            if (G.in_degree(A) == 1) and (G.in_degree(B) == 1): # B and A have only one regulator (each other)
+                print(f'found 1: {A}, {B}')
+                cycles.add((A, B))
+            for C in G.nodes():
+                if C not in (A, B):
+                    if (C in G.predecessors(A)) or (C in G.predecessors(B)):
+                        count+=1 # This just counts the number of feedback loops that do have a parent
+                        break
+    print(f'there are {count1} normal cycles and then {count} that don\'t count')
+    return list(cycles)
+
+    
+def find_IFFL(G):
+    """
+    Return (A,B,C) triples where edges A→B, A→C, and C→B all exist (incoherent feedforward loops)
+    """
+    motifs = []
+    for C, B in G.edges(): # If C->B
+        if B not in G.predecessors(C): # But B does not -> C
+            for A in G.predecessors(B): # And A->B
+                if (G.has_edge(A, B)) and (B not in G.predecessors(A)): # A->B but not B->A
+                    if (G.has_edge(A, C)) and (C not in G.predecessors(A)): # A->C but not C->A
+                        motifs.append((A, B, C))
+    return list({tuple(m) for m in motifs}) #motifs
+
+def find_IFL(G):
+    """
+    Return (A,B,C) triples where edges A→B, B→C, and C→B all exist but not C->A or B->A (incoherent feedback loop)
+    """
+    motifs = []
+    for B, C in G.edges():
+        if G.has_edge(C, B): # if B->C, and C->B
+            for A in G.predecessors(B): # And A->B   
+                if A not in (B, C): # But A is not B, C
+                    if (B not in G.predecessors(A)) and (C not in G.predecessors(A)) and (A not in G.predecessors(C)): # there is no B->A or C->A
+                        motifs.append((A, B, C))
+    return list({tuple(m) for m in motifs}) 
+
+
+
+
+##############################################################################################################
+##############################################################################################################
+'''
+GET MOTIFS AND GIVE A DB
+'''
+##############################################################################################################
+##############################################################################################################
+
+def analyze_3_node_feedback(theta_dense, theta_sparse, nG, niters, names_tf, age_sparse = 24, age_dense = 3, niters=100):
+    '''
+    Inputs:
+        theta_dense: the theta of the denser age
+        theta_sparse: the theta for the less dense age
+        nG: number of genes (TG or TF)
+        names_tf: names of the TFs to make db of loops
+        age_sparse: actual age of less dense age, default=24
+        age_dense: actual age of more dense age, default=3
+        niters: number of iterations to repeat sparsifying more dense matrix, default = 100
+
+    Returns:
+        motif_df: a df with the motifs and names of tfs/tgs in them 
+        counts_df: a df with counts for each type of loop
+        graphs_by_age: the graph corresponding the theta for each age
+    '''
+    theta_sp, _, _, _, _ = correct_sparsity(theta_dense, theta_sparse, nG, niters=niters)
+
+    # Convert to CSR if not already
+    M_dense = theta_sp
+    M_sparse = theta_sparse
+    counts_df = pd.DataFrame(columns=['age', 'pattern', 'count'])
+
+    for i in range(niters):
+        print(f'******* On iter {i} ********')
+        theta_sp, _, _, _, _ = correct_sparsity(theta_dense, theta_sparse, nG, niters=niters)
+
+        # Convert to CSR if not already
+        M3 = theta_sp
+        M24 = theta_sparse
+        matrices = {
+            3:  sparse.csr_matrix(M3) if not sparse.isspmatrix_csr(M3)  else M3,
+            24: sparse.csr_matrix(M24) if not sparse.isspmatrix_csr(M24) else M24
+        }
+
+        graphs_by_age = {}
+        for age, M in matrices.items():
+            # get non-zero coords
+            coo = M.tocoo()
+            # map index→gene
+            src = [names_tf[i] for i in coo.row]
+            tgt = [names_tf[j] for j in coo.col]
+            wts = coo.data
+            # build DiGraph
+            df_edges = pd.DataFrame({'source':src,'target':tgt,'weight':wts})
+            G = nx.from_pandas_edgelist(df_edges, 'source','target', edge_attr='weight',
+                                        create_using=nx.DiGraph())
+            graphs_by_age[age] = G
+
+        records = []
+        for age, G in graphs_by_age.items():
+            for A, B, C in find_input_feedback(G):
+                sAB = '+' if G[A][B]['weight'] > 0 else '-'
+                sBC = '+' if G[B][C]['weight'] > 0 else '-'
+                sCB = '+' if G[C][B]['weight'] > 0 else '-'
+                pattern = sAB + sBC + sCB
+                records.append({
+                    'age':     age,
+                    'A':       A,
+                    'B':       B,
+                    'C':       C,
+                    'pattern': pattern
+                })
+
+        motif_df = pd.DataFrame(records)
+
+        counts_df_current = (
+            motif_df
+            .groupby(['age','pattern'])
+            .size()
+            .reset_index(name='count')
+        )
+
+        for _, row in counts_df_current.iterrows():
+            age = row['age']
+            pattern = row['pattern']
+            count = row['count']
+            mask = (counts_df['age'] == age) & (counts_df['pattern'] == pattern)
+
+            if mask.any():
+                counts_df.loc[mask, 'count'] += count
+            else:
+                new_row = {'age': age, 'pattern': pattern, 'count': count}
+                counts_df = pd.concat([counts_df, pd.DataFrame([new_row])], ignore_index=True)
+        
+
+    for _, row in counts_df.iterrows():
+        age = row['age']
+        pattern = row['pattern']
+        count = row['count']
+        counts_df.loc[(counts_df['age'] == age) & (counts_df['pattern'] == pattern), 'count'] /= niters+1
+
+    return motif_df, counts_df, graphs_by_age
+
+def analyze_IFFL(theta_dense, theta_sparse, nG, niters, names_tf, age_sparse = 24, age_dense = 3, niters=100):
+
+    '''
+    Inputs:
+        theta_dense: the theta of the denser age
+        theta_sparse: the theta for the less dense age
+        nG: number of genes (TG or TF)
+        names_tf: names of the TFs to make db of loops
+        age_sparse: actual age of less dense age, default=24
+        age_dense: actual age of more dense age, default=3
+        niters: number of iterations to repeat sparsifying more dense matrix, default=100
+    Returns:
+        motif_df: a df with the IFFL motifs and names of tfs/tgs in them 
+        counts_df: a df with counts for each type of IFFL loop
+        graphs_by_age: the graph corresponding the theta for each age
+    '''
+
+    theta_sp, _, _, _, _ = correct_sparsity(theta_dense, theta_sparse, nG, niters=niters)
+
+    # Convert to CSR if not already
+    M_dense = theta_sp
+    M_sparse = theta_sparse
+    counts_df = pd.DataFrame(columns=['age', 'pattern', 'count'])
+
+    for i in range(niters):
+        print(f'******* On iter {i} ********')
+        theta_sp, _, _, _, _ = correct_sparsity(theta_dense, theta_sparse, nG, niters=niters)
+
+        # Convert to CSR if not already
+        M3 = theta_sp
+        M24 = theta_sparse
+        matrices = {
+            3:  sparse.csr_matrix(M3) if not sparse.isspmatrix_csr(M3)  else M3,
+            24: sparse.csr_matrix(M24) if not sparse.isspmatrix_csr(M24) else M24
+        }
+
+        graphs_by_age = {}
+        for age, M in matrices.items():
+            # get non-zero coords
+            coo = M.tocoo()
+            # map index→gene
+            src = [names_tf[i] for i in coo.row]
+            tgt = [names_tf[j] for j in coo.col]
+            wts = coo.data
+            # build DiGraph
+            df_edges = pd.DataFrame({'source':src,'target':tgt,'weight':wts})
+            G = nx.from_pandas_edgelist(df_edges, 'source','target', edge_attr='weight',
+                                        create_using=nx.DiGraph())
+            graphs_by_age[age] = G
+
+        records = []
+        for age, G in graphs_by_age.items():
+            for A, B, C in find_IFFL(G):
+                sAB = '+' if G[A][B]['weight'] > 0 else '-'
+                sAC = '+' if G[A][C]['weight'] > 0 else '-'
+                sCB = '+' if G[C][B]['weight'] > 0 else '-'
+                pattern = sAB + sAC + sCB
+                records.append({
+                    'age':     age,
+                    'A':       A,
+                    'B':       B,
+                    'C':       C,
+                    'pattern': pattern
+                })
+
+        motif_df = pd.DataFrame(records)
+
+        counts_df_current = (
+            motif_df
+            .groupby(['age','pattern'])
+            .size()
+            .reset_index(name='count')
+        )
+
+        for _, row in counts_df_current.iterrows():
+            age = row['age']
+            pattern = row['pattern']
+            count = row['count']
+            mask = (counts_df['age'] == age) & (counts_df['pattern'] == pattern)
+
+            if mask.any():
+                counts_df.loc[mask, 'count'] += count
+            else:
+                new_row = {'age': age, 'pattern': pattern, 'count': count}
+                counts_df = pd.concat([counts_df, pd.DataFrame([new_row])], ignore_index=True)
+        
+    for _, row in counts_df.iterrows():
+        age = row['age']
+        pattern = row['pattern']
+        count = row['count']
+        counts_df.loc[(counts_df['age'] == age) & (counts_df['pattern'] == pattern), 'count'] /= niters+1
+
+    return motif_df, counts_df, graphs_by_age
+
+
+
+def analyze_IFL(theta_dense, theta_sparse, nG, niters, names_tf, age_sparse = 24, age_dense = 3, niters=100):
+    '''
+    Inputs:
+        theta_dense: the theta of the denser age
+        theta_sparse: the theta for the less dense age
+        nG: number of genes (TG or TF)
+        names_tf: names of the TFs to make db of loops
+        age_sparse: actual age of less dense age, default=24
+        age_dense: actual age of more dense age, default=3
+        niters: number of iterations to repeat sparsifying more dense matrix, default = 100
+
+    Returns:
+        motif_df: a df with the IFL motifs and names of tfs/tgs in them 
+        counts_df: a df with counts for each type of IFL loop
+        graphs_by_age: the graph corresponding the theta for each age
+    '''
+
+    theta_sp, _, _, _, _ = correct_sparsity(theta_dense, theta_sparse, nG, niters=niters)
+    counts_df = pd.DataFrame(columns=['age', 'pattern', 'count'])
+    # Convert to CSR if not already
+    M3 = theta_sp
+    M24 = theta_sparse
+    print(f'Graph has been built')
+    print(f'Begin extraction')
+    for i in range(niters):
+        print(f'On iter {i}')
+        theta_sp, _, _, _, _ = correct_sparsity(theta_dense, theta_sparse, nG, niters=niters)
+        # Convert to CSR if not already
+        M3 = theta_sp
+        matrices = {
+            3:  sparse.csr_matrix(M3) if not sparse.isspmatrix_csr(M3)  else M3,
+            24: sparse.csr_matrix(M24) if not sparse.isspmatrix_csr(M24) else M24
+        }
+
+        graphs_by_age = {}
+        for age, M in matrices.items():
+            # get non-zero coords
+            coo = M.tocoo()
+            # map index→gene
+            src = [names_tf[i] for i in coo.row]
+            tgt = [names_tf[j] for j in coo.col]
+            wts = coo.data
+            # build DiGraph
+            df_edges = pd.DataFrame({'source':src,'target':tgt,'weight':wts})
+            G = nx.from_pandas_edgelist(df_edges, 'source','target', edge_attr='weight',
+                                        create_using=nx.DiGraph())
+            graphs_by_age[age] = G
+
+
+        records = []
+        for age, G in graphs_by_age.items():
+            for A, B, C in find_IFL(G):
+                # pull weights just once
+                w_ab = G[A][B]['weight']
+                w_cb = G[C][B]['weight']
+                w_bc = G[B][C]['weight']
+                #print(f'we got {G[A][B], G[C][B], G[B][C]}')
+                sAB = '+' if w_ab > 0 else '-'
+                sBC = '+' if w_bc > 0 else '-'
+                sCB = '+' if w_cb > 0 else '-'
+                pattern = sAB + sBC + sCB
+
+                records.append({
+                    'age':     age,
+                    'A':       A,
+                    'B':       B,
+                    'C':       C,
+                    'pattern': pattern
+                })
+
+        motif_df = pd.DataFrame(records)
+
+        counts_df_current = (
+            motif_df
+            .groupby(['age','pattern'])
+            .size()
+            .reset_index(name='count')
+        )
+        for _, row in counts_df_current.iterrows():
+            age = row['age']
+            pattern = row['pattern']
+            count = row['count']
+            mask = (counts_df['age'] == age) & (counts_df['pattern'] == pattern)
+
+            if mask.any():
+                counts_df.loc[mask, 'count'] += count
+            else:
+                new_row = {'age': age, 'pattern': pattern, 'count': count}
+                counts_df = pd.concat([counts_df, pd.DataFrame([new_row])], ignore_index=True)
+
+    for _, row in counts_df.iterrows():
+        age = row['age']
+        pattern = row['pattern']
+        count = row['count']
+        counts_df.loc[(counts_df['age'] == age) & (counts_df['pattern'] == pattern), 'count'] /= niters+1                                      
+
+    return motif_df, counts_df, graphs_by_age   
+
+##############################################################################################################
+##############################################################################################################
+'''
+PLOTTING
+'''
+##############################################################################################################
+##############################################################################################################
 def plot_out_deg(out_deg_dense, out_deg_sparse, out_deg_null, t, gene_type, dense_age = 3, sparse_age = 24):
     '''
     plot the out degree given 2 ages of out degrees and a null model. The rest is just for file writing
@@ -192,6 +571,13 @@ def plot_out_deg(out_deg_dense, out_deg_sparse, out_deg_null, t, gene_type, dens
 
 
 def plot_out_deg_eff(out_deg_dense, out_deg_sparse, t, gene_type,dense_age = 3, sparse_age = 24):
+
+    '''
+    plot the effective out degree (based on theta weight) given 2 ages of out degrees and a null model. 
+    The rest is just for file writing
+    '''
+
+
     niters = out_deg_dense.shape[0]
     print(out_deg_dense.shape)
     fig1 = plt.figure(figsize=(6, 4)) # to plot TGs
@@ -225,162 +611,6 @@ def plot_out_deg_eff(out_deg_dense, out_deg_sparse, t, gene_type,dense_age = 3, 
 
     plt.savefig(f'out_deg_{t}_comparison_{gene_type}_eff')
 
-
-#############################################################
-#*******FUNCTIIONS FOR FINDING DIFFERENT MOTIFS*********
-#############################################################
-
-def find_input_feedback(G):
-    """
-    Return (A,B,C) triples where edges A→B, B→C, and C→B all exist.
-    """
-    motifs = []
-    for B, C in G.edges():
-        if G.has_edge(C, B):            # there's B<->C
-            for A in G.predecessors(B):
-                if A not in (B, C):
-                    if ((B not in G.predecessors(A)) and (C not in G.predecessors(A)) and (A not in G.predecessors(C))): # there is no B->A or C->A
-                        motifs.append((A, B, C))
-    return motifs
-
-
-def find_two_cycles(G):
-    """
-    Return each 2-cycle once, as (u,v) with u < v and edges u->v and v->u.
-    """
-    cycles = set()
-    for A, B in G.edges():
-        if B in G.predecessors(A):
-            cycles.add((A, B))
-    return list(cycles)
-
-
-def find_two_cycles_no_parent(G):
-    """
-    Return each 2-cycle once, as (u,v) with u < v and edges u->v and v->u.
-    """
-    cycles = set()
-    count = 0
-    count1 = 0
-    for A, B in G.edges():
-        if G.has_edge(B, A):
-            count1+=1
-            if (G.in_degree(A) == 1) and (G.in_degree(B) == 1):
-                print(f'found 1: {A}, {B}')
-                cycles.add((A, B))
-            for C in G.nodes():
-                if C not in (A, B):
-                    if (C in G.predecessors(A)) or (C in G.predecessors(B)):
-                        count+=1
-                        break
-    print(f'there are {count1} normal cycles and then {count} that don\'t count')
-    return list(cycles)
-
-    
-def find_IFFL(G):
-    """
-    Return (A,B,C) triples where edges A→B, B→C, and C→B all exist.
-    """
-    motifs = []
-    for C, B in G.edges():
-        if B not in G.predecessors(C):
-            for A in G.predecessors(B):
-                if (G.has_edge(A, B)) and (B not in G.predecessors(A)): 
-                    if (G.has_edge(A, C)) and (C not in G.predecessors(A)): 
-                        motifs.append((A, B, C))
-    return list({tuple(m) for m in motifs}) #motifs
-
-def find_IFL(G):
-    """
-    Return (A,B,C) triples where edges A→B, B→C, and C→B all exist but not C->A or B->A
-    """
-    motifs = []
-    for B, C in G.edges():
-        if G.has_edge(C, B):
-            for A in G.predecessors(B):            
-                if A not in (B, C):
-                    if (B not in G.predecessors(A)) and (C not in G.predecessors(A)) and (A not in G.predecessors(C)): # there is no B->A or C->A
-                        motifs.append((A, B, C))
-    return list({tuple(m) for m in motifs}) 
-
-def analyze_3_node_feedback(theta_dense, theta_sparse, nG, niters, names_tf, age_sparse = 24, age_dense = 3):
-    theta_sp, _, _, _, _ = correct_sparsity(theta_dense, theta_sparse, nG, niters=100)
-
-    # Convert to CSR if not already
-    M_dense = theta_sp
-    M_sparse = theta_sparse
-    counts_df = pd.DataFrame(columns=['age', 'pattern', 'count'])
-
-    for i in range(niters):
-        print(f'******* On iter {i} ********')
-        theta_sp, _, _, _, _ = correct_sparsity(theta_dense, theta_sparse, nG, niters=100)
-
-        # Convert to CSR if not already
-        M3 = theta_sp
-        M24 = theta_sparse
-        matrices = {
-            3:  sparse.csr_matrix(M3) if not sparse.isspmatrix_csr(M3)  else M3,
-            24: sparse.csr_matrix(M24) if not sparse.isspmatrix_csr(M24) else M24
-        }
-
-        graphs_by_age = {}
-        for age, M in matrices.items():
-            # get non-zero coords
-            coo = M.tocoo()
-            # map index→gene
-            src = [names_tf[i] for i in coo.row]
-            tgt = [names_tf[j] for j in coo.col]
-            wts = coo.data
-            # build DiGraph
-            df_edges = pd.DataFrame({'source':src,'target':tgt,'weight':wts})
-            G = nx.from_pandas_edgelist(df_edges, 'source','target', edge_attr='weight',
-                                        create_using=nx.DiGraph())
-            graphs_by_age[age] = G
-
-        records = []
-        for age, G in graphs_by_age.items():
-            for A, B, C in find_input_feedback(G):
-                sAB = '+' if G[A][B]['weight'] > 0 else '-'
-                sBC = '+' if G[B][C]['weight'] > 0 else '-'
-                sCB = '+' if G[C][B]['weight'] > 0 else '-'
-                pattern = sAB + sBC + sCB
-                records.append({
-                    'age':     age,
-                    'A':       A,
-                    'B':       B,
-                    'C':       C,
-                    'pattern': pattern
-                })
-
-        motif_df = pd.DataFrame(records)
-
-        counts_df_current = (
-            motif_df
-            .groupby(['age','pattern'])
-            .size()
-            .reset_index(name='count')
-        )
-
-        for _, row in counts_df_current.iterrows():
-            age = row['age']
-            pattern = row['pattern']
-            count = row['count']
-            mask = (counts_df['age'] == age) & (counts_df['pattern'] == pattern)
-
-            if mask.any():
-                counts_df.loc[mask, 'count'] += count
-            else:
-                new_row = {'age': age, 'pattern': pattern, 'count': count}
-                counts_df = pd.concat([counts_df, pd.DataFrame([new_row])], ignore_index=True)
-        
-
-    for _, row in counts_df.iterrows():
-        age = row['age']
-        pattern = row['pattern']
-        count = row['count']
-        counts_df.loc[(counts_df['age'] == age) & (counts_df['pattern'] == pattern), 'count'] /= niters+1
-
-    return motif_df, counts_df, graphs_by_age
 
 def plot_3_node_feedback(motif_df, counts_df, graphs_by_age, tissue):
 
@@ -439,6 +669,120 @@ def plot_3_node_feedback(motif_df, counts_df, graphs_by_age, tissue):
     plt.tight_layout()
     plt.show()
     plt.savefig(f'example_connections_3_node_feeback_{tissue}')
+
+def plot_IFFL(motif_df, counts_df, graphs_by_age, tissue):
+
+    bar_df = counts_df.pivot(index='age', columns='pattern', values='count').fillna(0)
+
+    #### Stacked bar plot of types of motifs
+    plt.figure(figsize=(6,4))
+    bar_df.plot(kind='bar', stacked=True, edgecolor='black', legend=False)
+    plt.xlabel("Age (months)")
+    plt.ylabel("Number of A→B↔C motifs")
+    plt.title("Composition of input–feedback motifs by sign-pattern TF-TF Interactions")
+    plt.xticks(rotation=0)
+    plt.legend(title="pattern", bbox_to_anchor=(1.02,1))
+    plt.tight_layout()
+    plt.show()
+    plt.savefig(f'stacked_bar_plot_IFFL_{tissue}')
+
+    ########### heatmap with number of each motif
+    plt.figure(figsize=(4,6))
+    sns.heatmap(bar_df.T, annot=True, fmt='g', cbar_kws={'label':'Count'})
+    plt.xlabel("Age (months)")
+    plt.ylabel("Sign-pattern")
+    plt.title("Pattern frequencies across ages")
+    plt.tight_layout()
+    plt.show()
+    plt.savefig(f'heatmap_IFFL_{tissue}')
+
+
+    patterns = sorted(bar_df.columns)
+    ages     = sorted(bar_df.index)
+
+    ############ example connections
+    fig, axes = plt.subplots(len(patterns), len(ages),
+                            figsize=(3*len(ages), 2*len(patterns)),
+                            squeeze=False)
+
+    for i, pat in enumerate(patterns):
+        for j, age in enumerate(ages):
+            subset = motif_df[(motif_df.age==age)&(motif_df.pattern==pat)]
+            if subset.empty:
+                axes[i][j].axis('off')
+                continue
+            ex = subset.iloc[0]   # pick first example
+            A,B,C = ex['A'], ex['B'], ex['C']
+            print(A, B, C)
+            H = graphs_by_age[age].subgraph([A,B,C]).copy()
+            pos = {A:(0,1), B:(0,0), C:(1,0)}
+            edge_colors = ['green' if H[u][v]['weight']<0 else 'red' if H[u][v]['weight']>0 else 'white'
+                        for u,v in H.edges()]
+            nx.draw(H, pos, ax=axes[i][j],
+                    with_labels=True, edge_color=edge_colors,
+                    arrowsize=12)
+            axes[i][j].set_title(f"{pat} @ {age}m")
+            axes[i][j].axis('off')
+
+    plt.tight_layout()
+    plt.show()
+    plt.savefig(f'example_connections_IFFL_{tissue}')
+
+def plot_2nodes(motif_df, counts_df, graphs_by_age, tissue):
+    # pivot for plotting
+    bar_df = counts_df.pivot(index='age', columns='pattern', values='count').fillna(0)
+    # rows = ages, cols = sign-patterns
+
+    plt.figure(figsize=(6,4))
+    bar_df.plot(kind='bar', stacked=True, edgecolor='black', legend=False)
+    plt.xlabel("Age (months)")
+    plt.ylabel("Number of A<→>B motifs")
+    plt.title("Composition of input–feedback motifs by sign-pattern TF-TF Interactions")
+    plt.xticks(rotation=0)
+    plt.legend(title="pattern", bbox_to_anchor=(1.02,1))
+    plt.tight_layout()
+    plt.show()
+    plt.savefig(f'stacked_bar_plot_2_node_feeback_{tissue}')
+
+
+    plt.figure(figsize=(4,6))
+    sns.heatmap(bar_df.T, annot=True, fmt='g', cbar_kws={'label':'Count'})
+    plt.xlabel("Age (months)")
+    plt.ylabel("Sign-pattern")
+    plt.title("Pattern frequencies across ages")
+    plt.tight_layout()
+    plt.show()
+    plt.savefig(f'heatmap_2_node_feeback_{tissue}')
+
+    patterns = sorted(bar_df.columns)
+    ages     = sorted(bar_df.index)
+
+    fig, axes = plt.subplots(len(patterns), len(ages),
+                            figsize=(3*len(ages), 2*len(patterns)),
+                            squeeze=False)
+
+    for i, pat in enumerate(patterns):
+        for j, age in enumerate(ages):
+            subset = motif_df[(motif_df.age==age)&(motif_df.pattern==pat)]
+            if subset.empty:
+                axes[i][j].axis('off')
+                continue
+            ex = subset.iloc[0]   # pick first example
+            A,B = ex['A'], ex['B']
+            H = graphs_by_age[age].subgraph([A,B]).copy()
+            pos = {A:(0,1), B:(0,0)}
+            edge_colors = ['green' if H[u][v]['weight']>0 else 'red'
+                        for u,v in H.edges()]
+            nx.draw(H, pos, ax=axes[i][j],
+                    with_labels=True, edge_color=edge_colors,
+                    arrowsize=12)
+            axes[i][j].set_title(f"{pat} @ {age}m")
+            axes[i][j].axis('off')
+
+    plt.tight_layout()
+    plt.show()
+    plt.savefig(f'example_connections_2_node_feeback_{tissue}')
+
 
 def analyze_struct_2nodes(theta_dense, theta_sparse, nG, niters, names_tf, age_sparse = 24, age_dense = 3, no_parents=True):
 
@@ -539,283 +883,3 @@ def analyze_struct_2nodes(theta_dense, theta_sparse, nG, niters, names_tf, age_s
 
     return motif_df, counts_df, graphs_by_age
 
-def plot_2nodes(motif_df, counts_df, graphs_by_age, tissue):
-    # pivot for plotting
-    bar_df = counts_df.pivot(index='age', columns='pattern', values='count').fillna(0)
-    # rows = ages, cols = sign-patterns
-
-    plt.figure(figsize=(6,4))
-    bar_df.plot(kind='bar', stacked=True, edgecolor='black', legend=False)
-    plt.xlabel("Age (months)")
-    plt.ylabel("Number of A<→>B motifs")
-    plt.title("Composition of input–feedback motifs by sign-pattern TF-TF Interactions")
-    plt.xticks(rotation=0)
-    plt.legend(title="pattern", bbox_to_anchor=(1.02,1))
-    plt.tight_layout()
-    plt.show()
-    plt.savefig(f'stacked_bar_plot_2_node_feeback_{tissue}')
-
-
-    plt.figure(figsize=(4,6))
-    sns.heatmap(bar_df.T, annot=True, fmt='g', cbar_kws={'label':'Count'})
-    plt.xlabel("Age (months)")
-    plt.ylabel("Sign-pattern")
-    plt.title("Pattern frequencies across ages")
-    plt.tight_layout()
-    plt.show()
-    plt.savefig(f'heatmap_2_node_feeback_{tissue}')
-
-    patterns = sorted(bar_df.columns)
-    ages     = sorted(bar_df.index)
-
-    fig, axes = plt.subplots(len(patterns), len(ages),
-                            figsize=(3*len(ages), 2*len(patterns)),
-                            squeeze=False)
-
-    for i, pat in enumerate(patterns):
-        for j, age in enumerate(ages):
-            subset = motif_df[(motif_df.age==age)&(motif_df.pattern==pat)]
-            if subset.empty:
-                axes[i][j].axis('off')
-                continue
-            ex = subset.iloc[0]   # pick first example
-            A,B = ex['A'], ex['B']
-            H = graphs_by_age[age].subgraph([A,B]).copy()
-            pos = {A:(0,1), B:(0,0)}
-            edge_colors = ['green' if H[u][v]['weight']>0 else 'red'
-                        for u,v in H.edges()]
-            nx.draw(H, pos, ax=axes[i][j],
-                    with_labels=True, edge_color=edge_colors,
-                    arrowsize=12)
-            axes[i][j].set_title(f"{pat} @ {age}m")
-            axes[i][j].axis('off')
-
-    plt.tight_layout()
-    plt.show()
-    plt.savefig(f'example_connections_2_node_feeback_{tissue}')
-
-
-####################
-    ###############
-#######################
-
-
-def analyze_IFFL(theta_dense, theta_sparse, nG, niters, names_tf, age_sparse = 24, age_dense = 3):
-
-    theta_sp, _, _, _, _ = correct_sparsity(theta_dense, theta_sparse, nG, niters=100)
-
-    # Convert to CSR if not already
-    M_dense = theta_sp
-    M_sparse = theta_sparse
-    counts_df = pd.DataFrame(columns=['age', 'pattern', 'count'])
-
-    for i in range(niters):
-        print(f'******* On iter {i} ********')
-        theta_sp, _, _, _, _ = correct_sparsity(theta_dense, theta_sparse, nG, niters=100)
-
-        # Convert to CSR if not already
-        M3 = theta_sp
-        M24 = theta_sparse
-        matrices = {
-            3:  sparse.csr_matrix(M3) if not sparse.isspmatrix_csr(M3)  else M3,
-            24: sparse.csr_matrix(M24) if not sparse.isspmatrix_csr(M24) else M24
-        }
-
-        graphs_by_age = {}
-        for age, M in matrices.items():
-            # get non-zero coords
-            coo = M.tocoo()
-            # map index→gene
-            src = [names_tf[i] for i in coo.row]
-            tgt = [names_tf[j] for j in coo.col]
-            wts = coo.data
-            # build DiGraph
-            df_edges = pd.DataFrame({'source':src,'target':tgt,'weight':wts})
-            G = nx.from_pandas_edgelist(df_edges, 'source','target', edge_attr='weight',
-                                        create_using=nx.DiGraph())
-            graphs_by_age[age] = G
-
-        records = []
-        for age, G in graphs_by_age.items():
-            for A, B, C in find_IFFL(G):
-                sAB = '+' if G[A][B]['weight'] > 0 else '-'
-                sAC = '+' if G[A][C]['weight'] > 0 else '-'
-                sCB = '+' if G[C][B]['weight'] > 0 else '-'
-                pattern = sAB + sAC + sCB
-                records.append({
-                    'age':     age,
-                    'A':       A,
-                    'B':       B,
-                    'C':       C,
-                    'pattern': pattern
-                })
-
-        motif_df = pd.DataFrame(records)
-
-        counts_df_current = (
-            motif_df
-            .groupby(['age','pattern'])
-            .size()
-            .reset_index(name='count')
-        )
-
-        for _, row in counts_df_current.iterrows():
-            age = row['age']
-            pattern = row['pattern']
-            count = row['count']
-            mask = (counts_df['age'] == age) & (counts_df['pattern'] == pattern)
-
-            if mask.any():
-                counts_df.loc[mask, 'count'] += count
-            else:
-                new_row = {'age': age, 'pattern': pattern, 'count': count}
-                counts_df = pd.concat([counts_df, pd.DataFrame([new_row])], ignore_index=True)
-        
-    for _, row in counts_df.iterrows():
-        age = row['age']
-        pattern = row['pattern']
-        count = row['count']
-        counts_df.loc[(counts_df['age'] == age) & (counts_df['pattern'] == pattern), 'count'] /= niters+1
-
-    return motif_df, counts_df, graphs_by_age
-
-def plot_IFFL(motif_df, counts_df, graphs_by_age, tissue):
-
-    bar_df = counts_df.pivot(index='age', columns='pattern', values='count').fillna(0)
-
-    #### Stacked bar plot of types of motifs
-    plt.figure(figsize=(6,4))
-    bar_df.plot(kind='bar', stacked=True, edgecolor='black', legend=False)
-    plt.xlabel("Age (months)")
-    plt.ylabel("Number of A→B↔C motifs")
-    plt.title("Composition of input–feedback motifs by sign-pattern TF-TF Interactions")
-    plt.xticks(rotation=0)
-    plt.legend(title="pattern", bbox_to_anchor=(1.02,1))
-    plt.tight_layout()
-    plt.show()
-    plt.savefig(f'stacked_bar_plot_IFFL_{tissue}')
-
-    ########### heatmap with number of each motif
-    plt.figure(figsize=(4,6))
-    sns.heatmap(bar_df.T, annot=True, fmt='g', cbar_kws={'label':'Count'})
-    plt.xlabel("Age (months)")
-    plt.ylabel("Sign-pattern")
-    plt.title("Pattern frequencies across ages")
-    plt.tight_layout()
-    plt.show()
-    plt.savefig(f'heatmap_IFFL_{tissue}')
-
-
-    patterns = sorted(bar_df.columns)
-    ages     = sorted(bar_df.index)
-
-    ############ example connections
-    fig, axes = plt.subplots(len(patterns), len(ages),
-                            figsize=(3*len(ages), 2*len(patterns)),
-                            squeeze=False)
-
-    for i, pat in enumerate(patterns):
-        for j, age in enumerate(ages):
-            subset = motif_df[(motif_df.age==age)&(motif_df.pattern==pat)]
-            if subset.empty:
-                axes[i][j].axis('off')
-                continue
-            ex = subset.iloc[0]   # pick first example
-            A,B,C = ex['A'], ex['B'], ex['C']
-            print(A, B, C)
-            H = graphs_by_age[age].subgraph([A,B,C]).copy()
-            pos = {A:(0,1), B:(0,0), C:(1,0)}
-            edge_colors = ['green' if H[u][v]['weight']<0 else 'red' if H[u][v]['weight']>0 else 'white'
-                        for u,v in H.edges()]
-            nx.draw(H, pos, ax=axes[i][j],
-                    with_labels=True, edge_color=edge_colors,
-                    arrowsize=12)
-            axes[i][j].set_title(f"{pat} @ {age}m")
-            axes[i][j].axis('off')
-
-    plt.tight_layout()
-    plt.show()
-    plt.savefig(f'example_connections_IFFL_{tissue}')
-
-def analyze_IFL(theta_dense, theta_sparse, nG, niters, names_tf, age_sparse = 24, age_dense = 3):
-
-    theta_sp, _, _, _, _ = correct_sparsity(theta_dense, theta_sparse, nG, niters=niters)
-    counts_df = pd.DataFrame(columns=['age', 'pattern', 'count'])
-    # Convert to CSR if not already
-    M3 = theta_sp
-    M24 = theta_sparse
-    print(f'Graph has been built')
-    print(f'Begin extraction')
-    for i in range(niters):
-        print(f'On iter {i}')
-        theta_sp, _, _, _, _ = correct_sparsity(theta_dense, theta_sparse, nG, niters=niters)
-        # Convert to CSR if not already
-        M3 = theta_sp
-        matrices = {
-            3:  sparse.csr_matrix(M3) if not sparse.isspmatrix_csr(M3)  else M3,
-            24: sparse.csr_matrix(M24) if not sparse.isspmatrix_csr(M24) else M24
-        }
-
-        graphs_by_age = {}
-        for age, M in matrices.items():
-            # get non-zero coords
-            coo = M.tocoo()
-            # map index→gene
-            src = [names_tf[i] for i in coo.row]
-            tgt = [names_tf[j] for j in coo.col]
-            wts = coo.data
-            # build DiGraph
-            df_edges = pd.DataFrame({'source':src,'target':tgt,'weight':wts})
-            G = nx.from_pandas_edgelist(df_edges, 'source','target', edge_attr='weight',
-                                        create_using=nx.DiGraph())
-            graphs_by_age[age] = G
-
-
-        records = []
-        for age, G in graphs_by_age.items():
-            for A, B, C in find_IFL(G):
-                # pull weights just once
-                w_ab = G[A][B]['weight']
-                w_cb = G[C][B]['weight']
-                w_bc = G[B][C]['weight']
-                #print(f'we got {G[A][B], G[C][B], G[B][C]}')
-                sAB = '+' if w_ab > 0 else '-'
-                sBC = '+' if w_bc > 0 else '-'
-                sCB = '+' if w_cb > 0 else '-'
-                pattern = sAB + sBC + sCB
-
-                records.append({
-                    'age':     age,
-                    'A':       A,
-                    'B':       B,
-                    'C':       C,
-                    'pattern': pattern
-                })
-
-        motif_df = pd.DataFrame(records)
-
-        counts_df_current = (
-            motif_df
-            .groupby(['age','pattern'])
-            .size()
-            .reset_index(name='count')
-        )
-        for _, row in counts_df_current.iterrows():
-            age = row['age']
-            pattern = row['pattern']
-            count = row['count']
-            mask = (counts_df['age'] == age) & (counts_df['pattern'] == pattern)
-
-            if mask.any():
-                counts_df.loc[mask, 'count'] += count
-            else:
-                new_row = {'age': age, 'pattern': pattern, 'count': count}
-                counts_df = pd.concat([counts_df, pd.DataFrame([new_row])], ignore_index=True)
-
-    for _, row in counts_df.iterrows():
-        age = row['age']
-        pattern = row['pattern']
-        count = row['count']
-        counts_df.loc[(counts_df['age'] == age) & (counts_df['pattern'] == pattern), 'count'] /= niters+1                                      
-
-    return motif_df, counts_df, graphs_by_age   
