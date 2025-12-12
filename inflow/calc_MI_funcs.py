@@ -73,10 +73,10 @@ def generate_samples_mc(theta, tf_samples, m, int_burn=10000, nSamples=1000, int
 
         for row_idxs in row_idx_batch:
             tf_samples = update_samples(theta, tf_samples, m, row_idxs)
-            if ((count >= int_burn) and (count % int_save == 0)) or (count==int_burn): # when to store samples
-                stored_samples.append(tf_samples.clone().cpu()) # tensors are pointers so clone 
+            if count >= int_burn and (count - int_burn) % int_save == 0:
+                stored_samples.append(tf_samples.clone().cpu())
             count +=1
-    
+
     samples = torch.hstack(stored_samples) # turn into tensor
     samples = samples.to(tf_samples.device)
 
