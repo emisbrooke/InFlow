@@ -1,0 +1,2060 @@
+﻿Input,Input Type,MGI Gene/Marker ID,Symbol,Name,Feature Type
+TFAP2A,current symbol,MGI:104671,Tfap2a,"transcription factor AP-2, alpha",protein coding gene
+TFAP2B,current symbol,MGI:104672,Tfap2b,transcription factor AP-2 beta,protein coding gene
+TFAP2C,current symbol,MGI:106032,Tfap2c,"transcription factor AP-2, gamma",protein coding gene
+TFAP2D,current symbol,MGI:2153466,Tfap2d,"transcription factor AP-2, delta",protein coding gene
+TFAP2E,current symbol,MGI:2679630,Tfap2e,"transcription factor AP-2, epsilon",protein coding gene
+ARID3A,current symbol,MGI:1328360,Arid3a,AT-rich interaction domain 3A,protein coding gene
+ARID3B,current symbol,MGI:1930768,Arid3b,AT-rich interaction domain 3B,protein coding gene
+ARID3C,zebrafish symbol,MGI:1328360,Arid3a,AT-rich interaction domain 3A,protein coding gene
+ARID3C,current symbol,MGI:3650624,Arid3c,AT-rich interaction domain 3C,protein coding gene
+ARID5A,current symbol,MGI:2443039,Arid5a,AT-rich interaction domain 5A,protein coding gene
+ARID5B,current symbol,MGI:2175912,Arid5b,AT-rich interaction domain 5B,protein coding gene
+KDM5B,current symbol,MGI:1922855,Kdm5b,lysine demethylase 5B,protein coding gene
+ARID2,current symbol,MGI:1924294,Arid2,AT-rich interaction domain 2,protein coding gene
+AHCTF1,current symbol,MGI:1915033,Ahctf1,AT hook containing transcription factor 1,protein coding gene
+AHDC1,current symbol,MGI:2444218,Ahdc1,"AT hook, DNA binding motif, containing 1",protein coding gene
+AKNA,current symbol,MGI:2140340,Akna,AT-hook transcription factor,protein coding gene
+ASH1L,current symbol,MGI:2183158,Ash1l,ASH1 like histone lysine methyltransferase,protein coding gene
+CBX2,current symbol,MGI:88289,Cbx2,chromobox 2,protein coding gene
+DNTTIP1,current symbol,MGI:1923483,Dnttip1,"deoxynucleotidyltransferase, terminal, interacting protein 1",protein coding gene
+DOT1L,current symbol,MGI:2143886,Dot1l,DOT1 like histone lysine methyltransferase,protein coding gene
+GLYR1,current symbol,MGI:1921272,Glyr1,glyoxylate reductase 1 homolog (Arabidopsis),protein coding gene
+HMGA1,current symbol,MGI:96160,Hmga1,high mobility group AT-hook 1,protein coding gene
+HMGA1,human symbol,MGI:96161,Hmga1b,high mobility group AT-hook 1B,protein coding gene
+HMGA2,current symbol,MGI:101761,Hmga2,high mobility group AT-hook 2,protein coding gene
+PHF20,current symbol,MGI:2444148,Phf20,PHD finger protein 20,protein coding gene
+PHF21A,current symbol,MGI:2384756,Phf21a,PHD finger protein 21A,protein coding gene
+PRR12,current symbol,MGI:2679002,Prr12,proline rich 12,protein coding gene
+SCML4,current symbol,MGI:2446140,Scml4,Scm polycomb group protein like 4,protein coding gene
+SETBP1,current symbol,MGI:1933199,Setbp1,SET binding protein 1,protein coding gene
+SRCAP,current symbol,MGI:2444036,Srcap,Snf2-related CREBBP activator protein,protein coding gene
+C11orf95,human synonym,MGI:1919667,Zfta,zinc finger translocation associated,protein coding gene
+FAM200B,,No associated gene,,,
+SGSM2,current symbol,MGI:2144695,Sgsm2,small G protein signaling modulator 2,protein coding gene
+ZBED1,,No associated gene,,,
+ZBED2,,No associated gene,,,
+ZBED3,current symbol,MGI:1919364,Zbed3,"zinc finger, BED type containing 3",protein coding gene
+ZBED4,current symbol,MGI:2682302,Zbed4,"zinc finger, BED type containing 4",protein coding gene
+ZBED5,current symbol,MGI:1919220,Zbed5,zinc finger BED-type containing 5,protein coding gene
+ZBED6,current symbol,MGI:3828086,Zbed6,"zinc finger, BED type containing 6",protein coding gene
+ZBED9,,No associated gene,,,
+AHR,current symbol,MGI:105043,Ahr,aryl-hydrocarbon receptor,protein coding gene
+AHRR,current symbol,MGI:1333776,Ahrr,aryl-hydrocarbon receptor repressor,protein coding gene
+AHRR,rat synonym,MGI:88588,Cyp1a1,"cytochrome P450, family 1, subfamily a, polypeptide 1",protein coding gene
+ARNT,current symbol,MGI:88071,Arnt,aryl hydrocarbon receptor nuclear translocator,protein coding gene
+ARNT,synonym,MGI:3044000,D3Umi11,"DNA segment, Chr 3, University of Michigan 11",DNA segment
+ARNT,human synonym,MGI:2443183,Mia3,MIA SH3 domain ER export factor 3,protein coding gene
+ARNT2,current symbol,MGI:107188,Arnt2,aryl hydrocarbon receptor nuclear translocator 2,protein coding gene
+ARNTL,old symbol,MGI:1096381,Bmal1,basic helix-loop-helix ARNT like 1,protein coding gene
+ARNTL2,old symbol,MGI:2684845,Bmal2,basic helix-loop-helix ARNT like 2,protein coding gene
+ASCL1,current symbol,MGI:96919,Ascl1,achaete-scute family bHLH transcription factor 1,protein coding gene
+ASCL2,current symbol,MGI:96920,Ascl2,achaete-scute family bHLH transcription factor 2,protein coding gene
+ASCL3,current symbol,MGI:1928820,Ascl3,achaete-scute family bHLH transcription factor 3,protein coding gene
+ASCL4,current symbol,MGI:1914591,Ascl4,achaete-scute family bHLH transcription factor 4,protein coding gene
+ASCL5,current symbol,MGI:2685043,Ascl5,achaete-scute family bHLH transcription factor 5,protein coding gene
+ATOH1,current symbol,MGI:104654,Atoh1,atonal bHLH transcription factor 1,protein coding gene
+ATOH7,current symbol,MGI:1355553,Atoh7,atonal bHLH transcription factor 7,protein coding gene
+ATOH8,current symbol,MGI:1918343,Atoh8,atonal bHLH transcription factor 8,protein coding gene
+BHLHA15,current symbol,MGI:891976,Bhlha15,"basic helix-loop-helix family, member a15",protein coding gene
+BHLHA9,current symbol,MGI:2444198,Bhlha9,"basic helix-loop-helix family, member a9",protein coding gene
+BHLHE22,current symbol,MGI:1930001,Bhlhe22,"basic helix-loop-helix family, member e22",protein coding gene
+BHLHE23,current symbol,MGI:2153710,Bhlhe23,"basic helix-loop-helix family, member e23",protein coding gene
+BHLHE40,current symbol,MGI:1097714,Bhlhe40,"basic helix-loop-helix family, member e40",protein coding gene
+BHLHE41,current symbol,MGI:1930704,Bhlhe41,"basic helix-loop-helix family, member e41",protein coding gene
+CCDC169-SOHLH2,human symbol,MGI:1921684,Sohlh2,spermatogenesis and oogenesis specific basic helix-loop-helix 2,protein coding gene
+CLOCK,current symbol,MGI:99698,Clock,clock circadian regulator,protein coding gene
+EPAS1,current symbol,MGI:109169,Epas1,endothelial PAS domain protein 1,protein coding gene
+FERD3L,current symbol,MGI:2150010,Ferd3l,Fer3 like bHLH transcription factor,protein coding gene
+FIGLA,current symbol,MGI:1349421,Figla,folliculogenesis specific basic helix-loop-helix,protein coding gene
+HAND1,current symbol,MGI:103577,Hand1,heart and neural crest derivatives expressed 1,protein coding gene
+HAND2,current symbol,MGI:103580,Hand2,heart and neural crest derivatives expressed 2,protein coding gene
+HELT,current symbol,MGI:3040955,Helt,helt bHLH transcription factor,protein coding gene
+HES1,human synonym,MGI:1351861,Gatd3a,glutamine amidotransferase like class 1 domain containing 3A,protein coding gene
+HES1,current symbol,MGI:104853,Hes1,hes family bHLH transcription factor 1,protein coding gene
+HES2,current symbol,MGI:1098624,Hes2,hes family bHLH transcription factor 2,protein coding gene
+HES3,current symbol,MGI:104877,Hes3,hes family bHLH transcription factor 3,protein coding gene
+HES4,,No associated gene,,,
+HES5,current symbol,MGI:104876,Hes5,hes family bHLH transcription factor 5,protein coding gene
+HES6,current symbol,MGI:1859852,Hes6,hairy and enhancer of split 6,protein coding gene
+HES7,current symbol,MGI:2135679,Hes7,hes family bHLH transcription factor 7,protein coding gene
+HEY1,current symbol,MGI:1341800,Hey1,hairy/enhancer-of-split related with YRPW motif 1,protein coding gene
+HEY2,current symbol,MGI:1341884,Hey2,hairy/enhancer-of-split related with YRPW motif 2,protein coding gene
+HEYL,current symbol,MGI:1860511,Heyl,hairy/enhancer-of-split related with YRPW motif-like,protein coding gene
+HIF1A,current symbol,MGI:106918,Hif1a,"hypoxia inducible factor 1, alpha subunit",protein coding gene
+HIF3A,current symbol,MGI:1859778,Hif3a,"hypoxia inducible factor 3, alpha subunit",protein coding gene
+LYL1,current symbol,MGI:96891,Lyl1,lymphoblastomic leukemia 1,protein coding gene
+MAX,current symbol,MGI:96921,Max,Max protein,protein coding gene
+MESP1,current symbol,MGI:107785,Mesp1,mesoderm posterior 1,protein coding gene
+MESP2,current symbol,MGI:1096325,Mesp2,mesoderm posterior 2,protein coding gene
+MITF,current symbol,MGI:104554,Mitf,melanogenesis associated transcription factor,protein coding gene
+MITF,synonym,MGI:104638,Tff3,"trefoil factor 3, intestinal",protein coding gene
+MLX,current symbol,MGI:108398,Mlx,MAX-like protein X,protein coding gene
+MLX,human synonym,MGI:1927999,Mlxipl,MLX interacting protein-like,protein coding gene
+MLXIP,current symbol,MGI:2141183,Mlxip,MLX interacting protein,protein coding gene
+MLXIP,zebrafish symbol,MGI:1927999,Mlxipl,MLX interacting protein-like,protein coding gene
+MLXIPL,current symbol,MGI:1927999,Mlxipl,MLX interacting protein-like,protein coding gene
+MNT,synonym,MGI:1927811,Minute,minute imprinted gene in the Igf2 region,heritable phenotypic marker
+MNT,current symbol,MGI:109150,Mnt,max binding protein,protein coding gene
+MSC,current symbol,MGI:1333884,Msc,musculin,protein coding gene
+MSC,human synonym,MGI:1914962,Slc25a37,"solute carrier family 25, member 37",protein coding gene
+MSGN1,current symbol,MGI:1860483,Msgn1,mesogenin 1,protein coding gene
+MXD1,current symbol,MGI:96908,Mxd1,MAX dimerization protein 1,protein coding gene
+MXD3,current symbol,MGI:104987,Mxd3,Max dimerization protein 3,protein coding gene
+MXD4,current symbol,MGI:104991,Mxd4,Max dimerization protein 4,protein coding gene
+MXI1,current symbol,MGI:97245,Mxi1,"MAX interactor 1, dimerization protein",protein coding gene
+MYC,current symbol,MGI:97250,Myc,"Myc proto-oncogene, bHLH transcription factor",protein coding gene
+MYCL,current symbol,MGI:96799,Mycl,"Mycl proto-oncogene, bHLH transcription factor",protein coding gene
+MYCN,current symbol,MGI:97357,Mycn,"Mycn proto-oncogene, bHLH transcription factor",protein coding gene
+MYCN,human symbol,MGI:1332242,Mycs,"myc-like oncogene, s-myc protein",protein coding gene
+MYCN,synonym,MGI:2673317,Tg(Th-MYCN)41Waw,"transgene insertion 41, William A Weiss",transgene
+MYF5,current symbol,MGI:97252,Myf5,myogenic factor 5,protein coding gene
+MYF6,current symbol,MGI:97253,Myf6,myogenic factor 6,protein coding gene
+MYOD1,current symbol,MGI:97275,Myod1,myogenic differentiation 1,protein coding gene
+MYOG,current symbol,MGI:97276,Myog,myogenin,protein coding gene
+NCOA1,current symbol,MGI:1276523,Ncoa1,nuclear receptor coactivator 1,protein coding gene
+NCOA2,current symbol,MGI:1276533,Ncoa2,nuclear receptor coactivator 2,protein coding gene
+NCOA3,current symbol,MGI:1276535,Ncoa3,nuclear receptor coactivator 3,protein coding gene
+NEUROD1,current symbol,MGI:1339708,Neurod1,neurogenic differentiation 1,protein coding gene
+NEUROD2,current symbol,MGI:107755,Neurod2,neurogenic differentiation 2,protein coding gene
+NEUROD4,current symbol,MGI:108055,Neurod4,neurogenic differentiation 4,protein coding gene
+NEUROD6,current symbol,MGI:106593,Neurod6,neurogenic differentiation 6,protein coding gene
+NEUROG1,current symbol,MGI:107754,Neurog1,neurogenin 1,protein coding gene
+NEUROG2,current symbol,MGI:109619,Neurog2,neurogenin 2,protein coding gene
+NEUROG3,current symbol,MGI:893591,Neurog3,neurogenin 3,protein coding gene
+NHLH1,current symbol,MGI:98481,Nhlh1,nescient helix loop helix 1,protein coding gene
+NHLH2,zebrafish symbol,MGI:98481,Nhlh1,nescient helix loop helix 1,protein coding gene
+NHLH2,current symbol,MGI:97324,Nhlh2,nescient helix loop helix 2,protein coding gene
+NPAS1,current symbol,MGI:109205,Npas1,neuronal PAS domain protein 1,protein coding gene
+NPAS2,current symbol,MGI:109232,Npas2,neuronal PAS domain protein 2,protein coding gene
+NPAS2,zebrafish symbol,MGI:2685987,Pasd1,PAS domain containing repressor 1,protein coding gene
+NPAS3,current symbol,MGI:1351610,Npas3,neuronal PAS domain protein 3,protein coding gene
+NPAS4,current symbol,MGI:2664186,Npas4,neuronal PAS domain protein 4,protein coding gene
+OLIG1,current symbol,MGI:1355334,Olig1,oligodendrocyte transcription factor 1,protein coding gene
+OLIG2,current symbol,MGI:1355331,Olig2,oligodendrocyte transcription factor 2,protein coding gene
+OLIG3,current symbol,MGI:2149955,Olig3,oligodendrocyte transcription factor 3,protein coding gene
+PTF1A,current symbol,MGI:1328312,Ptf1a,"pancreas specific transcription factor, 1a",protein coding gene
+SCX,current symbol,MGI:102934,Scx,scleraxis scleraxis bHLH transcription factor,protein coding gene
+SIM1,current symbol,MGI:98306,Sim1,single-minded family bHLH transcription factor 1,protein coding gene
+SIM2,current symbol,MGI:98307,Sim2,single-minded family bHLH transcription factor 2,protein coding gene
+SOHLH1,current symbol,MGI:2684956,Sohlh1,spermatogenesis and oogenesis specific basic helix-loop-helix 1,protein coding gene
+SOHLH2,current symbol,MGI:1921684,Sohlh2,spermatogenesis and oogenesis specific basic helix-loop-helix 2,protein coding gene
+SREBF1,current symbol,MGI:107606,Srebf1,sterol regulatory element binding transcription factor 1,protein coding gene
+SREBF2,current symbol,MGI:107585,Srebf2,sterol regulatory element binding factor 2,protein coding gene
+TAL1,current symbol,MGI:98480,Tal1,T cell acute lymphocytic leukemia 1,protein coding gene
+TAL2,synonym,MGI:98481,Nhlh1,nescient helix loop helix 1,protein coding gene
+TAL2,current symbol,MGI:99540,Tal2,T cell acute lymphocytic leukemia 2,protein coding gene
+TCF12,current symbol,MGI:101877,Tcf12,transcription factor 12,protein coding gene
+TCF15,current symbol,MGI:104664,Tcf15,transcription factor 15,protein coding gene
+TCF21,current symbol,MGI:1202715,Tcf21,transcription factor 21,protein coding gene
+TCF23,current symbol,MGI:1934960,Tcf23,transcription factor 23,protein coding gene
+TCF23,zebrafish symbol,MGI:3780500,Tcf24,transcription factor 24,protein coding gene
+TCF24,current symbol,MGI:3780500,Tcf24,transcription factor 24,protein coding gene
+TCF3,current symbol,MGI:98510,Tcf3,transcription factor 3,protein coding gene
+TCF3,old symbol,MGI:1202876,Tcf7l1,"transcription factor 7 like 1 (T cell specific, HMG box)",protein coding gene
+TCF4,synonym,MGI:109128,Hnf4a,"hepatic nuclear factor 4, alpha",protein coding gene
+TCF4,current symbol,MGI:98506,Tcf4,transcription factor 4,protein coding gene
+TCF4,synonym,MGI:1202879,Tcf7l2,"transcription factor 7 like 2, T cell specific, HMG box",protein coding gene
+TCFL5,current symbol,MGI:2672878,Tcfl5,transcription factor-like 5 (basic helix-loop-helix),protein coding gene
+TFAP4,current symbol,MGI:103239,Tfap4,transcription factor AP4,protein coding gene
+TFE3,current symbol,MGI:98511,Tfe3,transcription factor E3,protein coding gene
+TFEB,current symbol,MGI:103270,Tfeb,transcription factor EB,protein coding gene
+TFEC,current symbol,MGI:1333760,Tfec,transcription factor EC,protein coding gene
+TWIST1,current symbol,MGI:98872,Twist1,twist basic helix-loop-helix transcription factor 1,protein coding gene
+TWIST2,current symbol,MGI:104685,Twist2,twist basic helix-loop-helix transcription factor 2,protein coding gene
+USF1,rat symbol,MGI:3648482,Tstd1,thiosulfate sulfurtransferase (rhodanese)-like domain containing 1,protein coding gene
+USF1,current symbol,MGI:99542,Usf1,upstream transcription factor 1,protein coding gene
+USF2,current symbol,MGI:99961,Usf2,upstream transcription factor 2,protein coding gene
+USF3,current symbol,MGI:2685454,Usf3,upstream transcription factor family member 3,protein coding gene
+POGK,current symbol,MGI:1918842,Pogk,pogo transposable element with KRAB domain,protein coding gene
+AC023509.3,,No associated gene,,,
+ATF1,current symbol,MGI:1298366,Atf1,activating transcription factor 1,protein coding gene
+ATF1,human synonym,MGI:107430,Gdnf,glial cell line derived neurotrophic factor,protein coding gene
+ATF2,current symbol,MGI:109349,Atf2,activating transcription factor 2,protein coding gene
+ATF2,human synonym,MGI:107430,Gdnf,glial cell line derived neurotrophic factor,protein coding gene
+ATF3,current symbol,MGI:109384,Atf3,activating transcription factor 3,protein coding gene
+ATF4,current symbol,MGI:88096,Atf4,activating transcription factor 4,protein coding gene
+ATF5,current symbol,MGI:2141857,Atf5,activating transcription factor 5,protein coding gene
+ATF6,current symbol,MGI:1926157,Atf6,activating transcription factor 6,protein coding gene
+ATF6B,current symbol,MGI:105121,Atf6b,activating transcription factor 6 beta,protein coding gene
+ATF7,old symbol,MGI:2141857,Atf5,activating transcription factor 5,protein coding gene
+ATF7,current symbol,MGI:2443472,Atf7,activating transcription factor 7,protein coding gene
+BACH1,current symbol,MGI:894680,Bach1,"BTB and CNC homology 1, basic leucine zipper transcription factor 1",protein coding gene
+BACH1,synonym,MGI:2442836,Brip1,BRCA1 interacting protein C-terminal helicase 1,protein coding gene
+BACH2,current symbol,MGI:894679,Bach2,"BTB and CNC homology, basic leucine zipper transcription factor 2",protein coding gene
+BATF,current symbol,MGI:1859147,Batf,"basic leucine zipper transcription factor, ATF-like",protein coding gene
+BATF2,current symbol,MGI:1921731,Batf2,"basic leucine zipper transcription factor, ATF-like 2",protein coding gene
+BATF3,current symbol,MGI:1925491,Batf3,"basic leucine zipper transcription factor, ATF-like 3",protein coding gene
+CEBPA,current symbol,MGI:99480,Cebpa,CCAAT/enhancer binding protein alpha,protein coding gene
+CEBPB,current symbol,MGI:88373,Cebpb,CCAAT/enhancer binding protein beta,protein coding gene
+CEBPD,current symbol,MGI:103573,Cebpd,CCAAT/enhancer binding protein delta,protein coding gene
+CEBPE,current symbol,MGI:103572,Cebpe,CCAAT/enhancer binding protein epsilon,protein coding gene
+CEBPG,current symbol,MGI:104982,Cebpg,CCAAT/enhancer binding protein gamma,protein coding gene
+CREB1,current symbol,MGI:88494,Creb1,cAMP responsive element binding protein 1,protein coding gene
+CREB3,current symbol,MGI:99946,Creb3,cAMP responsive element binding protein 3,protein coding gene
+CREB3,human synonym,MGI:1916603,Creb3l4,cAMP responsive element binding protein 3-like 4,protein coding gene
+CREB3L1,current symbol,MGI:1347062,Creb3l1,cAMP responsive element binding protein 3-like 1,protein coding gene
+CREB3L2,current symbol,MGI:2442695,Creb3l2,cAMP responsive element binding protein 3-like 2,protein coding gene
+CREB3L3,current symbol,MGI:2384786,Creb3l3,cAMP responsive element binding protein 3-like 3,protein coding gene
+CREB3L4,current symbol,MGI:1916603,Creb3l4,cAMP responsive element binding protein 3-like 4,protein coding gene
+CREB5,current symbol,MGI:2443973,Creb5,cAMP responsive element binding protein 5,protein coding gene
+CREBL2,current symbol,MGI:1889385,Crebl2,cAMP responsive element binding protein-like 2,protein coding gene
+CREBZF,current symbol,MGI:2675296,Crebzf,CREB/ATF bZIP transcription factor,protein coding gene
+CREM,current symbol,MGI:88495,Crem,cAMP responsive element modulator,protein coding gene
+DBP,current symbol,MGI:94866,Dbp,D site albumin promoter binding protein,protein coding gene
+DBP,synonym,MGI:95669,Gc,vitamin D binding protein,protein coding gene
+DBP,human synonym,MGI:105089,Hsd17b4,hydroxysteroid (17-beta) dehydrogenase 4,protein coding gene
+DBP,rat synonym,MGI:106181,Mybbp1a,MYB binding protein (P160) 1a,protein coding gene
+DDIT3,current symbol,MGI:109247,Ddit3,DNA-damage inducible transcript 3,protein coding gene
+FOS,current symbol,MGI:95574,Fos,"Fos proto-oncogene, AP-1 transcription factor subunit",protein coding gene
+FOSB,current symbol,MGI:95575,Fosb,"Fos B proto-oncogene, AP-1 transcription factor subunit",protein coding gene
+FOSL1,current symbol,MGI:107179,Fosl1,fos-like antigen 1,protein coding gene
+FOSL2,current symbol,MGI:102858,Fosl2,fos-like antigen 2,protein coding gene
+HLF,synonym,MGI:109169,Epas1,endothelial PAS domain protein 1,protein coding gene
+HLF,current symbol,MGI:96108,Hlf,hepatic leukemia factor,protein coding gene
+JDP2,current symbol,MGI:1932093,Jdp2,Jun dimerization protein 2,protein coding gene
+JUN,current symbol,MGI:96646,Jun,"Jun proto-oncogene, AP-1 transcription factor subunit",protein coding gene
+JUNB,current symbol,MGI:96647,Junb,"jun B proto-oncogene, AP-1 transcription factor subunit",protein coding gene
+JUNB,human synonym,MGI:1916974,Rnaseh2a,"ribonuclease H2, large subunit",protein coding gene
+JUND,current symbol,MGI:96648,Jund,"jun D proto-oncogene, AP-1 transcription factor subunit",protein coding gene
+MAF,current symbol,MGI:96909,Maf,MAF bZIP transcription factor,protein coding gene
+MAF,rat synonym,MGI:1914718,Mmd,monocyte to macrophage differentiation-associated,protein coding gene
+MAFA,human synonym,MGI:1355294,Klrg1,"killer cell lectin-like receptor subfamily G, member 1",protein coding gene
+MAFA,zebrafish symbol,MGI:96909,Maf,MAF bZIP transcription factor,protein coding gene
+MAFA,current symbol,MGI:2673307,Mafa,MAF bZIP transcription factor A,protein coding gene
+MAFB,zebrafish symbol,MGI:96909,Maf,MAF bZIP transcription factor,protein coding gene
+MAFB,current symbol,MGI:104555,Mafb,MAF bZIP transcription factor B,protein coding gene
+MAFF,current symbol,MGI:96910,Maff,Maf bZIP transcription factor F,protein coding gene
+MAFG,current symbol,MGI:96911,Mafg,Maf bZIP transcription factor G,protein coding gene
+MAFK,current symbol,MGI:99951,Mafk,Maf bZIP transcription factor K,protein coding gene
+NFE2,current symbol,MGI:97308,Nfe2,"nuclear factor, erythroid derived 2",protein coding gene
+NFE2L1,current symbol,MGI:99421,Nfe2l1,"nuclear factor, erythroid derived 2,-like 1",protein coding gene
+NFE2L2,current symbol,MGI:108420,Nfe2l2,"nuclear factor, erythroid derived 2, like 2",protein coding gene
+NFE2L3,current symbol,MGI:1339958,Nfe2l3,"nuclear factor, erythroid derived 2, like 3",protein coding gene
+NFIL3,current symbol,MGI:109495,Nfil3,"nuclear factor, interleukin 3, regulated",protein coding gene
+NRL,synonym,MGI:96757,Lcn2,lipocalin 2,protein coding gene
+NRL,current symbol,MGI:102567,Nrl,neural retina leucine zipper gene,protein coding gene
+TEF,current symbol,MGI:98663,Tef,thyrotroph embryonic factor,protein coding gene
+XBP1,current symbol,MGI:98970,Xbp1,X-box binding protein 1,protein coding gene
+AC008770.3,,No associated gene,,,
+AC092835.1,,No associated gene,,,
+AC138696.1,,No associated gene,,,
+AEBP2,current symbol,MGI:1338038,Aebp2,AE binding protein 2,protein coding gene
+AKAP8,current symbol,MGI:1928488,Akap8,A kinase anchor protein 8,protein coding gene
+AKAP8L,current symbol,MGI:1860606,Akap8l,A kinase anchor protein 8-like,protein coding gene
+ANKZF1,current symbol,MGI:1098746,Ankzf1,ankyrin repeat and zinc finger domain containing 1,protein coding gene
+ATMIN,current symbol,MGI:2682328,Atmin,ATM interactor,protein coding gene
+BCL11A,current symbol,MGI:106190,Bcl11a,BCL11 transcription factor A,protein coding gene
+BCL11B,current symbol,MGI:1929913,Bcl11b,B cell leukemia/lymphoma 11B,protein coding gene
+BCL6,current symbol,MGI:107187,Bcl6,B cell leukemia/lymphoma 6,protein coding gene
+BCL6B,current symbol,MGI:1278332,Bcl6b,"B cell CLL/lymphoma 6, member B",protein coding gene
+BNC1,synonym,MGI:1100867,Asic2,acid-sensing ion channel 2,protein coding gene
+BNC1,current symbol,MGI:1097164,Bnc1,basonuclin zinc finger protein 1,protein coding gene
+BNC2,current symbol,MGI:2443805,Bnc2,basonuclin zinc finger protein 2,protein coding gene
+CASZ1,current symbol,MGI:1196251,Casz1,castor zinc finger 1,protein coding gene
+CCDC17,current symbol,MGI:1915667,Ccdc17,coiled-coil domain containing 17,protein coding gene
+CHAMP1,current symbol,MGI:1196398,Champ1,chromosome alignment maintaining phosphoprotein 1,protein coding gene
+CPXCR1,current symbol,MGI:2685989,Cpxcr1,"CPX chromosome region, candidate 1",protein coding gene
+CTCF,current symbol,MGI:109447,Ctcf,CCCTC-binding factor,protein coding gene
+CTCFL,current symbol,MGI:3652571,Ctcfl,CCCTC-binding factor like,protein coding gene
+DPF1,current symbol,MGI:1352748,Dpf1,double PHD fingers 1,protein coding gene
+DPF3,current symbol,MGI:1917377,Dpf3,double PHD fingers 3,protein coding gene
+DZIP1,current symbol,MGI:1914311,Dzip1,DAZ interacting protein 1,protein coding gene
+E4F1,current symbol,MGI:109530,E4f1,E4F transcription factor 1,protein coding gene
+EEA1,current symbol,MGI:2442192,Eea1,early endosome antigen 1,protein coding gene
+EGR1,current symbol,MGI:95295,Egr1,early growth response 1,protein coding gene
+EGR2,current symbol,MGI:95296,Egr2,early growth response 2,protein coding gene
+EGR3,current symbol,MGI:1306780,Egr3,early growth response 3,protein coding gene
+EGR4,current symbol,MGI:99252,Egr4,early growth response 4,protein coding gene
+FAM170A,current symbol,MGI:2684939,Fam170a,"family with sequence similarity 170, member A",protein coding gene
+FEZF1,current symbol,MGI:1920441,Fezf1,Fez family zinc finger 1,protein coding gene
+FEZF2,current symbol,MGI:1859823,Fezf2,Fez family zinc finger 2,protein coding gene
+FIZ1,current symbol,MGI:1344336,Fiz1,Flt3 interacting zinc finger protein 1,protein coding gene
+GFI1,current symbol,MGI:103170,Gfi1,growth factor independent 1 transcription repressor,protein coding gene
+GFI1B,current symbol,MGI:1276578,Gfi1b,growth factor independent 1B,protein coding gene
+GLI1,current symbol,MGI:95727,Gli1,GLI-Kruppel family member GLI1,protein coding gene
+GLI2,current symbol,MGI:95728,Gli2,GLI-Kruppel family member GLI2,protein coding gene
+GLI3,current symbol,MGI:95729,Gli3,GLI-Kruppel family member GLI3,protein coding gene
+GLI4,,No associated gene,,,
+GLIS1,current symbol,MGI:2386723,Glis1,GLIS family zinc finger 1,protein coding gene
+GLIS2,current symbol,MGI:1932535,Glis2,GLIS family zinc finger 2,protein coding gene
+GLIS3,current symbol,MGI:2444289,Glis3,GLIS family zinc finger 3,protein coding gene
+GTF3A,current symbol,MGI:1913846,Gtf3a,general transcription factor III A,protein coding gene
+GZF1,current symbol,MGI:1921783,Gzf1,GDNF-inducible zinc finger protein 1,protein coding gene
+HIC1,current symbol,MGI:1338010,Hic1,hypermethylated in cancer 1,protein coding gene
+HIC2,current symbol,MGI:1929869,Hic2,hypermethylated in cancer 2,protein coding gene
+HINFP,current symbol,MGI:2429620,Hinfp,histone H4 transcription factor,protein coding gene
+HIVEP1,current symbol,MGI:96100,Hivep1,human immunodeficiency virus type I enhancer binding protein 1,protein coding gene
+HIVEP2,current symbol,MGI:1338076,Hivep2,human immunodeficiency virus type I enhancer binding protein 2,protein coding gene
+HIVEP3,current symbol,MGI:106589,Hivep3,human immunodeficiency virus type I enhancer binding protein 3,protein coding gene
+HKR1,current symbol,MGI:96105,Hkr1,GLI-Kruppel family member HKR1,unclassified other genome feature
+IKZF1,current symbol,MGI:1342540,Ikzf1,IKAROS family zinc finger 1,protein coding gene
+IKZF2,current symbol,MGI:1342541,Ikzf2,IKAROS family zinc finger 2,protein coding gene
+IKZF3,current symbol,MGI:1342542,Ikzf3,IKAROS family zinc finger 3,protein coding gene
+IKZF4,current symbol,MGI:1343139,Ikzf4,IKAROS family zinc finger 4,protein coding gene
+IKZF5,current symbol,MGI:1914393,Ikzf5,IKAROS family zinc finger 5,protein coding gene
+INSM1,current symbol,MGI:1859980,Insm1,insulinoma-associated 1,protein coding gene
+INSM2,current symbol,MGI:1930787,Insm2,insulinoma-associated 2,protein coding gene
+JAZF1,current symbol,MGI:2141450,Jazf1,JAZF zinc finger 1,protein coding gene
+KAT7,current symbol,MGI:2182799,Kat7,K(lysine) acetyltransferase 7,protein coding gene
+KCMF1,rat synonym,MGI:2445168,Elmod3,ELMO/CED-12 domain containing 3,protein coding gene
+KCMF1,current symbol,MGI:1921537,Kcmf1,potassium channel modulatory factor 1,protein coding gene
+KIN,current symbol,MGI:96676,Kin,Kin17 DNA and RNA binding protein,protein coding gene
+KLF1,current symbol,MGI:1342771,Klf1,Kruppel-like transcription factor 1 (erythroid),protein coding gene
+KLF1,zebrafish symbol,MGI:2181068,Klf17,Kruppel-like transcription factor 17,protein coding gene
+KLF10,current symbol,MGI:1101353,Klf10,Kruppel-like transcription factor 10,protein coding gene
+KLF11,current symbol,MGI:2653368,Klf11,Kruppel-like transcription factor 11,protein coding gene
+KLF12,current symbol,MGI:1333796,Klf12,Kruppel-like transcription factor 12,protein coding gene
+KLF13,current symbol,MGI:1354948,Klf13,Kruppel-like transcription factor 13,protein coding gene
+KLF14,current symbol,MGI:3577024,Klf14,Kruppel-like transcription factor 14,protein coding gene
+KLF14,synonym,MGI:1932575,Sp6,trans-acting transcription factor 6,protein coding gene
+KLF15,current symbol,MGI:1929988,Klf15,Kruppel-like transcription factor 15,protein coding gene
+KLF16,current symbol,MGI:2153049,Klf16,Kruppel-like transcription factor 16,protein coding gene
+KLF17,current symbol,MGI:2181068,Klf17,Kruppel-like transcription factor 17,protein coding gene
+KLF2,current symbol,MGI:1342772,Klf2,Kruppel-like transcription factor 2 (lung),protein coding gene
+KLF3,current symbol,MGI:1342773,Klf3,Kruppel-like transcription factor 3 (basic),protein coding gene
+KLF4,current symbol,MGI:1342287,Klf4,Kruppel-like transcription factor 4 (gut),protein coding gene
+KLF5,current symbol,MGI:1338056,Klf5,Kruppel-like transcription factor 5,protein coding gene
+KLF6,current symbol,MGI:1346318,Klf6,Kruppel-like transcription factor 6,protein coding gene
+KLF7,current symbol,MGI:1935151,Klf7,Kruppel-like transcription factor 7 (ubiquitous),protein coding gene
+KLF8,current symbol,MGI:2442430,Klf8,Kruppel-like transcription factor 8,protein coding gene
+KLF9,current symbol,MGI:1333856,Klf9,Kruppel-like transcription factor 9,protein coding gene
+L3MBTL1,current symbol,MGI:2676663,L3mbtl1,L3MBTL1 histone methyl-lysine binding protein,protein coding gene
+L3MBTL3,current symbol,MGI:2143628,L3mbtl3,L3MBTL3 histone methyl-lysine binding protein,protein coding gene
+L3MBTL4,current symbol,MGI:2444889,L3mbtl4,L3MBTL4 histone methyl-lysine binding protein,protein coding gene
+MAZ,current symbol,MGI:1338823,Maz,MYC-associated zinc finger protein (purine-binding transcription factor),protein coding gene
+MECOM,current symbol,MGI:95457,Mecom,MDS1 and EVI1 complex locus,protein coding gene
+MTF1,human synonym,MGI:1353421,Meltf,melanotransferrin,protein coding gene
+MTF1,current symbol,MGI:101786,Mtf1,metal response element binding transcription factor 1,protein coding gene
+MTF1,human synonym,MGI:1100535,Myt1,myelin transcription factor 1,protein coding gene
+MYNN,current symbol,MGI:1931415,Mynn,myoneurin,protein coding gene
+MYNN,human synonym,MGI:1891838,Zbtb32,zinc finger and BTB domain containing 32,protein coding gene
+MYT1,current symbol,MGI:1100535,Myt1,myelin transcription factor 1,protein coding gene
+MYT1,synonym,MGI:2137630,Pkmyt1,"protein kinase, membrane associated tyrosine/threonine 1",protein coding gene
+MYT1L,current symbol,MGI:1100511,Myt1l,myelin transcription factor 1-like,protein coding gene
+MZF1,current symbol,MGI:107457,Mzf1,myeloid zinc finger 1,protein coding gene
+OSR1,human synonym,MGI:1913930,Oser1,oxidative stress responsive serine rich 1,protein coding gene
+OSR1,current symbol,MGI:1344424,Osr1,odd-skipped related transcription factor 1,protein coding gene
+OSR1,old symbol,MGI:1917378,Oxsr1,oxidative-stress responsive 1,protein coding gene
+OSR2,current symbol,MGI:1930813,Osr2,odd-skipped related 2,protein coding gene
+OVOL1,current symbol,MGI:1330290,Ovol1,ovo like zinc finger 1,protein coding gene
+OVOL2,current symbol,MGI:1338039,Ovol2,ovo like zinc finger 2,protein coding gene
+OVOL3,current symbol,MGI:2388075,Ovol3,ovo like zinc finger 3,protein coding gene
+PEG3,current symbol,MGI:104748,Peg3,paternally expressed 3,protein coding gene
+PLAG1,current symbol,MGI:1891916,Plag1,pleiomorphic adenoma gene 1,protein coding gene
+PLAGL1,current symbol,MGI:1100874,Plagl1,pleiomorphic adenoma gene-like 1,protein coding gene
+PLAGL2,current symbol,MGI:1933165,Plagl2,pleiomorphic adenoma gene-like 2,protein coding gene
+PRDM1,current symbol,MGI:99655,Prdm1,"PR domain containing 1, with ZNF domain",protein coding gene
+PRDM10,current symbol,MGI:2682952,Prdm10,PR domain containing 10,protein coding gene
+PRDM12,current symbol,MGI:2685844,Prdm12,PR domain containing 12,protein coding gene
+PRDM13,current symbol,MGI:2448528,Prdm13,PR domain containing 13,protein coding gene
+PRDM14,current symbol,MGI:3588194,Prdm14,PR domain containing 14,protein coding gene
+PRDM15,current symbol,MGI:1930121,Prdm15,PR domain containing 15,protein coding gene
+PRDM16,current symbol,MGI:1917923,Prdm16,PR domain containing 16,protein coding gene
+PRDM2,current symbol,MGI:107628,Prdm2,"PR domain containing 2, with ZNF domain",protein coding gene
+PRDM4,current symbol,MGI:1920093,Prdm4,PR domain containing 4,protein coding gene
+PRDM5,current symbol,MGI:1918029,Prdm5,PR domain containing 5,protein coding gene
+PRDM6,current symbol,MGI:2684938,Prdm6,PR domain containing 6,protein coding gene
+PRDM8,current symbol,MGI:1924880,Prdm8,PR domain containing 8,protein coding gene
+PRDM9,current symbol,MGI:2384854,Prdm9,PR domain containing 9,protein coding gene
+PRMT3,current symbol,MGI:1919224,Prmt3,protein arginine N-methyltransferase 3,protein coding gene
+RBAK,current symbol,MGI:1927369,Rbak,RB-associated KRAB zinc finger,protein coding gene
+RBSN,current symbol,MGI:1925537,Rbsn,"rabenosyn, RAB effector",protein coding gene
+REPIN1,current symbol,MGI:1889817,Repin1,replication initiator 1,protein coding gene
+REST,current symbol,MGI:104897,Rest,RE1-silencing transcription factor,protein coding gene
+RLF,synonym,MGI:108427,Insl3,insulin-like 3,protein coding gene
+RLF,synonym,MGI:107483,Rgl2,ral guanine nucleotide dissociation stimulator-like 2,protein coding gene
+RLF,current symbol,MGI:1924705,Rlf,rearranged L-myc fusion sequence,protein coding gene
+RREB1,current symbol,MGI:2443664,Rreb1,ras responsive element binding protein 1,protein coding gene
+SALL1,current symbol,MGI:1889585,Sall1,spalt like transcription factor 1,protein coding gene
+SALL2,current symbol,MGI:1354373,Sall2,spalt like transcription factor 2,protein coding gene
+SALL3,current symbol,MGI:109295,Sall3,spalt like transcription factor 3,protein coding gene
+SALL4,current symbol,MGI:2139360,Sall4,spalt like transcription factor 4,protein coding gene
+SCRT1,current symbol,MGI:2176606,Scrt1,scratch family zinc finger 1,protein coding gene
+SCRT2,current symbol,MGI:2139287,Scrt2,scratch family zinc finger 2,protein coding gene
+SLC2A4RG,zebrafish symbol,MGI:3651388,Slc2a4rg-ps,"Slc2a4 regulator, pseudogene",pseudogene
+SNAI1,current symbol,MGI:98330,Snai1,snail family zinc finger 1,protein coding gene
+SNAI2,current symbol,MGI:1096393,Snai2,snail family zinc finger 2,protein coding gene
+SNAI3,current symbol,MGI:1353563,Snai3,snail family zinc finger 3,protein coding gene
+SP1,human synonym,MGI:1347246,Ceacam2,CEA cell adhesion molecule 2,protein coding gene
+SP1,human synonym,MGI:1344365,Dand5,"DAN domain family member 5, BMP antagonist",protein coding gene
+SP1,current symbol,MGI:98372,Sp1,trans-acting transcription factor 1,protein coding gene
+SP2,current symbol,MGI:1926162,Sp2,Sp2 transcription factor,protein coding gene
+SP2,synonym,MGI:98885,Zrsr2-ps1,"zinc finger (CCCH type), RNA binding motif and serine/arginine rich 2, pseudogene 1",pseudogene
+SP3,current symbol,MGI:1277166,Sp3,trans-acting transcription factor 3,protein coding gene
+SP4,current symbol,MGI:107595,Sp4,trans-acting transcription factor 4,protein coding gene
+SP5,synonym,MGI:104522,Phxr4,per-hexamer repeat gene 4,protein coding gene
+SP5,human synonym,MGI:109517,Sftpc,surfactant associated protein C,protein coding gene
+SP5,current symbol,MGI:1927715,Sp5,trans-acting transcription factor 5,protein coding gene
+SP6,current symbol,MGI:1932575,Sp6,trans-acting transcription factor 6,protein coding gene
+SP6,synonym,MGI:2139607,Usp53,ubiquitin specific peptidase 53,protein coding gene
+SP7,current symbol,MGI:2153568,Sp7,Sp7 transcription factor 7,protein coding gene
+SP8,current symbol,MGI:2443471,Sp8,trans-acting transcription factor 8,protein coding gene
+SP9,current symbol,MGI:3574660,Sp9,trans-acting transcription factor 9,protein coding gene
+ST18,current symbol,MGI:2446700,St18,suppression of tumorigenicity 18,protein coding gene
+TRAFD1,current symbol,MGI:1923551,Trafd1,TRAF type zinc finger domain containing 1,protein coding gene
+TSHZ1,current symbol,MGI:1346031,Tshz1,teashirt zinc finger family member 1,protein coding gene
+TSHZ2,current symbol,MGI:2153084,Tshz2,teashirt zinc finger family member 2,protein coding gene
+TSHZ3,current symbol,MGI:2442819,Tshz3,teashirt zinc finger family member 3,protein coding gene
+VEZF1,current symbol,MGI:1313291,Vezf1,vascular endothelial zinc finger 1,protein coding gene
+WIZ,current symbol,MGI:1332638,Wiz,widely-interspaced zinc finger motifs,protein coding gene
+WT1,current symbol,MGI:98968,Wt1,WT1 transcription factor,protein coding gene
+YY1,current symbol,MGI:99150,Yy1,YY1 transcription factor,protein coding gene
+YY2,current symbol,MGI:3837947,Yy2,Yy2 transcription factor,protein coding gene
+ZBTB1,current symbol,MGI:2442326,Zbtb1,zinc finger and BTB domain containing 1,protein coding gene
+ZBTB10,current symbol,MGI:2139883,Zbtb10,zinc finger and BTB domain containing 10,protein coding gene
+ZBTB11,current symbol,MGI:2443876,Zbtb11,zinc finger and BTB domain containing 11,protein coding gene
+ZBTB12,current symbol,MGI:88133,Zbtb12,zinc finger and BTB domain containing 12,protein coding gene
+ZBTB14,current symbol,MGI:1195345,Zbtb14,zinc finger and BTB domain containing 14,protein coding gene
+ZBTB16,current symbol,MGI:103222,Zbtb16,zinc finger and BTB domain containing 16,protein coding gene
+ZBTB17,current symbol,MGI:107410,Zbtb17,zinc finger and BTB domain containing 17,protein coding gene
+ZBTB18,current symbol,MGI:1353609,Zbtb18,zinc finger and BTB domain containing 18,protein coding gene
+ZBTB2,current symbol,MGI:2685949,Zbtb2,zinc finger and BTB domain containing 2,protein coding gene
+ZBTB20,current symbol,MGI:1929213,Zbtb20,zinc finger and BTB domain containing 20,protein coding gene
+ZBTB21,current symbol,MGI:1927240,Zbtb21,zinc finger and BTB domain containing 21,protein coding gene
+ZBTB22,current symbol,MGI:1931870,Zbtb22,zinc finger and BTB domain containing 22,protein coding gene
+ZBTB25,current symbol,MGI:99197,Zbtb25,zinc finger and BTB domain containing 25,protein coding gene
+ZBTB26,current symbol,MGI:2444402,Zbtb26,zinc finger and BTB domain containing 26,protein coding gene
+ZBTB3,current symbol,MGI:1922541,Zbtb3,zinc finger and BTB domain containing 3,protein coding gene
+ZBTB32,current symbol,MGI:1891838,Zbtb32,zinc finger and BTB domain containing 32,protein coding gene
+ZBTB33,current symbol,MGI:1927290,Zbtb33,zinc finger and BTB domain containing 33,protein coding gene
+ZBTB34,current symbol,MGI:2685195,Zbtb34,zinc finger and BTB domain containing 34,protein coding gene
+ZBTB37,current symbol,MGI:2444467,Zbtb37,zinc finger and BTB domain containing 37,protein coding gene
+ZBTB38,current symbol,MGI:2442866,Zbtb38,zinc finger and BTB domain containing 38,protein coding gene
+ZBTB39,current symbol,MGI:2443316,Zbtb39,zinc finger and BTB domain containing 39,protein coding gene
+ZBTB4,current symbol,MGI:1922830,Zbtb4,zinc finger and BTB domain containing 4,protein coding gene
+ZBTB40,current symbol,MGI:2682254,Zbtb40,zinc finger and BTB domain containing 40,protein coding gene
+ZBTB41,current symbol,MGI:2444487,Zbtb41,zinc finger and BTB domain containing 41,protein coding gene
+ZBTB42,current symbol,MGI:3644133,Zbtb42,zinc finger and BTB domain containing 42,protein coding gene
+ZBTB43,current symbol,MGI:1919084,Zbtb43,zinc finger and BTB domain containing 43,protein coding gene
+ZBTB44,current symbol,MGI:1925123,Zbtb44,zinc finger and BTB domain containing 44,protein coding gene
+ZBTB45,current symbol,MGI:2685003,Zbtb45,zinc finger and BTB domain containing 45,protein coding gene
+ZBTB46,current symbol,MGI:1919397,Zbtb46,zinc finger and BTB domain containing 46,protein coding gene
+ZBTB47,current symbol,MGI:2670992,Zbtb47,zinc finger and BTB domain containing 47,protein coding gene
+ZBTB48,current symbol,MGI:2140248,Zbtb48,zinc finger and BTB domain containing 48,protein coding gene
+ZBTB49,current symbol,MGI:1922329,Zbtb49,zinc finger and BTB domain containing 49,protein coding gene
+ZBTB5,current symbol,MGI:1924601,Zbtb5,zinc finger and BTB domain containing 5,protein coding gene
+ZBTB6,current symbol,MGI:2442998,Zbtb6,zinc finger and BTB domain containing 6,protein coding gene
+ZBTB7A,current symbol,MGI:1335091,Zbtb7a,zinc finger and BTB domain containing 7a,protein coding gene
+ZBTB7B,current symbol,MGI:102755,Zbtb7b,zinc finger and BTB domain containing 7B,protein coding gene
+ZBTB7C,current symbol,MGI:2443302,Zbtb7c,zinc finger and BTB domain containing 7C,protein coding gene
+ZBTB8A,current symbol,MGI:1920930,Zbtb8a,zinc finger and BTB domain containing 8a,protein coding gene
+ZBTB8B,current symbol,MGI:2387181,Zbtb8b,zinc finger and BTB domain containing 8b,protein coding gene
+ZBTB9,current symbol,MGI:1918022,Zbtb9,zinc finger and BTB domain containing 9,protein coding gene
+ZFAT,current symbol,MGI:2681865,Zfat,zinc finger and AT hook domain containing,protein coding gene
+ZFP1,current symbol,MGI:99154,Zfp1,zinc finger protein 1,protein coding gene
+ZFP14,current symbol,MGI:99160,Zfp14,zinc finger protein 14,protein coding gene
+ZFP2,current symbol,MGI:99167,Zfp2,zinc finger protein 2,protein coding gene
+ZFP28,rat synonym,MGI:3648314,Gm7072,predicted gene 7072,protein coding gene
+ZFP28,current symbol,MGI:99175,Zfp28,zinc finger protein 28,protein coding gene
+ZFP28,rat synonym,MGI:3643318,Zfp994,zinc finger protein 994,protein coding gene
+ZFP3,current symbol,MGI:99177,Zfp3,zinc finger protein 3,protein coding gene
+ZFP30,current symbol,MGI:99178,Zfp30,zinc finger protein 30,protein coding gene
+ZFP37,current symbol,MGI:99181,Zfp37,zinc finger protein 37,protein coding gene
+ZFP41,current symbol,MGI:99186,Zfp41,zinc finger protein 41,protein coding gene
+ZFP42,current symbol,MGI:99187,Zfp42,zinc finger protein 42,protein coding gene
+ZFP57,current symbol,MGI:99204,Zfp57,zinc finger protein 57,protein coding gene
+ZFP62,current symbol,MGI:99662,Zfp62,zinc finger protein 62,protein coding gene
+ZFP64,current symbol,MGI:107342,Zfp64,zinc finger protein 64,protein coding gene
+ZFP64,synonym,MGI:104786,Zfp90,zinc finger protein 90,protein coding gene
+ZFP69,current symbol,MGI:107794,Zfp69,zinc finger protein 69,protein coding gene
+ZFP69,synonym,MGI:107780,Zfp84,zinc finger protein 84,protein coding gene
+ZFP69B,,No associated gene,,,
+ZFP82,current symbol,MGI:1890753,Zfp82,zinc finger protein 82,protein coding gene
+ZFP90,current symbol,MGI:104786,Zfp90,zinc finger protein 90,protein coding gene
+ZFP91,current symbol,MGI:104854,Zfp91,zinc finger protein 91,protein coding gene
+ZFP92,current symbol,MGI:108094,Zfp92,zinc finger protein 92,protein coding gene
+ZFPM1,current symbol,MGI:1095400,Zfpm1,"zinc finger protein, multitype 1",protein coding gene
+ZFPM2,current symbol,MGI:1334444,Zfpm2,"zinc finger protein, multitype 2",protein coding gene
+ZFX,zebrafish symbol,MGI:99153,Zfa-ps,"zinc finger protein, autosomal, pseudogene",pseudogene
+ZFX,current symbol,MGI:99211,Zfx,zinc finger protein X-linked,protein coding gene
+ZFX,zebrafish symbol,MGI:99212,Zfy1,"zinc finger protein 1, Y-linked",protein coding gene
+ZFX,zebrafish symbol,MGI:99213,Zfy2,"zinc finger protein 2, Y-linked",protein coding gene
+ZFY,human symbol,MGI:99153,Zfa-ps,"zinc finger protein, autosomal, pseudogene",pseudogene
+ZFY,rat synonym,MGI:99212,Zfy1,"zinc finger protein 1, Y-linked",protein coding gene
+ZFY,rat synonym,MGI:99213,Zfy2,"zinc finger protein 2, Y-linked",protein coding gene
+ZIC1,current symbol,MGI:106683,Zic1,zinc finger protein of the cerebellum 1,protein coding gene
+ZIC2,current symbol,MGI:106679,Zic2,zinc finger protein of the cerebellum 2,protein coding gene
+ZIC3,current symbol,MGI:106676,Zic3,zinc finger protein of the cerebellum 3,protein coding gene
+ZIC4,current symbol,MGI:107201,Zic4,zinc finger protein of the cerebellum 4,protein coding gene
+ZIC5,current symbol,MGI:1929518,Zic5,zinc finger protein of the cerebellum 5,protein coding gene
+ZIK1,current symbol,MGI:108070,Zik1,zinc finger protein interacting with K protein 1,protein coding gene
+ZIM2,current symbol,MGI:1923887,Zim2,"zinc finger, imprinted 2",lncRNA gene
+ZIM3,current symbol,MGI:2151058,Zim3,"zinc finger, imprinted 3",lncRNA gene
+ZKSCAN1,current symbol,MGI:1921820,Zkscan1,zinc finger with KRAB and SCAN domains 1,protein coding gene
+ZKSCAN2,current symbol,MGI:2444060,Zkscan2,zinc finger with KRAB and SCAN domains 2,protein coding gene
+ZKSCAN3,current symbol,MGI:1919989,Zkscan3,zinc finger with KRAB and SCAN domains 3,protein coding gene
+ZKSCAN4,human symbol,MGI:1919989,Zkscan3,zinc finger with KRAB and SCAN domains 3,protein coding gene
+ZKSCAN4,current symbol,MGI:3649412,Zkscan4,zinc finger with KRAB and SCAN domains 4,protein coding gene
+ZKSCAN5,current symbol,MGI:107533,Zkscan5,zinc finger with KRAB and SCAN domains 5,protein coding gene
+ZKSCAN7,current symbol,MGI:3040678,Zkscan7,zinc finger with KRAB and SCAN domains 7,protein coding gene
+ZKSCAN8,current symbol,MGI:1913815,Zkscan8,zinc finger with KRAB and SCAN domains 8,protein coding gene
+ZMAT1,current symbol,MGI:2442284,Zmat1,"zinc finger, matrin type 1",protein coding gene
+ZMAT4,current symbol,MGI:2443497,Zmat4,"zinc finger, matrin type 4",protein coding gene
+ZNF10,,No associated gene,,,
+ZNF100,,No associated gene,,,
+ZNF101,,No associated gene,,,
+ZNF107,human symbol,MGI:3036250,Zfp729a,zinc finger protein 729a,protein coding gene
+ZNF112,human symbol,MGI:1929115,Zfp112,zinc finger protein 112,protein coding gene
+ZNF114,,No associated gene,,,
+ZNF117,human symbol,MGI:3652251,Gm14412,predicted gene 14412,protein coding gene
+ZNF117,human symbol,MGI:3652324,Gm14443,predicted gene 14443,protein coding gene
+ZNF117,human symbol,MGI:5591846,Gm32687,"predicted gene, 32687",protein coding gene
+ZNF117,human symbol,MGI:3642994,Zfp936,zinc finger protein 936,protein coding gene
+ZNF117,human symbol,MGI:2385298,Zfp958,zinc finger protein 958,protein coding gene
+ZNF117,human symbol,MGI:1924053,Zfp998,zinc finger protein 998,protein coding gene
+ZNF12,human symbol,MGI:99157,Zfp12,zinc finger protein 12,protein coding gene
+ZNF121,human symbol,MGI:1915280,Zfp560,zinc finger protein 560,protein coding gene
+ZNF124,rat synonym,MGI:1920701,Zfp763,zinc finger protein 763,protein coding gene
+ZNF124,human symbol,MGI:2681848,Zfp867,zinc finger protein 867,protein coding gene
+ZNF131,synonym,MGI:1919715,Zfp131,zinc finger protein 131,protein coding gene
+ZNF132,,No associated gene,,,
+ZNF133,,No associated gene,,,
+ZNF134,,No associated gene,,,
+ZNF135,,No associated gene,,,
+ZNF136,human symbol,MGI:2142212,AW146154,expressed sequence AW146154,protein coding gene
+ZNF136,human symbol,MGI:3780195,Gm2026,predicted gene 2026,protein coding gene
+ZNF136,human symbol,MGI:3782813,Gm4631,predicted gene 4631,protein coding gene
+ZNF136,human symbol,MGI:3782904,Gm4724,predicted gene 4724,protein coding gene
+ZNF136,human symbol,MGI:3779623,Gm6710,predicted gene 6710,protein coding gene
+ZNF136,human symbol,MGI:3643456,Gm6871,predicted gene 6871,protein coding gene
+ZNF136,human symbol,MGI:3782921,Gm14308,predicted gene 14308,protein coding gene
+ZNF136,human symbol,MGI:3702875,Gm14325,predicted gene 14325,protein coding gene
+ZNF136,human symbol,MGI:3709324,Gm14391,predicted gene 14391,protein coding gene
+ZNF136,human symbol,MGI:3702412,Gm14430,predicted gene 14430,protein coding gene
+ZNF136,human symbol,MGI:3702417,Gm14434,predicted gene 14434,protein coding gene
+ZNF136,human symbol,MGI:3709333,Gm15446,predicted gene 15446,protein coding gene
+ZNF136,human symbol,MGI:3584369,Zfp866,zinc finger protein 866,protein coding gene
+ZNF136,human symbol,MGI:2681848,Zfp867,zinc finger protein 867,protein coding gene
+ZNF136,human symbol,MGI:3709288,Zfp966,zinc finger protein 966,protein coding gene
+ZNF136,human symbol,MGI:3709638,Zfp967,zinc finger protein 967,protein coding gene
+ZNF136,human symbol,MGI:1261426,Zfp971,zinc finger protein 971,protein coding gene
+ZNF138,,No associated gene,,,
+ZNF14,rat synonym,MGI:2384299,Zfp709,zinc finger protein 709,protein coding gene
+ZNF140,,No associated gene,,,
+ZNF141,,No associated gene,,,
+ZNF142,rat synonym,MGI:1924514,Zfp142,zinc finger protein 142,protein coding gene
+ZNF143,rat synonym,MGI:1277969,Zfp143,zinc finger protein 143,protein coding gene
+ZNF146,rat synonym,MGI:1347092,Zfp146,zinc finger protein 146,protein coding gene
+ZNF146,rat synonym,MGI:1347071,Zfp260,zinc finger protein 260,protein coding gene
+ZNF148,rat synonym,MGI:1332234,Zfp148,zinc finger protein 148,protein coding gene
+ZNF154,,No associated gene,,,
+ZNF155,,No associated gene,,,
+ZNF157,human symbol,MGI:3652251,Gm14412,predicted gene 14412,protein coding gene
+ZNF16,,No associated gene,,,
+ZNF160,human symbol,MGI:108187,Zfp160,zinc finger protein 160,protein coding gene
+ZNF165,,No associated gene,,,
+ZNF169,rat synonym,MGI:1915161,Zfp169,zinc finger protein 169,protein coding gene
+ZNF17,,No associated gene,,,
+ZNF174,rat synonym,MGI:2686600,Zfp174,zinc finger protein 174,protein coding gene
+ZNF175,,No associated gene,,,
+ZNF177,,No associated gene,,,
+ZNF18,rat synonym,MGI:1289293,Zkscan6,zinc finger with KRAB and SCAN domains 6,protein coding gene
+ZNF180,human symbol,MGI:1923701,Zfp180,zinc finger protein 180,protein coding gene
+ZNF181,,No associated gene,,,
+ZNF182,human symbol,MGI:2442220,Zfp182,zinc finger protein 182,protein coding gene
+ZNF182,human synonym,MGI:2682609,Zfp212,Zinc finger protein 212,protein coding gene
+ZNF184,rat synonym,MGI:1922244,Zfp184,zinc finger protein 184 (Kruppel-like),protein coding gene
+ZNF189,human symbol,MGI:2444707,Zfp189,zinc finger protein 189,protein coding gene
+ZNF19,,No associated gene,,,
+ZNF195,,No associated gene,,,
+ZNF197,,No associated gene,,,
+ZNF2,human symbol,MGI:1919430,Zfp661,zinc finger protein 661,protein coding gene
+ZNF20,human synonym,MGI:1915280,Zfp560,zinc finger protein 560,protein coding gene
+ZNF200,,No associated gene,,,
+ZNF202,human symbol,MGI:1933401,Zfp202,zinc finger protein 202,protein coding gene
+ZNF205,human symbol,MGI:99159,Zfp13,zinc finger protein 13,protein coding gene
+ZNF207,human symbol,MGI:1340045,Zfp207,zinc finger protein 207,protein coding gene
+ZNF208,human symbol,MGI:3036250,Zfp729a,zinc finger protein 729a,protein coding gene
+ZNF208,human symbol,MGI:3040706,Zfp738,zinc finger protein 738,protein coding gene
+ZNF211,,No associated gene,,,
+ZNF212,synonym,MGI:2682609,Zfp212,Zinc finger protein 212,protein coding gene
+ZNF213,rat synonym,MGI:3053094,Zfp213,zinc finger protein 213,protein coding gene
+ZNF214,,No associated gene,,,
+ZNF215,,No associated gene,,,
+ZNF217,rat synonym,MGI:2685408,Zfp217,zinc finger protein 217,protein coding gene
+ZNF219,rat synonym,MGI:1917140,Zfp219,zinc finger protein 219,protein coding gene
+ZNF22,rat synonym,MGI:1914505,Zfp422,zinc finger protein 422,protein coding gene
+ZNF221,human symbol,MGI:5591846,Gm32687,"predicted gene, 32687",protein coding gene
+ZNF222,,No associated gene,,,
+ZNF223,,No associated gene,,,
+ZNF224,,No associated gene,,,
+ZNF225,human synonym,MGI:95295,Egr1,early growth response 1,protein coding gene
+ZNF226,human symbol,MGI:99663,Zfp61,zinc finger protein 61,protein coding gene
+ZNF227,,No associated gene,,,
+ZNF229,,No associated gene,,,
+ZNF23,rat synonym,MGI:2443465,Zfp612,zinc finger protein 612,protein coding gene
+ZNF230,synonym,MGI:1914400,Rnf141,ring finger protein 141,protein coding gene
+ZNF232,,No associated gene,,,
+ZNF233,,No associated gene,,,
+ZNF234,human symbol,MGI:3705222,Zfp600,zinc finger protein 600,protein coding gene
+ZNF234,human symbol,MGI:3652002,Zfp1005,zinc finger protein 1005,protein coding gene
+ZNF235,human symbol,MGI:107611,Zfp93,zinc finger protein 93,protein coding gene
+ZNF235,human symbol,MGI:1891198,Zfp108,zinc finger protein 108,protein coding gene
+ZNF235,human symbol,MGI:1929099,Zfp109,zinc finger protein 109,protein coding gene
+ZNF235,human symbol,MGI:1929114,Zfp111,zinc finger protein 111,protein coding gene
+ZNF235,human symbol,MGI:3037815,Zfp114,zinc finger protein 114,protein coding gene
+ZNF235,human symbol,MGI:1929117,Zfp235,zinc finger protein 235,protein coding gene
+ZNF236,human symbol,MGI:1926950,Zfp236,zinc finger protein 236,protein coding gene
+ZNF239,human symbol,MGI:1306812,Zfp239,zinc finger protein 239,protein coding gene
+ZNF24,rat synonym,MGI:1929704,Zfp24,zinc finger protein 24,protein coding gene
+ZNF248,rat synonym,MGI:1919970,Zfp248,zinc finger protein 248,protein coding gene
+ZNF25,human symbol,MGI:99210,Zfp9,zinc finger protein 9,protein coding gene
+ZNF250,rat synonym,MGI:3052806,Zfp647,zinc finger protein 647,protein coding gene
+ZNF251,rat synonym,MGI:1918841,Zfp251,zinc finger protein 251,protein coding gene
+ZNF253,,No associated gene,,,
+ZNF254,human symbol,MGI:3705222,Zfp600,zinc finger protein 600,protein coding gene
+ZNF254,human symbol,MGI:1925501,Zfp712,zinc finger protein 712,protein coding gene
+ZNF254,human symbol,MGI:3652002,Zfp1005,zinc finger protein 1005,protein coding gene
+ZNF256,,No associated gene,,,
+ZNF257,,No associated gene,,,
+ZNF26,,No associated gene,,,
+ZNF260,rat synonym,MGI:1347071,Zfp260,zinc finger protein 260,protein coding gene
+ZNF263,human symbol,MGI:1921370,Zfp263,zinc finger protein 263,protein coding gene
+ZNF264,,No associated gene,,,
+ZNF266,human symbol,MGI:1924769,Zfp266,zinc finger protein 266,protein coding gene
+ZNF267,human symbol,MGI:3652251,Gm14412,predicted gene 14412,protein coding gene
+ZNF267,human symbol,MGI:99173,Zfp26,zinc finger protein 26,protein coding gene
+ZNF267,human symbol,MGI:2679295,Zfp229,zinc finger protein 229,protein coding gene
+ZNF267,human symbol,MGI:1098769,Zfp267,zinc finger protein 267,protein coding gene
+ZNF267,human symbol,MGI:3704127,Zfp808,zinc finger protein 808,protein coding gene
+ZNF267,human symbol,MGI:3652002,Zfp1005,zinc finger protein 1005,protein coding gene
+ZNF268,human symbol,MGI:3651014,Zfp268,zinc finger protein 268,protein coding gene
+ZNF273,,No associated gene,,,
+ZNF274,human symbol,MGI:1890378,Zfp110,zinc finger protein 110,protein coding gene
+ZNF274,human symbol,MGI:2176229,Zfp369,zinc finger protein 369,protein coding gene
+ZNF275,human symbol,MGI:1350985,Zfp275,zinc finger protein 275,protein coding gene
+ZNF276,human symbol,MGI:1888495,Zfp276,zinc finger protein (C2H2 type) 276,protein coding gene
+ZNF28,human symbol,MGI:3781781,Gm3604,predicted gene 3604,protein coding gene
+ZNF280A,,No associated gene,,,
+ZNF280B,rat synonym,MGI:1927865,Zfp280b,zinc finger protein 280B,protein coding gene
+ZNF280C,human symbol,MGI:2387585,Zfp280c,zinc finger protein 280C,protein coding gene
+ZNF280D,zebrafish symbol,MGI:1927865,Zfp280b,zinc finger protein 280B,protein coding gene
+ZNF280D,zebrafish symbol,MGI:2387585,Zfp280c,zinc finger protein 280C,protein coding gene
+ZNF280D,human symbol,MGI:2384583,Zfp280d,zinc finger protein 280D,protein coding gene
+ZNF281,human symbol,MGI:3029290,Zfp281,zinc finger protein 281,protein coding gene
+ZNF282,rat synonym,MGI:2141413,Zfp282,zinc finger protein 282,protein coding gene
+ZNF283,,No associated gene,,,
+ZNF284,human symbol,MGI:5591846,Gm32687,"predicted gene, 32687",protein coding gene
+ZNF285,,No associated gene,,,
+ZNF286A,rat synonym,MGI:2384758,Zfp286,zinc finger protein 286,protein coding gene
+ZNF286B,human symbol,MGI:2384758,Zfp286,zinc finger protein 286,protein coding gene
+ZNF287,rat synonym,MGI:2176561,Zfp287,zinc finger protein 287,protein coding gene
+ZNF292,rat synonym,MGI:1353423,Zfp292,zinc finger protein 292,protein coding gene
+ZNF296,rat synonym,MGI:1926956,Zfp296,zinc finger protein 296,protein coding gene
+ZNF3,human symbol,MGI:1929116,Zfp113,zinc finger protein 113,protein coding gene
+ZNF30,rat synonym,MGI:99178,Zfp30,zinc finger protein 30,protein coding gene
+ZNF300,,No associated gene,,,
+ZNF302,,No associated gene,,,
+ZNF304,,No associated gene,,,
+ZNF311,,No associated gene,,,
+ZNF316,human symbol,MGI:1860402,Zfp316,zinc finger protein 316,protein coding gene
+ZNF317,human symbol,MGI:107775,Zfp317,zinc finger protein 317,protein coding gene
+ZNF318,human symbol,MGI:1889348,Zfp318,zinc finger protein 318,protein coding gene
+ZNF319,human symbol,MGI:1890618,Zfp319,zinc finger protein 319,protein coding gene
+ZNF32,human synonym,MGI:87934,Adra2a,"adrenergic receptor, alpha 2a",protein coding gene
+ZNF32,human symbol,MGI:2448537,Zfp637,zinc finger protein 637,protein coding gene
+ZNF320,human symbol,MGI:3779466,Gm5141,predicted gene 5141,protein coding gene
+ZNF320,human symbol,MGI:99200,Zfp53,zinc finger protein 53,protein coding gene
+ZNF320,human symbol,MGI:3652219,Zfp345,zinc finger protein 345,protein coding gene
+ZNF320,human symbol,MGI:3053207,Zfp677,zinc finger protein 677,protein coding gene
+ZNF320,human symbol,MGI:3040689,Zfp873,zinc finger protein 873,protein coding gene
+ZNF320,human symbol,MGI:1924367,Zfp934,zinc finger protein 934,protein coding gene
+ZNF320,human symbol,MGI:3036263,Zfp976,zinc finger protein 976,protein coding gene
+ZNF320,human symbol,MGI:3836251,Zfp1004,zinc finger protein 1004,protein coding gene
+ZNF322,human symbol,MGI:2442566,Zfp322a,zinc finger protein 322A,protein coding gene
+ZNF324,rat synonym,MGI:2444641,Zfp324,zinc finger protein 324,protein coding gene
+ZNF324B,human symbol,MGI:2444641,Zfp324,zinc finger protein 324,protein coding gene
+ZNF326,human symbol,MGI:1927246,Zfp326,zinc finger protein 326,protein coding gene
+ZNF329,human symbol,MGI:1921283,Zfp329,zinc finger protein 329,protein coding gene
+ZNF331,,No associated gene,,,
+ZNF333,human symbol,MGI:2142212,AW146154,expressed sequence AW146154,protein coding gene
+ZNF333,human symbol,MGI:3780195,Gm2026,predicted gene 2026,protein coding gene
+ZNF333,human symbol,MGI:3782813,Gm4631,predicted gene 4631,protein coding gene
+ZNF333,human symbol,MGI:3782904,Gm4724,predicted gene 4724,protein coding gene
+ZNF333,human symbol,MGI:3779623,Gm6710,predicted gene 6710,protein coding gene
+ZNF333,human symbol,MGI:3782921,Gm14308,predicted gene 14308,protein coding gene
+ZNF333,human symbol,MGI:3702875,Gm14325,predicted gene 14325,protein coding gene
+ZNF333,human symbol,MGI:3709324,Gm14391,predicted gene 14391,protein coding gene
+ZNF333,human symbol,MGI:3702412,Gm14430,predicted gene 14430,protein coding gene
+ZNF333,human symbol,MGI:3702417,Gm14434,predicted gene 14434,protein coding gene
+ZNF333,human symbol,MGI:1922865,Zfp933,zinc finger protein 933,protein coding gene
+ZNF333,human symbol,MGI:3709288,Zfp966,zinc finger protein 966,protein coding gene
+ZNF333,human symbol,MGI:3709638,Zfp967,zinc finger protein 967,protein coding gene
+ZNF333,human symbol,MGI:1261426,Zfp971,zinc finger protein 971,protein coding gene
+ZNF334,human symbol,MGI:2388656,Zfp334,zinc finger protein 334,protein coding gene
+ZNF335,rat synonym,MGI:2682313,Zfp335,zinc finger protein 335,protein coding gene
+ZNF337,,No associated gene,,,
+ZNF33A,,No associated gene,,,
+ZNF33B,,No associated gene,,,
+ZNF34,,No associated gene,,,
+ZNF341,rat synonym,MGI:2682937,Zfp341,zinc finger protein 341,protein coding gene
+ZNF343,,No associated gene,,,
+ZNF345,,No associated gene,,,
+ZNF346,human symbol,MGI:1349417,Zfp346,zinc finger protein 346,protein coding gene
+ZNF347,human symbol,MGI:108187,Zfp160,zinc finger protein 160,protein coding gene
+ZNF35,human symbol,MGI:1277119,Zfp105,zinc finger protein 105,protein coding gene
+ZNF350,,No associated gene,,,
+ZNF354A,rat synonym,MGI:103172,Zfp354a,zinc finger protein 354A,protein coding gene
+ZNF354B,human symbol,MGI:1351476,Zfp354b,zinc finger protein 354B,protein coding gene
+ZNF354C,rat synonym,MGI:1353621,Zfp354c,zinc finger protein 354C,protein coding gene
+ZNF358,human symbol,MGI:2153740,Zfp358,zinc finger protein 358,protein coding gene
+ZNF362,human symbol,MGI:2652839,Zfp362,zinc finger protein 362,protein coding gene
+ZNF365,rat synonym,MGI:2143676,Zfp365,zinc finger protein 365,protein coding gene
+ZNF366,rat synonym,MGI:2178429,Zfp366,zinc finger protein 366,protein coding gene
+ZNF367,rat synonym,MGI:2442266,Zfp367,zinc finger protein 367,protein coding gene
+ZNF37A,,No associated gene,,,
+ZNF382,rat synonym,MGI:3588204,Zfp382,zinc finger protein 382,protein coding gene
+ZNF383,human symbol,MGI:1920979,Zfp383,zinc finger protein 383,protein coding gene
+ZNF384,rat synonym,MGI:2443203,Zfp384,zinc finger protein 384,protein coding gene
+ZNF385A,human symbol,MGI:1352495,Zfp385a,zinc finger protein 385A,protein coding gene
+ZNF385B,human symbol,MGI:2444734,Zfp385b,zinc finger protein 385B,protein coding gene
+ZNF385C,human symbol,MGI:3608347,Zfp385c,zinc finger protein 385C,protein coding gene
+ZNF385D,,No associated gene,,,
+ZNF391,,No associated gene,,,
+ZNF394,rat synonym,MGI:1914485,Zkscan14,zinc finger with KRAB and SCAN domains 14,protein coding gene
+ZNF395,human symbol,MGI:2682318,Zfp395,zinc finger protein 395,protein coding gene
+ZNF396,,No associated gene,,,
+ZNF397,rat synonym,MGI:1916506,Zfp397,zinc finger protein 397,protein coding gene
+ZNF398,human symbol,MGI:1917856,Zfp398,zinc finger protein 398,protein coding gene
+ZNF404,,No associated gene,,,
+ZNF407,human symbol,MGI:2685179,Zfp407,zinc finger protein 407,protein coding gene
+ZNF408,human symbol,MGI:2685857,Zfp408,zinc finger protein 408,protein coding gene
+ZNF408,human synonym,MGI:1095400,Zfpm1,"zinc finger protein, multitype 1",protein coding gene
+ZNF41,,No associated gene,,,
+ZNF410,rat synonym,MGI:1289280,Zfp410,zinc finger protein 410,protein coding gene
+ZNF414,rat synonym,MGI:3576625,Pram1,PML-RAR alpha-regulated adaptor molecule 1,protein coding gene
+ZNF414,rat synonym,MGI:1915641,Zfp414,zinc finger protein 414,protein coding gene
+ZNF415,human symbol,MGI:3779466,Gm5141,predicted gene 5141,protein coding gene
+ZNF415,human symbol,MGI:99200,Zfp53,zinc finger protein 53,protein coding gene
+ZNF415,human symbol,MGI:3652219,Zfp345,zinc finger protein 345,protein coding gene
+ZNF415,human symbol,MGI:3053207,Zfp677,zinc finger protein 677,protein coding gene
+ZNF415,human symbol,MGI:3040689,Zfp873,zinc finger protein 873,protein coding gene
+ZNF415,human symbol,MGI:1924367,Zfp934,zinc finger protein 934,protein coding gene
+ZNF415,human symbol,MGI:3036263,Zfp976,zinc finger protein 976,protein coding gene
+ZNF415,human symbol,MGI:3836251,Zfp1004,zinc finger protein 1004,protein coding gene
+ZNF416,,No associated gene,,,
+ZNF417,,No associated gene,,,
+ZNF418,rat synonym,MGI:2444763,Zfp418,zinc finger protein 418,protein coding gene
+ZNF419,human symbol,MGI:2385265,Zfp772,zinc finger protein 772,protein coding gene
+ZNF419,human symbol,MGI:1923623,Zfp773,zinc finger protein 773,protein coding gene
+ZNF419,human symbol,MGI:1917764,Zfp954,zinc finger protein 954,protein coding gene
+ZNF420,human symbol,MGI:2444666,Zfp420,zinc finger protein 420,protein coding gene
+ZNF423,rat synonym,MGI:1891217,Zfp423,zinc finger protein 423,protein coding gene
+ZNF425,,No associated gene,,,
+ZNF426,rat synonym,MGI:1920248,Zfp426,zinc finger protein 426,protein coding gene
+ZNF426,rat synonym,MGI:1924012,Zfp846,zinc finger protein 846,protein coding gene
+ZNF428,human symbol,MGI:1916463,Zfp428,zinc finger protein 428,protein coding gene
+ZNF429,human symbol,MGI:107768,Zfp87,zinc finger protein 87,protein coding gene
+ZNF43,,No associated gene,,,
+ZNF430,,No associated gene,,,
+ZNF431,,No associated gene,,,
+ZNF432,human symbol,MGI:3705222,Zfp600,zinc finger protein 600,protein coding gene
+ZNF432,human symbol,MGI:3652002,Zfp1005,zinc finger protein 1005,protein coding gene
+ZNF433,,No associated gene,,,
+ZNF436,human symbol,MGI:99192,Zfp46,zinc finger protein 46,protein coding gene
+ZNF438,human symbol,MGI:2444919,Zfp438,zinc finger protein 438,protein coding gene
+ZNF439,,No associated gene,,,
+ZNF44,,No associated gene,,,
+ZNF440,,No associated gene,,,
+ZNF441,,No associated gene,,,
+ZNF442,,No associated gene,,,
+ZNF443,,No associated gene,,,
+ZNF444,rat synonym,MGI:1923365,Zfp444,zinc finger protein 444,protein coding gene
+ZNF445,human symbol,MGI:2143340,Zfp445,zinc finger protein 445,protein coding gene
+ZNF446,human symbol,MGI:2442185,Zfp446,zinc finger protein 446,protein coding gene
+ZNF449,human symbol,MGI:1925869,Zfp449,zinc finger protein 449,protein coding gene
+ZNF45,human symbol,MGI:107610,Zfp94,zinc finger protein 94,protein coding gene
+ZNF451,human symbol,MGI:2137896,Zfp451,zinc finger protein 451,protein coding gene
+ZNF454,rat symbol,MGI:1351476,Zfp354b,zinc finger protein 354B,protein coding gene
+ZNF454,human symbol,MGI:2679253,Zfp454,zinc finger protein 454,protein coding gene
+ZNF460,,No associated gene,,,
+ZNF461,,No associated gene,,,
+ZNF462,human symbol,MGI:107690,Zfp462,zinc finger protein 462,protein coding gene
+ZNF467,rat synonym,MGI:1916160,Zfp467,zinc finger protein 467,protein coding gene
+ZNF468,,No associated gene,,,
+ZNF469,human symbol,MGI:2684868,Zfp469,zinc finger protein 469,protein coding gene
+ZNF470,,No associated gene,,,
+ZNF471,rat synonym,MGI:99175,Zfp28,zinc finger protein 28,protein coding gene
+ZNF471,human symbol,MGI:107783,Zfp78,zinc finger protein 78,protein coding gene
+ZNF473,rat synonym,MGI:2442697,Zfp473,zinc finger protein 473,protein coding gene
+ZNF474,human synonym,MGI:1270153,Zfp106,zinc finger protein 106,protein coding gene
+ZNF474,rat synonym,MGI:1914008,Zfp474,zinc finger protein 474,protein coding gene
+ZNF479,,No associated gene,,,
+ZNF48,human symbol,MGI:2384725,Zfp553,zinc finger protein 553,protein coding gene
+ZNF480,,No associated gene,,,
+ZNF483,rat synonym,MGI:3510405,Zkscan16,zinc finger with KRAB and SCAN domains 16,protein coding gene
+ZNF484,human symbol,MGI:3651014,Zfp268,zinc finger protein 268,protein coding gene
+ZNF484,human symbol,MGI:3705222,Zfp600,zinc finger protein 600,protein coding gene
+ZNF484,human symbol,MGI:3040683,Zfp948,zinc finger protein 948,protein coding gene
+ZNF485,human symbol,MGI:3648947,Zfp658,zinc finger protein 658,protein coding gene
+ZNF486,human symbol,MGI:3652325,Gm14444,predicted gene 14444,protein coding gene
+ZNF486,human symbol,MGI:2675306,Zfp930,zinc finger protein 930,protein coding gene
+ZNF486,human symbol,MGI:3701121,Zfp982,zinc finger protein 982,protein coding gene
+ZNF486,human symbol,MGI:1919389,Zfp1006,zinc finger protein 1006,protein coding gene
+ZNF487,,No associated gene,,,
+ZNF488,rat synonym,MGI:2686052,Zfp488,zinc finger protein 488,protein coding gene
+ZNF490,human symbol,MGI:3652251,Gm14412,predicted gene 14412,protein coding gene
+ZNF490,human symbol,MGI:3652324,Gm14443,predicted gene 14443,protein coding gene
+ZNF490,human symbol,MGI:5591846,Gm32687,"predicted gene, 32687",protein coding gene
+ZNF490,human symbol,MGI:3584369,Zfp866,zinc finger protein 866,protein coding gene
+ZNF490,human symbol,MGI:3642994,Zfp936,zinc finger protein 936,protein coding gene
+ZNF490,human symbol,MGI:2385298,Zfp958,zinc finger protein 958,protein coding gene
+ZNF490,human symbol,MGI:1924053,Zfp998,zinc finger protein 998,protein coding gene
+ZNF491,,No associated gene,,,
+ZNF492,,No associated gene,,,
+ZNF493,human symbol,MGI:2664334,Zfp457,zinc finger protein 457,protein coding gene
+ZNF493,human symbol,MGI:3040691,Zfp458,zinc finger protein 458,protein coding gene
+ZNF493,human symbol,MGI:3705222,Zfp600,zinc finger protein 600,protein coding gene
+ZNF493,human symbol,MGI:3652002,Zfp1005,zinc finger protein 1005,protein coding gene
+ZNF496,rat synonym,MGI:2679270,Zkscan17,zinc finger with KRAB and SCAN domains 17,protein coding gene
+ZNF497,,No associated gene,,,
+ZNF500,,No associated gene,,,
+ZNF501,human symbol,MGI:3650075,Gm14401,predicted gene 14401,protein coding gene
+ZNF501,human symbol,MGI:1918758,Zfp935,zinc finger protein 935,protein coding gene
+ZNF501,human symbol,MGI:3779822,Zfp965,zinc finger protein 965,protein coding gene
+ZNF501,human symbol,MGI:3615331,Zfp973,zinc finger protein 973,protein coding gene
+ZNF501,human symbol,MGI:5439751,Zfp1002,zinc finger protein 1002,protein coding gene
+ZNF502,,No associated gene,,,
+ZNF503,synonym,MGI:1353644,Zfp503,zinc finger protein 503,protein coding gene
+ZNF506,human symbol,MGI:3652325,Gm14444,predicted gene 14444,protein coding gene
+ZNF506,human symbol,MGI:2675306,Zfp930,zinc finger protein 930,protein coding gene
+ZNF506,human symbol,MGI:3701121,Zfp982,zinc finger protein 982,protein coding gene
+ZNF506,human symbol,MGI:1919389,Zfp1006,zinc finger protein 1006,protein coding gene
+ZNF507,rat synonym,MGI:1916378,Zfp507,zinc finger protein 507,protein coding gene
+ZNF510,,No associated gene,,,
+ZNF511,rat synonym,MGI:1917002,Zfp511,zinc finger protein 511,protein coding gene
+ZNF512B,old symbol,MGI:2685478,Zfp512b,zinc finger protein 512B,protein coding gene
+ZNF513,rat synonym,MGI:2141255,Zfp513,zinc finger protein 513,protein coding gene
+ZNF514,,No associated gene,,,
+ZNF516,rat synonym,MGI:2443957,Zfp516,zinc finger protein 516,protein coding gene
+ZNF517,,No associated gene,,,
+ZNF518A,rat synonym,MGI:1919922,Zfp518a,zinc finger protein 518A,protein coding gene
+ZNF518B,human symbol,MGI:2140750,Zfp518b,zinc finger protein 518B,protein coding gene
+ZNF519,human symbol,MGI:3039601,Zfp941,zinc finger protein 941,protein coding gene
+ZNF521,rat synonym,MGI:95459,Zfp521,zinc finger protein 521,protein coding gene
+ZNF525,human symbol,MGI:3648947,Zfp658,zinc finger protein 658,protein coding gene
+ZNF526,human symbol,MGI:2445181,Zfp526,zinc finger protein 526,protein coding gene
+ZNF526,zebrafish symbol,MGI:2442951,Zfp574,zinc finger protein 574,protein coding gene
+ZNF527,,No associated gene,,,
+ZNF528,human symbol,MGI:3779466,Gm5141,predicted gene 5141,protein coding gene
+ZNF528,human symbol,MGI:99200,Zfp53,zinc finger protein 53,protein coding gene
+ZNF528,human symbol,MGI:3652219,Zfp345,zinc finger protein 345,protein coding gene
+ZNF528,human symbol,MGI:3053207,Zfp677,zinc finger protein 677,protein coding gene
+ZNF528,human symbol,MGI:3040689,Zfp873,zinc finger protein 873,protein coding gene
+ZNF528,human symbol,MGI:1924367,Zfp934,zinc finger protein 934,protein coding gene
+ZNF528,human symbol,MGI:3036263,Zfp976,zinc finger protein 976,protein coding gene
+ZNF528,human symbol,MGI:3836251,Zfp1004,zinc finger protein 1004,protein coding gene
+ZNF529,,No associated gene,,,
+ZNF530,,No associated gene,,,
+ZNF532,rat synonym,MGI:3036282,Zfp532,zinc finger protein 532,protein coding gene
+ZNF534,human symbol,MGI:3779466,Gm5141,predicted gene 5141,protein coding gene
+ZNF534,human symbol,MGI:99200,Zfp53,zinc finger protein 53,protein coding gene
+ZNF534,human symbol,MGI:3652219,Zfp345,zinc finger protein 345,protein coding gene
+ZNF534,human symbol,MGI:3053207,Zfp677,zinc finger protein 677,protein coding gene
+ZNF534,human symbol,MGI:3040689,Zfp873,zinc finger protein 873,protein coding gene
+ZNF534,human symbol,MGI:1924367,Zfp934,zinc finger protein 934,protein coding gene
+ZNF534,human symbol,MGI:3036263,Zfp976,zinc finger protein 976,protein coding gene
+ZNF534,human symbol,MGI:3836251,Zfp1004,zinc finger protein 1004,protein coding gene
+ZNF536,rat synonym,MGI:1926102,Zfp536,zinc finger protein 536,protein coding gene
+ZNF540,,No associated gene,,,
+ZNF543,,No associated gene,,,
+ZNF544,,No associated gene,,,
+ZNF546,,No associated gene,,,
+ZNF547,,No associated gene,,,
+ZNF548,,No associated gene,,,
+ZNF549,,No associated gene,,,
+ZNF550,,No associated gene,,,
+ZNF551,human symbol,MGI:3588205,Zfp551,zinc finger protein 551,protein coding gene
+ZNF552,,No associated gene,,,
+ZNF554,,No associated gene,,,
+ZNF555,,No associated gene,,,
+ZNF556,,No associated gene,,,
+ZNF557,human symbol,MGI:1921681,Zfp558,zinc finger protein 558,protein coding gene
+ZNF558,human symbol,MGI:1921681,Zfp558,zinc finger protein 558,protein coding gene
+ZNF559,,No associated gene,,,
+ZNF560,,No associated gene,,,
+ZNF561,human symbol,MGI:1924769,Zfp266,zinc finger protein 266,protein coding gene
+ZNF562,human symbol,MGI:1924769,Zfp266,zinc finger protein 266,protein coding gene
+ZNF563,,No associated gene,,,
+ZNF564,,No associated gene,,,
+ZNF565,,No associated gene,,,
+ZNF566,human symbol,MGI:1919806,Zfp566,zinc finger protein 566,protein coding gene
+ZNF567,,No associated gene,,,
+ZNF568,,No associated gene,,,
+ZNF569,rat synonym,MGI:107784,Zfp74,zinc finger protein 74,protein coding gene
+ZNF57,,No associated gene,,,
+ZNF570,,No associated gene,,,
+ZNF571,,No associated gene,,,
+ZNF572,,No associated gene,,,
+ZNF573,,No associated gene,,,
+ZNF574,rat synonym,MGI:2442951,Zfp574,zinc finger protein 574,protein coding gene
+ZNF574,zebrafish symbol,MGI:2442757,Zfp667,zinc finger protein 667,protein coding gene
+ZNF575,rat synonym,MGI:2141921,Zfp575,zinc finger protein 575,protein coding gene
+ZNF576,,No associated gene,,,
+ZNF577,,No associated gene,,,
+ZNF578,,No associated gene,,,
+ZNF579,rat synonym,MGI:1915740,Zfp579,zinc finger protein 579,protein coding gene
+ZNF580,rat synonym,MGI:1916242,Zfp580,zinc finger protein 580,protein coding gene
+ZNF581,human synonym,MGI:2385900,Ccdc106,coiled-coil domain containing 106,protein coding gene
+ZNF582,human symbol,MGI:3782026,Zfp582,zinc finger protein 582,protein coding gene
+ZNF583,human symbol,MGI:2682297,Zfp583,zinc finger protein 583,protein coding gene
+ZNF584,,No associated gene,,,
+ZNF585A,human symbol,MGI:99174,Zfp27,zinc finger protein 27,protein coding gene
+ZNF585B,human symbol,MGI:99174,Zfp27,zinc finger protein 27,protein coding gene
+ZNF586,,No associated gene,,,
+ZNF587,,No associated gene,,,
+ZNF587B,,No associated gene,,,
+ZNF589,,No associated gene,,,
+ZNF592,rat synonym,MGI:2443541,Zfp592,zinc finger protein 592,protein coding gene
+ZNF594,,No associated gene,,,
+ZNF595,human symbol,MGI:3652251,Gm14412,predicted gene 14412,protein coding gene
+ZNF595,human symbol,MGI:3652324,Gm14443,predicted gene 14443,protein coding gene
+ZNF595,human symbol,MGI:5591846,Gm32687,"predicted gene, 32687",protein coding gene
+ZNF595,human symbol,MGI:99205,Zfp58,zinc finger protein 58,protein coding gene
+ZNF595,human symbol,MGI:107767,Zfp85,zinc finger protein 85,protein coding gene
+ZNF595,human symbol,MGI:3040707,Zfp595,zinc finger protein 595,protein coding gene
+ZNF595,human symbol,MGI:3040703,Zfp874a,zinc finger protein 874a,protein coding gene
+ZNF595,human symbol,MGI:3642994,Zfp936,zinc finger protein 936,protein coding gene
+ZNF595,human symbol,MGI:2385298,Zfp958,zinc finger protein 958,protein coding gene
+ZNF595,human symbol,MGI:1924053,Zfp998,zinc finger protein 998,protein coding gene
+ZNF596,,No associated gene,,,
+ZNF597,rat synonym,MGI:1918313,Zfp597,zinc finger protein 597,protein coding gene
+ZNF598,rat synonym,MGI:2670965,Zfp598,zinc finger protein 598,protein coding gene
+ZNF599,,No associated gene,,,
+ZNF600,human symbol,MGI:2664334,Zfp457,zinc finger protein 457,protein coding gene
+ZNF600,human symbol,MGI:3040691,Zfp458,zinc finger protein 458,protein coding gene
+ZNF600,human symbol,MGI:3705222,Zfp600,zinc finger protein 600,protein coding gene
+ZNF600,human symbol,MGI:3652002,Zfp1005,zinc finger protein 1005,protein coding gene
+ZNF605,human symbol,MGI:2444933,Zfp605,zinc finger protein 605,protein coding gene
+ZNF606,rat synonym,MGI:1914620,Zfp606,zinc finger protein 606,protein coding gene
+ZNF607,human symbol,MGI:107780,Zfp84,zinc finger protein 84,protein coding gene
+ZNF608,rat synonym,MGI:2442338,Zfp608,zinc finger protein 608,protein coding gene
+ZNF609,rat synonym,MGI:2674092,Zfp609,zinc finger protein 609,protein coding gene
+ZNF610,,No associated gene,,,
+ZNF611,human symbol,MGI:3651999,Zfp442,zinc finger protein 442,protein coding gene
+ZNF611,human symbol,MGI:1924450,Zfp1007,zinc finger protein 1007,protein coding gene
+ZNF613,,No associated gene,,,
+ZNF614,,No associated gene,,,
+ZNF615,human symbol,MGI:3705222,Zfp600,zinc finger protein 600,protein coding gene
+ZNF615,human symbol,MGI:3652002,Zfp1005,zinc finger protein 1005,protein coding gene
+ZNF616,human symbol,MGI:3779466,Gm5141,predicted gene 5141,protein coding gene
+ZNF616,human symbol,MGI:99200,Zfp53,zinc finger protein 53,protein coding gene
+ZNF616,human symbol,MGI:3652219,Zfp345,zinc finger protein 345,protein coding gene
+ZNF616,human symbol,MGI:3053207,Zfp677,zinc finger protein 677,protein coding gene
+ZNF616,human symbol,MGI:3040689,Zfp873,zinc finger protein 873,protein coding gene
+ZNF616,human symbol,MGI:1924367,Zfp934,zinc finger protein 934,protein coding gene
+ZNF616,human symbol,MGI:3036263,Zfp976,zinc finger protein 976,protein coding gene
+ZNF616,human symbol,MGI:3836251,Zfp1004,zinc finger protein 1004,protein coding gene
+ZNF618,rat synonym,MGI:1919950,Zfp618,zinc finger protein 618,protein coding gene
+ZNF619,,No associated gene,,,
+ZNF620,,No associated gene,,,
+ZNF621,,No associated gene,,,
+ZNF623,human symbol,MGI:1926084,Zfp623,zinc finger protein 623,protein coding gene
+ZNF624,,No associated gene,,,
+ZNF625,human symbol,MGI:2385315,Zfp825,zinc finger protein 825,protein coding gene
+ZNF625,human symbol,MGI:3649811,Zfp1010,zinc finger protein 1010,protein coding gene
+ZNF626,,No associated gene,,,
+ZNF627,,No associated gene,,,
+ZNF628,human symbol,MGI:2665174,Zfp628,zinc finger protein 628,protein coding gene
+ZNF629,rat synonym,MGI:2444524,Zfp629,zinc finger protein 629,protein coding gene
+ZNF630,,No associated gene,,,
+ZNF639,rat synonym,MGI:1915028,Zfp639,zinc finger protein 639,protein coding gene
+ZNF641,rat synonym,MGI:2442788,Zfp641,zinc finger protein 641,protein coding gene
+ZNF644,rat synonym,MGI:1277212,Zfp644,zinc finger protein 644,protein coding gene
+ZNF645,human synonym,MGI:2144842,Cbll1,Cbl proto-oncogene like 1,protein coding gene
+ZNF646,rat synonym,MGI:3665412,Zfp646,zinc finger protein 646,protein coding gene
+ZNF648,human symbol,MGI:2685049,Zfp648,zinc finger protein 648,protein coding gene
+ZNF649,,No associated gene,,,
+ZNF652,rat synonym,MGI:2442221,Zfp652,zinc finger protein 652,protein coding gene
+ZNF654,rat synonym,MGI:1919270,Zfp654,zinc finger protein 654,protein coding gene
+ZNF655,rat synonym,MGI:1919861,Zfp655,zinc finger protein 655,protein coding gene
+ZNF658,,No associated gene,,,
+ZNF66,,No associated gene,,,
+ZNF660,,No associated gene,,,
+ZNF662,,No associated gene,,,
+ZNF664,human symbol,MGI:2442505,Zfp664,zinc finger protein 664,protein coding gene
+ZNF665,human symbol,MGI:108187,Zfp160,zinc finger protein 160,protein coding gene
+ZNF667,rat synonym,MGI:2442757,Zfp667,zinc finger protein 667,protein coding gene
+ZNF668,rat synonym,MGI:2442943,Zfp668,zinc finger protein 668,protein coding gene
+ZNF669,,No associated gene,,,
+ZNF670,human symbol,MGI:1919321,2010315B03Rik,RIKEN cDNA 2010315B03 gene,protein coding gene
+ZNF670,human symbol,MGI:1917882,5730507C01Rik,RIKEN cDNA 5730507C01 gene,protein coding gene
+ZNF670,human symbol,MGI:2142079,AI987944,expressed sequence AI987944,protein coding gene
+ZNF670,human symbol,MGI:3652185,Gm14322,predicted gene 14322,protein coding gene
+ZNF670,human symbol,MGI:3649813,Gm14403,predicted gene 14403,protein coding gene
+ZNF670,human symbol,MGI:3702408,Gm14418,predicted gene 14418,protein coding gene
+ZNF670,human symbol,MGI:4937894,Gm17067,predicted gene 17067,protein coding gene
+ZNF670,human symbol,MGI:2681848,Zfp867,zinc finger protein 867,protein coding gene
+ZNF670,human symbol,MGI:2441662,Zfp931,zinc finger protein 931,protein coding gene
+ZNF670,human symbol,MGI:2441896,Zfp951,zinc finger protein 951,protein coding gene
+ZNF670,human symbol,MGI:3645327,Zfp977,zinc finger protein 977,protein coding gene
+ZNF671,,No associated gene,,,
+ZNF672,rat synonym,MGI:2442105,Zfp672,zinc finger protein 672,protein coding gene
+ZNF674,,No associated gene,,,
+ZNF675,,No associated gene,,,
+ZNF676,human symbol,MGI:3705222,Zfp600,zinc finger protein 600,protein coding gene
+ZNF676,human symbol,MGI:3652002,Zfp1005,zinc finger protein 1005,protein coding gene
+ZNF677,,No associated gene,,,
+ZNF678,human symbol,MGI:3040707,Zfp595,zinc finger protein 595,protein coding gene
+ZNF679,human symbol,MGI:3652325,Gm14444,predicted gene 14444,protein coding gene
+ZNF679,human symbol,MGI:2675306,Zfp930,zinc finger protein 930,protein coding gene
+ZNF679,human symbol,MGI:3701121,Zfp982,zinc finger protein 982,protein coding gene
+ZNF679,human symbol,MGI:1919389,Zfp1006,zinc finger protein 1006,protein coding gene
+ZNF680,,No associated gene,,,
+ZNF681,human symbol,MGI:1925501,Zfp712,zinc finger protein 712,protein coding gene
+ZNF682,,No associated gene,,,
+ZNF683,human symbol,MGI:3650254,Zfp683,zinc finger protein 683,protein coding gene
+ZNF684,,No associated gene,,,
+ZNF687,human symbol,MGI:1925516,Zfp687,zinc finger protein 687,protein coding gene
+ZNF688,rat synonym,MGI:1916484,Zfp688,zinc finger protein 688,protein coding gene
+ZNF689,rat synonym,MGI:2444524,Zfp629,zinc finger protein 629,protein coding gene
+ZNF689,rat synonym,MGI:1918381,Zfp689,zinc finger protein 689,protein coding gene
+ZNF69,,No associated gene,,,
+ZNF691,rat synonym,MGI:3041163,Zfp691,zinc finger protein 691,protein coding gene
+ZNF692,rat synonym,MGI:2144276,Zfp692,zinc finger protein 692,protein coding gene
+ZNF695,,No associated gene,,,
+ZNF696,human symbol,MGI:2442738,Zfp696,zinc finger protein 696,protein coding gene
+ZNF697,rat synonym,MGI:2139736,Zfp697,zinc finger protein 697,protein coding gene
+ZNF699,,No associated gene,,,
+ZNF7,rat synonym,MGI:99208,Zfp7,zinc finger protein 7,protein coding gene
+ZNF70,,No associated gene,,,
+ZNF700,,No associated gene,,,
+ZNF701,,No associated gene,,,
+ZNF703,rat synonym,MGI:2662729,Zfp703,zinc finger protein 703,protein coding gene
+ZNF704,rat synonym,MGI:2180715,Zfp704,zinc finger protein 704,protein coding gene
+ZNF705A,,No associated gene,,,
+ZNF705B,,No associated gene,,,
+ZNF705D,,No associated gene,,,
+ZNF705E,,No associated gene,,,
+ZNF705G,,No associated gene,,,
+ZNF706,rat synonym,MGI:1915286,Zfp706,zinc finger protein 706,protein coding gene
+ZNF707,rat synonym,MGI:1916270,Zfp707,zinc finger protein 707,protein coding gene
+ZNF708,human symbol,MGI:3652251,Gm14412,predicted gene 14412,protein coding gene
+ZNF708,human symbol,MGI:3652324,Gm14443,predicted gene 14443,protein coding gene
+ZNF708,human symbol,MGI:5591846,Gm32687,"predicted gene, 32687",protein coding gene
+ZNF708,human symbol,MGI:3642994,Zfp936,zinc finger protein 936,protein coding gene
+ZNF708,human symbol,MGI:2385298,Zfp958,zinc finger protein 958,protein coding gene
+ZNF708,human symbol,MGI:1924053,Zfp998,zinc finger protein 998,protein coding gene
+ZNF709,human symbol,MGI:3588272,Zfp872,zinc finger protein 872,protein coding gene
+ZNF71,,No associated gene,,,
+ZNF710,rat synonym,MGI:1921747,Zfp710,zinc finger protein 710,protein coding gene
+ZNF711,rat synonym,MGI:3045342,Zfp711,zinc finger protein 711,protein coding gene
+ZNF713,,No associated gene,,,
+ZNF714,,No associated gene,,,
+ZNF716,human symbol,MGI:3652251,Gm14412,predicted gene 14412,protein coding gene
+ZNF716,human symbol,MGI:3652324,Gm14443,predicted gene 14443,protein coding gene
+ZNF716,human symbol,MGI:5591846,Gm32687,"predicted gene, 32687",protein coding gene
+ZNF716,human symbol,MGI:3642994,Zfp936,zinc finger protein 936,protein coding gene
+ZNF716,human symbol,MGI:2385298,Zfp958,zinc finger protein 958,protein coding gene
+ZNF716,human symbol,MGI:1924053,Zfp998,zinc finger protein 998,protein coding gene
+ZNF717,,No associated gene,,,
+ZNF718,human symbol,MGI:3652251,Gm14412,predicted gene 14412,protein coding gene
+ZNF718,human symbol,MGI:3652324,Gm14443,predicted gene 14443,protein coding gene
+ZNF718,human symbol,MGI:5591846,Gm32687,"predicted gene, 32687",protein coding gene
+ZNF718,human symbol,MGI:3642994,Zfp936,zinc finger protein 936,protein coding gene
+ZNF718,human symbol,MGI:2385298,Zfp958,zinc finger protein 958,protein coding gene
+ZNF718,human symbol,MGI:1924053,Zfp998,zinc finger protein 998,protein coding gene
+ZNF721,,No associated gene,,,
+ZNF724,human symbol,MGI:2664334,Zfp457,zinc finger protein 457,protein coding gene
+ZNF726,human symbol,MGI:3652251,Gm14412,predicted gene 14412,protein coding gene
+ZNF726,human symbol,MGI:3652324,Gm14443,predicted gene 14443,protein coding gene
+ZNF726,human symbol,MGI:5591846,Gm32687,"predicted gene, 32687",protein coding gene
+ZNF726,human symbol,MGI:3642994,Zfp936,zinc finger protein 936,protein coding gene
+ZNF726,human symbol,MGI:2385298,Zfp958,zinc finger protein 958,protein coding gene
+ZNF726,human symbol,MGI:1924053,Zfp998,zinc finger protein 998,protein coding gene
+ZNF727,,No associated gene,,,
+ZNF728,human symbol,MGI:3652251,Gm14412,predicted gene 14412,protein coding gene
+ZNF728,human symbol,MGI:3652324,Gm14443,predicted gene 14443,protein coding gene
+ZNF728,human symbol,MGI:5591846,Gm32687,"predicted gene, 32687",protein coding gene
+ZNF728,human symbol,MGI:99205,Zfp58,zinc finger protein 58,protein coding gene
+ZNF728,human symbol,MGI:107767,Zfp85,zinc finger protein 85,protein coding gene
+ZNF728,human symbol,MGI:3642994,Zfp936,zinc finger protein 936,protein coding gene
+ZNF728,human symbol,MGI:2385298,Zfp958,zinc finger protein 958,protein coding gene
+ZNF728,human symbol,MGI:1924053,Zfp998,zinc finger protein 998,protein coding gene
+ZNF729,human symbol,MGI:3036250,Zfp729a,zinc finger protein 729a,protein coding gene
+ZNF729,human symbol,MGI:2145180,Zfp729b,zinc finger protein 729b,protein coding gene
+ZNF729,human symbol,MGI:3040706,Zfp738,zinc finger protein 738,protein coding gene
+ZNF730,,No associated gene,,,
+ZNF732,human symbol,MGI:3652251,Gm14412,predicted gene 14412,protein coding gene
+ZNF732,human symbol,MGI:3652324,Gm14443,predicted gene 14443,protein coding gene
+ZNF732,human symbol,MGI:5591846,Gm32687,"predicted gene, 32687",protein coding gene
+ZNF732,human symbol,MGI:3642994,Zfp936,zinc finger protein 936,protein coding gene
+ZNF732,human symbol,MGI:2385298,Zfp958,zinc finger protein 958,protein coding gene
+ZNF732,human symbol,MGI:1924053,Zfp998,zinc finger protein 998,protein coding gene
+ZNF735,human symbol,MGI:3652325,Gm14444,predicted gene 14444,protein coding gene
+ZNF735,human symbol,MGI:2675306,Zfp930,zinc finger protein 930,protein coding gene
+ZNF735,human symbol,MGI:3701121,Zfp982,zinc finger protein 982,protein coding gene
+ZNF735,human symbol,MGI:1919389,Zfp1006,zinc finger protein 1006,protein coding gene
+ZNF736,,No associated gene,,,
+ZNF737,,No associated gene,,,
+ZNF74,synonym,MGI:2442430,Klf8,Kruppel-like transcription factor 8,protein coding gene
+ZNF740,human symbol,MGI:1915994,Zfp740,zinc finger protein 740,protein coding gene
+ZNF746,rat synonym,MGI:1916478,Zfp746,zinc finger protein 746,protein coding gene
+ZNF747,human symbol,MGI:2141981,Zfp764l1,zinc finger protein 764 like 1,protein coding gene
+ZNF749,,No associated gene,,,
+ZNF750,human symbol,MGI:2442210,Zfp750,zinc finger protein 750,protein coding gene
+ZNF75A,,No associated gene,,,
+ZNF75D,,No associated gene,,,
+ZNF76,rat synonym,MGI:2687278,Zfp523,zinc finger protein 523,protein coding gene
+ZNF761,,No associated gene,,,
+ZNF763,rat synonym,MGI:1920701,Zfp763,zinc finger protein 763,protein coding gene
+ZNF764,rat synonym,MGI:2443581,Zfp747,zinc finger protein 747,protein coding gene
+ZNF764,rat synonym,MGI:1926171,Zfp747l1,zinc finger protein 747 like 1,protein coding gene
+ZNF764,rat synonym,MGI:2443580,Zfp764,zinc finger protein 764,protein coding gene
+ZNF764,human symbol,MGI:2141981,Zfp764l1,zinc finger protein 764 like 1,protein coding gene
+ZNF765,,No associated gene,,,
+ZNF766,,No associated gene,,,
+ZNF768,human symbol,MGI:2384582,Zfp768,zinc finger protein 768,protein coding gene
+ZNF77,,No associated gene,,,
+ZNF770,rat synonym,MGI:2445100,Zfp770,zinc finger protein 770,protein coding gene
+ZNF771,rat synonym,MGI:2442050,Zfp771,zinc finger protein 771,protein coding gene
+ZNF772,,No associated gene,,,
+ZNF773,human symbol,MGI:2385265,Zfp772,zinc finger protein 772,protein coding gene
+ZNF773,rat synonym,MGI:1923623,Zfp773,zinc finger protein 773,protein coding gene
+ZNF773,human symbol,MGI:1917764,Zfp954,zinc finger protein 954,protein coding gene
+ZNF774,,No associated gene,,,
+ZNF775,rat synonym,MGI:2683557,Zfp775,zinc finger protein 775,protein coding gene
+ZNF776,,No associated gene,,,
+ZNF777,rat synonym,MGI:1919556,Zfp777,zinc finger protein 777,protein coding gene
+ZNF778,,No associated gene,,,
+ZNF780A,human symbol,MGI:99206,Zfp59,zinc finger protein 59,protein coding gene
+ZNF780A,human symbol,MGI:99207,Zfp60,zinc finger protein 60,protein coding gene
+ZNF780A,human symbol,MGI:3584526,Zfp607a,zinc finger protein 607A,protein coding gene
+ZNF780A,human symbol,MGI:2148237,Zfp607b,zinc finger protein 607B,protein coding gene
+ZNF780A,human symbol,MGI:1918413,Zfp626,zinc finger protein 626,protein coding gene
+ZNF780A,human symbol,MGI:2444764,Zfp780b,zinc finger protein 780B,protein coding gene
+ZNF780A,human symbol,MGI:3036281,Zfp850,zinc finger protein 850,protein coding gene
+ZNF780A,human symbol,MGI:1920680,Zfp974,zinc finger protein 974,protein coding gene
+ZNF780B,rat symbol,MGI:99207,Zfp60,zinc finger protein 60,protein coding gene
+ZNF780B,human symbol,MGI:1918413,Zfp626,zinc finger protein 626,protein coding gene
+ZNF780B,human symbol,MGI:2444764,Zfp780b,zinc finger protein 780B,protein coding gene
+ZNF780B,human symbol,MGI:1920680,Zfp974,zinc finger protein 974,protein coding gene
+ZNF781,,No associated gene,,,
+ZNF782,,No associated gene,,,
+ZNF783,,No associated gene,,,
+ZNF784,human symbol,MGI:3606042,Zfp784,zinc finger protein 784,protein coding gene
+ZNF785,,No associated gene,,,
+ZNF786,human symbol,MGI:3026883,Zfp786,zinc finger protein 786,protein coding gene
+ZNF787,rat synonym,MGI:1914359,Zfp787,zinc finger protein 787,protein coding gene
+ZNF788,,No associated gene,,,
+ZNF789,,No associated gene,,,
+ZNF79,,No associated gene,,,
+ZNF790,human symbol,MGI:1923431,Zfp790,zinc finger protein 790,protein coding gene
+ZNF791,human symbol,MGI:3648473,Zfp791,zinc finger protein 791,protein coding gene
+ZNF792,,No associated gene,,,
+ZNF793,,No associated gene,,,
+ZNF799,,No associated gene,,,
+ZNF8,human symbol,MGI:2389445,Zfp128,zinc finger protein 128,protein coding gene
+ZNF80,,No associated gene,,,
+ZNF800,human symbol,MGI:1889334,Zfp800,zinc finger protein 800,protein coding gene
+ZNF804A,rat synonym,MGI:2442949,Zfp804a,zinc finger protein 804A,protein coding gene
+ZNF804B,human symbol,MGI:2685287,Zfp804b,zinc finger protein 804B,protein coding gene
+ZNF805,,No associated gene,,,
+ZNF808,,No associated gene,,,
+ZNF81,,No associated gene,,,
+ZNF813,,No associated gene,,,
+ZNF814,,No associated gene,,,
+ZNF816,,No associated gene,,,
+ZNF821,rat synonym,MGI:1923121,Zfp821,zinc finger protein 821,protein coding gene
+ZNF823,,No associated gene,,,
+ZNF827,human symbol,MGI:2444807,Zfp827,zinc finger protein 827,protein coding gene
+ZNF829,,No associated gene,,,
+ZNF83,current symbol,MGI:5825588,Znf83,zinc finger protein 83,protein coding gene
+ZNF830,rat synonym,MGI:1914233,Zfp830,zinc finger protein 830,protein coding gene
+ZNF831,human symbol,MGI:3641861,Zfp831,zinc finger protein 831,protein coding gene
+ZNF835,human symbol,MGI:3704404,Zfp999,zinc finger protein 999,protein coding gene
+ZNF835,human symbol,MGI:3642815,Zfp1000,zinc finger protein 1000,protein coding gene
+ZNF836,human symbol,MGI:3652251,Gm14412,predicted gene 14412,protein coding gene
+ZNF836,human symbol,MGI:99173,Zfp26,zinc finger protein 26,protein coding gene
+ZNF836,human symbol,MGI:2679295,Zfp229,zinc finger protein 229,protein coding gene
+ZNF836,human symbol,MGI:3704127,Zfp808,zinc finger protein 808,protein coding gene
+ZNF836,human symbol,MGI:3652002,Zfp1005,zinc finger protein 1005,protein coding gene
+ZNF837,,No associated gene,,,
+ZNF84,,No associated gene,,,
+ZNF841,human symbol,MGI:3652251,Gm14412,predicted gene 14412,protein coding gene
+ZNF841,human symbol,MGI:99173,Zfp26,zinc finger protein 26,protein coding gene
+ZNF841,human symbol,MGI:2679295,Zfp229,zinc finger protein 229,protein coding gene
+ZNF841,human symbol,MGI:3704127,Zfp808,zinc finger protein 808,protein coding gene
+ZNF841,human symbol,MGI:3652002,Zfp1005,zinc finger protein 1005,protein coding gene
+ZNF843,,No associated gene,,,
+ZNF844,,No associated gene,,,
+ZNF845,,No associated gene,,,
+ZNF846,rat symbol,MGI:3583896,A430033K04Rik,RIKEN cDNA A430033K04 gene,protein coding gene
+ZNF846,rat synonym,MGI:1924012,Zfp846,zinc finger protein 846,protein coding gene
+ZNF85,,No associated gene,,,
+ZNF850,human symbol,MGI:1917477,Zfp619,zinc finger protein 619,protein coding gene
+ZNF852,human symbol,MGI:3040678,Zkscan7,zinc finger with KRAB and SCAN domains 7,protein coding gene
+ZNF853,human symbol,MGI:2685638,Zfp853,zinc finger protein 853,protein coding gene
+ZNF860,,No associated gene,,,
+ZNF865,rat synonym,MGI:3606042,Zfp784,zinc finger protein 784,protein coding gene
+ZNF865,human symbol,MGI:2442656,Zfp865,zinc finger protein 865,protein coding gene
+ZNF878,human symbol,MGI:2684459,Zfp617,zinc finger protein 617,protein coding gene
+ZNF878,human symbol,MGI:2443934,Zfp799,zinc finger protein 799,protein coding gene
+ZNF878,human symbol,MGI:2682944,Zfp811,zinc finger protein 811,protein coding gene
+ZNF879,human symbol,MGI:3053099,Zfp879,zinc finger protein 879,protein coding gene
+ZNF880,human symbol,MGI:3809656,Gm10778,predicted gene 10778,protein coding gene
+ZNF880,human symbol,MGI:3650082,Gm14399,predicted gene 14399,protein coding gene
+ZNF880,human symbol,MGI:1920860,Zfp433,zinc finger protein 433,protein coding gene
+ZNF880,human symbol,MGI:3644476,Zfp937,zinc finger protein 937,protein coding gene
+ZNF880,human symbol,MGI:2652824,Zfp950,zinc finger protein 950,protein coding gene
+ZNF880,human symbol,MGI:3652255,Zfp970,zinc finger protein 970,protein coding gene
+ZNF883,,No associated gene,,,
+ZNF888,,No associated gene,,,
+ZNF891,,No associated gene,,,
+ZNF90,human symbol,MGI:3652251,Gm14412,predicted gene 14412,protein coding gene
+ZNF90,human symbol,MGI:3652324,Gm14443,predicted gene 14443,protein coding gene
+ZNF90,human symbol,MGI:5591846,Gm32687,"predicted gene, 32687",protein coding gene
+ZNF90,human symbol,MGI:3642994,Zfp936,zinc finger protein 936,protein coding gene
+ZNF90,human symbol,MGI:2385298,Zfp958,zinc finger protein 958,protein coding gene
+ZNF90,human symbol,MGI:1924053,Zfp998,zinc finger protein 998,protein coding gene
+ZNF91,human symbol,MGI:3036250,Zfp729a,zinc finger protein 729a,protein coding gene
+ZNF91,human symbol,MGI:3040706,Zfp738,zinc finger protein 738,protein coding gene
+ZNF92,,No associated gene,,,
+ZNF93,human symbol,MGI:3036278,Zfp273,zinc finger protein 273,protein coding gene
+ZNF93,human symbol,MGI:3040674,Zfp708,zinc finger protein 708,protein coding gene
+ZNF98,,No associated gene,,,
+ZNF99,human symbol,MGI:3036250,Zfp729a,zinc finger protein 729a,protein coding gene
+ZNF99,human symbol,MGI:3040706,Zfp738,zinc finger protein 738,protein coding gene
+ZSCAN1,,No associated gene,,,
+ZSCAN10,current symbol,MGI:3040700,Zscan10,zinc finger and SCAN domain containing 10,protein coding gene
+ZSCAN12,current symbol,MGI:1099444,Zscan12,zinc finger and SCAN domain containing 12,protein coding gene
+ZSCAN16,,No associated gene,,,
+ZSCAN18,current symbol,MGI:3643810,Zscan18,zinc finger and SCAN domain containing 18,protein coding gene
+ZSCAN2,current symbol,MGI:99176,Zscan2,zinc finger and SCAN domain containing 2,protein coding gene
+ZSCAN20,current symbol,MGI:2679268,Zscan20,zinc finger and SCAN domains 20,protein coding gene
+ZSCAN21,current symbol,MGI:99182,Zscan21,zinc finger and SCAN domain containing 21,protein coding gene
+ZSCAN22,current symbol,MGI:2443312,Zscan22,zinc finger and SCAN domain containing 22,protein coding gene
+ZSCAN23,,No associated gene,,,
+ZSCAN25,current symbol,MGI:3647079,Zscan25,zinc finger and SCAN domain containing 25,protein coding gene
+ZSCAN26,current symbol,MGI:3531417,Zscan26,zinc finger and SCAN domain containing 26,protein coding gene
+ZSCAN29,current symbol,MGI:2139317,Zscan29,zinc finger SCAN domains 29,protein coding gene
+ZSCAN30,human synonym,MGI:2442185,Zfp446,zinc finger protein 446,protein coding gene
+ZSCAN30,current symbol,MGI:2685600,Zscan30,zinc finger and SCAN domain containing 30,protein coding gene
+ZSCAN31,human synonym,MGI:2444060,Zkscan2,zinc finger with KRAB and SCAN domains 2,protein coding gene
+ZSCAN32,,No associated gene,,,
+ZSCAN4,human symbol,MGI:3645953,Zscan4-ps1,"zinc finger and SCAN domain containing 4, pseudogene 1",pseudogene
+ZSCAN4,human symbol,MGI:3708487,Zscan4-ps2,"zinc finger and SCAN domain containing 4, pseudogene 2",pseudogene
+ZSCAN4,human symbol,MGI:3708489,Zscan4-ps3,"zinc finger and SCAN domain containing 4, pseudogene 3",pseudogene
+ZSCAN4,human symbol,MGI:3645447,Zscan4b,zinc finger and SCAN domain containing 4B,protein coding gene
+ZSCAN4,human symbol,MGI:2685243,Zscan4c,zinc finger and SCAN domain containing 4C,protein coding gene
+ZSCAN4,human symbol,MGI:3645954,Zscan4d,zinc finger and SCAN domain containing 4D,protein coding gene
+ZSCAN4,human symbol,MGI:3643613,Zscan4e,zinc finger and SCAN domain containing 4E,protein coding gene
+ZSCAN4,human symbol,MGI:3708485,Zscan4f,zinc finger and SCAN domain containing 4F,protein coding gene
+ZSCAN5A,human symbol,MGI:2159640,Zscan5b,zinc finger and SCAN domain containing 5B,protein coding gene
+ZSCAN5B,current symbol,MGI:2159640,Zscan5b,zinc finger and SCAN domain containing 5B,protein coding gene
+ZSCAN5C,human symbol,MGI:2159640,Zscan5b,zinc finger and SCAN domain containing 5B,protein coding gene
+ZSCAN9,,No associated gene,,,
+ZUFSP,old symbol,MGI:1919830,Zup1,zinc finger containing ubiquitin peptidase 1,protein coding gene
+ZXDA,current symbol,MGI:1921689,Zxda,"zinc finger, X-linked, duplicated A",pseudogene
+ZXDA,human symbol,MGI:3694898,Zxdb,"zinc finger, X-linked, duplicated B",protein coding gene
+ZXDB,current symbol,MGI:3694898,Zxdb,"zinc finger, X-linked, duplicated B",protein coding gene
+ZXDC,current symbol,MGI:1933108,Zxdc,ZXD family zinc finger C,protein coding gene
+PATZ1,current symbol,MGI:1891832,Patz1,POZ (BTB) and AT hook containing zinc finger 1,protein coding gene
+ZBTB24,current symbol,MGI:3039618,Zbtb24,zinc finger and BTB domain containing 24,protein coding gene
+ZNF524,rat synonym,MGI:1916740,Zfp524,zinc finger protein 524,protein coding gene
+ZNF653,human symbol,MGI:2442362,Zfp653,zinc finger protein 653,protein coding gene
+ZNF277,human symbol,MGI:1890393,Zfp277,zinc finger protein 277,protein coding gene
+ZNF512,rat synonym,MGI:1917345,Zfp512,zinc finger protein 512,protein coding gene
+ZEB1,current symbol,MGI:1344313,Zeb1,zinc finger E-box binding homeobox 1,protein coding gene
+ZEB2,current symbol,MGI:1344407,Zeb2,zinc finger E-box binding homeobox 2,protein coding gene
+ZFHX3,current symbol,MGI:99948,Zfhx3,zinc finger homeobox 3,protein coding gene
+ZFHX4,current symbol,MGI:2137668,Zfhx4,zinc finger homeodomain 4,protein coding gene
+TRERF1,current symbol,MGI:2442086,Trerf1,transcriptional regulating factor 1,protein coding gene
+ZNF541,rat synonym,MGI:3647699,Zfp541,zinc finger protein 541,protein coding gene
+NFYA,current symbol,MGI:97316,Nfya,nuclear transcription factor-Y alpha,protein coding gene
+NFYA,rat synonym,MGI:97317,Nfyb,nuclear transcription factor-Y beta,protein coding gene
+MBNL2,current symbol,MGI:2145597,Mbnl2,muscleblind like splicing factor 2,protein coding gene
+ZC3H8,current symbol,MGI:1930128,Zc3h8,zinc finger CCCH type containing 8,protein coding gene
+ZGPAT,current symbol,MGI:2449939,Zgpat,"zinc finger, CCCH-type with G patch domain",protein coding gene
+CENPB,current symbol,MGI:88376,Cenpb,centromere protein B,protein coding gene
+CENPBD1,,No associated gene,,,
+JRK,current symbol,MGI:106214,Jrk,jerky,protein coding gene
+JRKL,current symbol,MGI:1924782,Jrkl,Jrk-like,protein coding gene
+TIGD1,,No associated gene,,,
+TIGD2,current symbol,MGI:1915390,Tigd2,tigger transposable element derived 2,protein coding gene
+TIGD3,current symbol,MGI:2681860,Tigd3,tigger transposable element derived 3,protein coding gene
+TIGD4,current symbol,MGI:2685264,Tigd4,tigger transposable element derived 4,protein coding gene
+TIGD5,current symbol,MGI:2145902,Tigd5,tigger transposable element derived 5,protein coding gene
+TIGD6,,No associated gene,,,
+TIGD7,,No associated gene,,,
+CAMTA1,current symbol,MGI:2140230,Camta1,calmodulin binding transcription activator 1,protein coding gene
+CAMTA2,current symbol,MGI:2135957,Camta2,calmodulin binding transcription activator 2,protein coding gene
+LIN28A,current symbol,MGI:1890546,Lin28a,lin-28 homolog A,protein coding gene
+LIN28B,current symbol,MGI:3584032,Lin28b,lin-28 homolog B,protein coding gene
+YBX1,current symbol,MGI:99146,Ybx1,Y box protein 1,protein coding gene
+YBX2,current symbol,MGI:1096372,Ybx2,Y box protein 2,protein coding gene
+YBX3,current symbol,MGI:2137670,Ybx3,Y box protein 3,protein coding gene
+RBPJ,current symbol,MGI:96522,Rbpj,recombination signal binding protein for immunoglobulin kappa J region,protein coding gene
+RBPJL,current symbol,MGI:1196616,Rbpjl,recombination signal binding protein for immunoglobulin kappa J region-like,protein coding gene
+CUX1,current symbol,MGI:88568,Cux1,cut-like homeobox 1,protein coding gene
+CUX2,current symbol,MGI:107321,Cux2,cut-like homeobox 2,protein coding gene
+ONECUT1,current symbol,MGI:1196423,Onecut1,"one cut domain, family member 1",protein coding gene
+ONECUT2,current symbol,MGI:1891408,Onecut2,"one cut domain, family member 2",protein coding gene
+ONECUT3,current symbol,MGI:1891409,Onecut3,"one cut domain, family member 3",protein coding gene
+SATB1,current symbol,MGI:105084,Satb1,special AT-rich sequence binding protein 1,protein coding gene
+SATB2,current symbol,MGI:2679336,Satb2,special AT-rich sequence binding protein 2,protein coding gene
+CXXC1,current symbol,MGI:1921572,Cxxc1,CXXC finger protein 1,protein coding gene
+CXXC4,current symbol,MGI:2442112,Cxxc4,CXXC finger 4,protein coding gene
+CXXC5,current symbol,MGI:1914643,Cxxc5,CXXC finger 5,protein coding gene
+DNMT1,current symbol,MGI:94912,Dnmt1,DNA methyltransferase 1,protein coding gene
+FBXL19,current symbol,MGI:3039600,Fbxl19,F-box and leucine-rich repeat protein 19,protein coding gene
+KDM2A,current symbol,MGI:1354736,Kdm2a,lysine (K)-specific demethylase 2A,protein coding gene
+KDM2B,current symbol,MGI:1354737,Kdm2b,lysine (K)-specific demethylase 2B,protein coding gene
+TET1,current symbol,MGI:1098693,Tet1,tet methylcytosine dioxygenase 1,protein coding gene
+TET3,current symbol,MGI:2446229,Tet3,tet methylcytosine dioxygenase 3,protein coding gene
+KMT2A,current symbol,MGI:96995,Kmt2a,lysine (K)-specific methyltransferase 2A,protein coding gene
+KMT2B,current symbol,MGI:109565,Kmt2b,lysine (K)-specific methyltransferase 2B,protein coding gene
+DMRT1,current symbol,MGI:1354733,Dmrt1,doublesex and mab-3 related transcription factor 1,protein coding gene
+DMRT2,current symbol,MGI:1330307,Dmrt2,doublesex and mab-3 related transcription factor 2,protein coding gene
+DMRT3,current symbol,MGI:2449470,Dmrt3,doublesex and mab-3 related transcription factor 3,protein coding gene
+DMRTA1,current symbol,MGI:2653627,Dmrta1,doublesex and mab-3 related transcription factor like family A1,protein coding gene
+DMRTA2,current symbol,MGI:2653629,Dmrta2,doublesex and mab-3 related transcription factor like family A2,protein coding gene
+DMRTB1,current symbol,MGI:1927125,Dmrtb1,"DMRT-like family B with proline-rich C-terminal, 1",protein coding gene
+DMRTC2,current symbol,MGI:1918491,Dmrtc2,doublesex and mab-3 related transcription factor like family C2,protein coding gene
+E2F1,current symbol,MGI:101941,E2f1,E2F transcription factor 1,protein coding gene
+E2F2,current symbol,MGI:1096341,E2f2,E2F transcription factor 2,protein coding gene
+E2F2,rat synonym,MGI:96080,Mst1,macrophage stimulating 1 (hepatocyte growth factor-like),protein coding gene
+E2F3,current symbol,MGI:1096340,E2f3,E2F transcription factor 3,protein coding gene
+E2F4,current symbol,MGI:103012,E2f4,E2F transcription factor 4,protein coding gene
+E2F5,current symbol,MGI:105091,E2f5,E2F transcription factor 5,protein coding gene
+E2F6,current symbol,MGI:1354159,E2f6,E2F transcription factor 6,protein coding gene
+E2F7,current symbol,MGI:1289147,E2f7,E2F transcription factor 7,protein coding gene
+E2F8,current symbol,MGI:1922038,E2f8,E2F transcription factor 8,protein coding gene
+TFDP1,current symbol,MGI:101934,Tfdp1,transcription factor Dp 1,protein coding gene
+TFDP2,current symbol,MGI:107167,Tfdp2,transcription factor Dp 2,protein coding gene
+TFDP3,human symbol,MGI:101934,Tfdp1,transcription factor Dp 1,protein coding gene
+EBF1,current symbol,MGI:95275,Ebf1,early B cell factor 1,protein coding gene
+EBF2,current symbol,MGI:894332,Ebf2,early B cell factor 2,protein coding gene
+EBF3,current symbol,MGI:894289,Ebf3,early B cell factor 3,protein coding gene
+EBF3,human synonym,MGI:2140967,Mapre3,"microtubule-associated protein, RP/EB family, member 3",protein coding gene
+EBF4,current symbol,MGI:2385972,Ebf4,early B cell factor 4,protein coding gene
+EHF,current symbol,MGI:1270840,Ehf,ets homologous factor,protein coding gene
+ELF1,current symbol,MGI:107180,Elf1,E74 like ETS transcription factor 1,protein coding gene
+ELF1,zebrafish symbol,MGI:1928377,Elf4,E74 like ETS transcription factor 4,protein coding gene
+ELF1,human synonym,MGI:1913376,Elof1,"ELF1 homolog, elongation factor 1",protein coding gene
+ELF1,synonym,MGI:98388,Sptbn1,"spectrin beta, non-erythrocytic 1",protein coding gene
+ELF2,current symbol,MGI:1916507,Elf2,E74-like factor 2,protein coding gene
+ELF4,current symbol,MGI:1928377,Elf4,E74 like ETS transcription factor 4,protein coding gene
+ELF5,current symbol,MGI:1335079,Elf5,E74-like factor 5,protein coding gene
+ELK1,current symbol,MGI:101833,Elk1,ETS transcription factor ELK1,protein coding gene
+ELK1,human synonym,MGI:2156184,Kcnh4,"potassium voltage-gated channel, subfamily H (eag-related), member 4",protein coding gene
+ELK1,synonym,MGI:2445160,Kcnh8,"potassium voltage-gated channel, subfamily H (eag-related), member 8",protein coding gene
+ELK3,current symbol,MGI:101762,Elk3,ETS transcription factor ELK3,protein coding gene
+ELK3,human synonym,MGI:2445160,Kcnh8,"potassium voltage-gated channel, subfamily H (eag-related), member 8",protein coding gene
+ELK4,current symbol,MGI:102853,Elk4,ETS transcription factor ELK4,protein coding gene
+ERF,current symbol,MGI:109637,Erf,Ets2 repressor factor,protein coding gene
+ERF,human synonym,MGI:2385071,Etf1,eukaryotic translation termination factor 1,protein coding gene
+ERG,current symbol,MGI:95415,Erg,ETS transcription factor,protein coding gene
+ETS1,current symbol,MGI:95455,Ets1,"Ets proto-oncogene 1, transcription factor",protein coding gene
+ETS2,current symbol,MGI:95456,Ets2,"Ets proto-oncogene 2, transcription factor",protein coding gene
+ETV1,current symbol,MGI:99254,Etv1,ets variant 1,protein coding gene
+ETV2,current symbol,MGI:99253,Etv2,ets variant 2,protein coding gene
+ETV3,current symbol,MGI:1350926,Etv3,ets variant 3,protein coding gene
+ETV3L,current symbol,MGI:3646099,Etv3l,ets variant 3-like,protein coding gene
+ETV4,current symbol,MGI:99423,Etv4,ets variant 4,protein coding gene
+ETV5,current symbol,MGI:1096867,Etv5,ets variant 5,protein coding gene
+ETV6,current symbol,MGI:109336,Etv6,ets variant 6,protein coding gene
+ETV7,,No associated gene,,,
+FEV,current symbol,MGI:2449712,Fev,"FEV transcription factor, ETS family member",protein coding gene
+FLI1,current symbol,MGI:95554,Fli1,"Fli1 proto-oncogene, ETS transcription factor",protein coding gene
+FLI1,human synonym,MGI:1342286,Flii,flightless I actin binding protein,protein coding gene
+GABPA,current symbol,MGI:95610,Gabpa,"GA repeat binding protein, alpha",protein coding gene
+SPDEF,current symbol,MGI:1353422,Spdef,SAM pointed domain containing ets transcription factor,protein coding gene
+SPI1,old symbol,MGI:98376,Serpina1,"serine (or cysteine) peptidase inhibitor, clade A, member 1 cluster",complex/cluster/region
+SPI1,rat synonym,MGI:891971,Serpina1a,"serine (or cysteine) peptidase inhibitor, clade A, member 1A",protein coding gene
+SPI1,rat synonym,MGI:891970,Serpina1b,"serine (or cysteine) preptidase inhibitor, clade A, member 1B",protein coding gene
+SPI1,rat synonym,MGI:891969,Serpina1c,"serine (or cysteine) peptidase inhibitor, clade A, member 1C",protein coding gene
+SPI1,rat synonym,MGI:891968,Serpina1d,"serine (or cysteine) peptidase inhibitor, clade A, member 1D",protein coding gene
+SPI1,rat synonym,MGI:891967,Serpina1e,"serine (or cysteine) peptidase inhibitor, clade A, member 1E",protein coding gene
+SPI1,rat synonym,MGI:102848,Serpina3c,"serine (or cysteine) peptidase inhibitor, clade A, member 3C",protein coding gene
+SPI1,rat synonym,MGI:98377,Serpina3k,"serine (or cysteine) peptidase inhibitor, clade A, member 3K",protein coding gene
+SPI1,rat synonym,MGI:98378,Serpina3m,"serine (or cysteine) peptidase inhibitor, clade A, member 3M",protein coding gene
+SPI1,current symbol,MGI:98282,Spi1,Spi-1 proto-oncogene,protein coding gene
+SPIB,current symbol,MGI:892986,Spib,Spi-B transcription factor (Spi-1/PU.1 related),protein coding gene
+SPIC,synonym,MGI:2145481,Serpinb6c,"serine (or cysteine) peptidase inhibitor, clade B, member 6c",protein coding gene
+SPIC,current symbol,MGI:1341168,Spic,Spi-C transcription factor (Spi-1/PU.1 related),protein coding gene
+ELF3,current symbol,MGI:1101781,Elf3,E74-like factor 3,protein coding gene
+ELF3,synonym,MGI:98388,Sptbn1,"spectrin beta, non-erythrocytic 1",protein coding gene
+FLYWCH1,current symbol,MGI:2442638,Flywch1,FLYWCH-type zinc finger 1,protein coding gene
+FOXA1,current symbol,MGI:1347472,Foxa1,forkhead box A1,protein coding gene
+FOXA2,current symbol,MGI:1347476,Foxa2,forkhead box A2,protein coding gene
+FOXA3,current symbol,MGI:1347477,Foxa3,forkhead box A3,protein coding gene
+FOXB1,current symbol,MGI:1927549,Foxb1,forkhead box B1,protein coding gene
+FOXB2,current symbol,MGI:1347468,Foxb2,forkhead box B2,protein coding gene
+FOXC1,current symbol,MGI:1347466,Foxc1,forkhead box C1,protein coding gene
+FOXC2,current symbol,MGI:1347481,Foxc2,forkhead box C2,protein coding gene
+FOXD1,current symbol,MGI:1347463,Foxd1,forkhead box D1,protein coding gene
+FOXD2,current symbol,MGI:1347471,Foxd2,forkhead box D2,protein coding gene
+FOXD3,current symbol,MGI:1347473,Foxd3,forkhead box D3,protein coding gene
+FOXD4,current symbol,MGI:1347467,Foxd4,forkhead box D4,protein coding gene
+FOXD4L1,human symbol,MGI:1347467,Foxd4,forkhead box D4,protein coding gene
+FOXD4L3,human symbol,MGI:1347467,Foxd4,forkhead box D4,protein coding gene
+FOXD4L4,human synonym,MGI:1347467,Foxd4,forkhead box D4,protein coding gene
+FOXD4L5,human symbol,MGI:1347467,Foxd4,forkhead box D4,protein coding gene
+FOXD4L6,human symbol,MGI:1347467,Foxd4,forkhead box D4,protein coding gene
+FOXE1,current symbol,MGI:1353500,Foxe1,forkhead box E1,protein coding gene
+FOXE3,current symbol,MGI:1353569,Foxe3,forkhead box E3,protein coding gene
+FOXF1,current symbol,MGI:1347470,Foxf1,forkhead box F1,protein coding gene
+FOXF2,current symbol,MGI:1347479,Foxf2,forkhead box F2,protein coding gene
+FOXG1,current symbol,MGI:1347464,Foxg1,forkhead box G1,protein coding gene
+FOXH1,current symbol,MGI:1347465,Foxh1,forkhead box H1,protein coding gene
+FOXI1,current symbol,MGI:1096329,Foxi1,forkhead box I1,protein coding gene
+FOXI1,zebrafish symbol,MGI:3028075,Foxi2,forkhead box I2,protein coding gene
+FOXI2,current symbol,MGI:3028075,Foxi2,forkhead box I2,protein coding gene
+FOXI2,zebrafish symbol,MGI:3511278,Foxi3,forkhead box I3,protein coding gene
+FOXI3,current symbol,MGI:3511278,Foxi3,forkhead box I3,protein coding gene
+FOXJ1,current symbol,MGI:1347474,Foxj1,forkhead box J1,protein coding gene
+FOXJ2,current symbol,MGI:1926805,Foxj2,forkhead box J2,protein coding gene
+FOXJ3,current symbol,MGI:2443432,Foxj3,forkhead box J3,protein coding gene
+FOXK1,current symbol,MGI:1347488,Foxk1,forkhead box K1,protein coding gene
+FOXK2,current symbol,MGI:1916087,Foxk2,forkhead box K2,protein coding gene
+FOXL1,current symbol,MGI:1347469,Foxl1,forkhead box L1,protein coding gene
+FOXL2,current symbol,MGI:1349428,Foxl2,forkhead box L2,protein coding gene
+FOXM1,current symbol,MGI:1347487,Foxm1,forkhead box M1,protein coding gene
+FOXN1,current symbol,MGI:102949,Foxn1,forkhead box N1,protein coding gene
+FOXN2,current symbol,MGI:1347478,Foxn2,forkhead box N2,protein coding gene
+FOXN3,current symbol,MGI:1918625,Foxn3,forkhead box N3,protein coding gene
+FOXN4,current symbol,MGI:2151057,Foxn4,forkhead box N4,protein coding gene
+FOXO1,current symbol,MGI:1890077,Foxo1,forkhead box O1,protein coding gene
+FOXO3,current symbol,MGI:1890081,Foxo3,forkhead box O3,protein coding gene
+FOXO4,current symbol,MGI:1891915,Foxo4,forkhead box O4,protein coding gene
+FOXO6,current symbol,MGI:2676586,Foxo6,forkhead box O6,protein coding gene
+FOXP1,current symbol,MGI:1914004,Foxp1,forkhead box P1,protein coding gene
+FOXP2,current symbol,MGI:2148705,Foxp2,forkhead box P2,protein coding gene
+FOXP3,current symbol,MGI:1891436,Foxp3,forkhead box P3,protein coding gene
+FOXP4,current symbol,MGI:1921373,Foxp4,forkhead box P4,protein coding gene
+FOXQ1,current symbol,MGI:1298228,Foxq1,forkhead box Q1,protein coding gene
+FOXR1,current symbol,MGI:2685961,Foxr1,forkhead box R1,protein coding gene
+FOXR1,zebrafish symbol,MGI:3511682,Foxr2,forkhead box R2,protein coding gene
+FOXR2,current symbol,MGI:3511682,Foxr2,forkhead box R2,protein coding gene
+FOXS1,current symbol,MGI:95546,Foxs1,forkhead box S1,protein coding gene
+GATA1,current symbol,MGI:95661,Gata1,GATA binding protein 1,protein coding gene
+GATA2,current symbol,MGI:95662,Gata2,GATA binding protein 2,protein coding gene
+GATA3,current symbol,MGI:95663,Gata3,GATA binding protein 3,protein coding gene
+GATA4,current symbol,MGI:95664,Gata4,GATA binding protein 4,protein coding gene
+GATA5,current symbol,MGI:109497,Gata5,GATA binding protein 5,protein coding gene
+GATA6,current symbol,MGI:107516,Gata6,GATA binding protein 6,protein coding gene
+GATAD2A,current symbol,MGI:2384585,Gatad2a,GATA zinc finger domain containing 2A,protein coding gene
+GATAD2B,current symbol,MGI:2443225,Gatad2b,GATA zinc finger domain containing 2B,protein coding gene
+TRPS1,current symbol,MGI:1927616,Trps1,transcriptional repressor GATA binding 1,protein coding gene
+ZGLP1,current symbol,MGI:3696042,Zglp1,"zinc finger, GATA-like protein 1",protein coding gene
+GCM1,current symbol,MGI:108045,Gcm1,glial cells missing homolog 1,protein coding gene
+GCM2,current symbol,MGI:1861438,Gcm2,glial cells missing homolog 2,protein coding gene
+GRHL1,current symbol,MGI:2182540,Grhl1,grainyhead like transcription factor 1,protein coding gene
+GRHL2,current symbol,MGI:2182543,Grhl2,grainyhead like transcription factor 2,protein coding gene
+GRHL3,current symbol,MGI:2655333,Grhl3,grainyhead like transcription factor 3,protein coding gene
+TFCP2,current symbol,MGI:98509,Tfcp2,transcription factor CP2,protein coding gene
+TFCP2L1,current symbol,MGI:2444691,Tfcp2l1,transcription factor CP2-like 1,protein coding gene
+UBP1,current symbol,MGI:104889,Ubp1,upstream binding protein 1,protein coding gene
+GTF2I,current symbol,MGI:1202722,Gtf2i,general transcription factor II I,protein coding gene
+GTF2IRD1,rat synonym,MGI:1202722,Gtf2i,general transcription factor II I,protein coding gene
+GTF2IRD1,current symbol,MGI:1861942,Gtf2ird1,general transcription factor II I repeat domain-containing 1,protein coding gene
+GTF2IRD2,current symbol,MGI:2149780,Gtf2ird2,GTF2I repeat domain containing 2,protein coding gene
+GTF2IRD2B,human symbol,MGI:2149780,Gtf2ird2,GTF2I repeat domain containing 2,protein coding gene
+BBX,current symbol,MGI:1917758,Bbx,bobby sox HMG box containing,protein coding gene
+CIC,current symbol,MGI:1918972,Cic,capicua transcriptional repressor,protein coding gene
+CIC,human synonym,MGI:1345283,Slc25a1,"solute carrier family 25 (mitochondrial carrier, citrate transporter), member 1",protein coding gene
+HBP1,current symbol,MGI:894659,Hbp1,high mobility group box transcription factor 1,protein coding gene
+HMG20A,current symbol,MGI:1914117,Hmg20a,high mobility group 20A,protein coding gene
+HMG20B,current symbol,MGI:1341190,Hmg20b,high mobility group 20B,protein coding gene
+HMGN3,current symbol,MGI:2138069,Hmgn3,high mobility group nucleosomal binding domain 3,protein coding gene
+LEF1,current symbol,MGI:96770,Lef1,lymphoid enhancer binding factor 1,protein coding gene
+SOX1,current symbol,MGI:98357,Sox1,SRY (sex determining region Y)-box 1,protein coding gene
+SOX10,current symbol,MGI:98358,Sox10,SRY (sex determining region Y)-box 10,protein coding gene
+SOX11,current symbol,MGI:98359,Sox11,SRY (sex determining region Y)-box 11,protein coding gene
+SOX12,current symbol,MGI:98360,Sox12,SRY (sex determining region Y)-box 12,protein coding gene
+SOX13,current symbol,MGI:98361,Sox13,SRY (sex determining region Y)-box 13,protein coding gene
+SOX14,current symbol,MGI:98362,Sox14,SRY (sex determining region Y)-box 14,protein coding gene
+SOX15,current symbol,MGI:98363,Sox15,SRY (sex determining region Y)-box 15,protein coding gene
+SOX17,current symbol,MGI:107543,Sox17,SRY (sex determining region Y)-box 17,protein coding gene
+SOX18,current symbol,MGI:103559,Sox18,SRY (sex determining region Y)-box 18,protein coding gene
+SOX2,current symbol,MGI:98364,Sox2,SRY (sex determining region Y)-box 2,protein coding gene
+SOX21,old symbol,MGI:98358,Sox10,SRY (sex determining region Y)-box 10,protein coding gene
+SOX21,current symbol,MGI:2654070,Sox21,SRY (sex determining region Y)-box 21,protein coding gene
+SOX3,current symbol,MGI:98365,Sox3,SRY (sex determining region Y)-box 3,protein coding gene
+SOX30,rat synonym,MGI:105377,Adam19,ADAM metallopeptidase domain 19,protein coding gene
+SOX30,current symbol,MGI:1341157,Sox30,SRY (sex determining region Y)-box 30,protein coding gene
+SOX4,current symbol,MGI:98366,Sox4,SRY (sex determining region Y)-box 4,protein coding gene
+SOX5,current symbol,MGI:98367,Sox5,SRY (sex determining region Y)-box 5,protein coding gene
+SOX6,current symbol,MGI:98368,Sox6,SRY (sex determining region Y)-box 6,protein coding gene
+SOX7,current symbol,MGI:98369,Sox7,SRY (sex determining region Y)-box 7,protein coding gene
+SOX8,current symbol,MGI:98370,Sox8,SRY (sex determining region Y)-box 8,protein coding gene
+SOX9,current symbol,MGI:98371,Sox9,SRY (sex determining region Y)-box 9,protein coding gene
+SRY,rat synonym,MGI:98371,Sox9,SRY (sex determining region Y)-box 9,protein coding gene
+SRY,current symbol,MGI:98660,Sry,sex determining region of Chr Y,protein coding gene
+TCF7,current symbol,MGI:98507,Tcf7,"transcription factor 7, T cell specific",protein coding gene
+TCF7L1,current symbol,MGI:1202876,Tcf7l1,"transcription factor 7 like 1 (T cell specific, HMG box)",protein coding gene
+TCF7L2,current symbol,MGI:1202879,Tcf7l2,"transcription factor 7 like 2, T cell specific, HMG box",protein coding gene
+ADNP,current symbol,MGI:1338758,Adnp,activity-dependent neuroprotective protein,protein coding gene
+ADNP2,current symbol,MGI:2448562,Adnp2,ADNP homeobox 2,protein coding gene
+ALX1,current symbol,MGI:104621,Alx1,ALX homeobox 1,protein coding gene
+ALX3,current symbol,MGI:1277097,Alx3,aristaless-like homeobox 3,protein coding gene
+ALX4,current symbol,MGI:108359,Alx4,aristaless-like homeobox 4,protein coding gene
+ANHX,,No associated gene,,,
+ARGFX,,No associated gene,,,
+ARX,current symbol,MGI:1097716,Arx,aristaless related homeobox,protein coding gene
+ARX,synonym,MGI:1858313,Uba2,ubiquitin-like modifier activating enzyme 2,protein coding gene
+BARHL1,current symbol,MGI:1859288,Barhl1,BarH like homeobox 1,protein coding gene
+BARHL2,rat synonym,MGI:1859288,Barhl1,BarH like homeobox 1,protein coding gene
+BARHL2,current symbol,MGI:1859314,Barhl2,BarH like homeobox 2,protein coding gene
+BARX1,current symbol,MGI:103124,Barx1,BarH-like homeobox 1,protein coding gene
+BARX2,current symbol,MGI:109617,Barx2,BarH-like homeobox 2,protein coding gene
+BSX,current symbol,MGI:2669849,Bsx,brain specific homeobox,protein coding gene
+CDX1,current symbol,MGI:88360,Cdx1,caudal type homeobox 1,protein coding gene
+CDX2,current symbol,MGI:88361,Cdx2,caudal type homeobox 2,protein coding gene
+CDX4,current symbol,MGI:88362,Cdx4,caudal type homeobox 4,protein coding gene
+CRX,current symbol,MGI:1194883,Crx,cone-rod homeobox,protein coding gene
+DBX1,current symbol,MGI:94867,Dbx1,developing brain homeobox 1,protein coding gene
+DBX2,current symbol,MGI:107445,Dbx2,developing brain homeobox 2,protein coding gene
+DLX1,current symbol,MGI:94901,Dlx1,distal-less homeobox 1,protein coding gene
+DLX2,current symbol,MGI:94902,Dlx2,distal-less homeobox 2,protein coding gene
+DLX3,current symbol,MGI:94903,Dlx3,distal-less homeobox 3,protein coding gene
+DLX4,current symbol,MGI:94904,Dlx4,distal-less homeobox 4,protein coding gene
+DLX5,rat synonym,MGI:94902,Dlx2,distal-less homeobox 2,protein coding gene
+DLX5,current symbol,MGI:101926,Dlx5,distal-less homeobox 5,protein coding gene
+DLX6,current symbol,MGI:101927,Dlx6,distal-less homeobox 6,protein coding gene
+DMBX1,current symbol,MGI:2153518,Dmbx1,diencephalon/mesencephalon homeobox 1,protein coding gene
+DPRX,,No associated gene,,,
+DRGX,current symbol,MGI:2148204,Drgx,dorsal root ganglia homeobox,protein coding gene
+DUX1,,No associated gene,,,
+DUX3,,No associated gene,,,
+DUX4,rat symbol,MGI:1916048,Duxbl1,double homeobox B-like 1,protein coding gene
+DUX4,human synonym,MGI:1921649,Duxf3,double homeobox family member 3,protein coding gene
+DUX4,human synonym,MGI:3645498,Duxf4,double homeobox family member 4,protein coding gene
+DUXA,,No associated gene,,,
+EMX1,current symbol,MGI:95387,Emx1,empty spiracles homeobox 1,protein coding gene
+EMX2,current symbol,MGI:95388,Emx2,empty spiracles homeobox 2,protein coding gene
+EN1,synonym,MGI:3850508,cmy1,cardiomyopathy 1,heritable phenotypic marker
+EN1,current symbol,MGI:95389,En1,engrailed 1,protein coding gene
+EN1,synonym,MGI:7339268,Rr273,regulatory region 273,enhancer
+EN2,current symbol,MGI:95390,En2,engrailed 2,protein coding gene
+EN2,synonym,MGI:7339269,Rr274,regulatory region 274,enhancer
+ESX1,current symbol,MGI:1096388,Esx1,"extraembryonic, spermatogenesis, homeobox 1",protein coding gene
+EVX1,current symbol,MGI:95461,Evx1,even-skipped homeobox 1,protein coding gene
+EVX2,current symbol,MGI:95462,Evx2,even-skipped homeobox 2,protein coding gene
+GBX1,current symbol,MGI:95667,Gbx1,gastrulation brain homeobox 1,protein coding gene
+GBX2,current symbol,MGI:95668,Gbx2,gastrulation brain homeobox 2,protein coding gene
+GSC,current symbol,MGI:95841,Gsc,goosecoid homeobox,protein coding gene
+GSC2,current symbol,MGI:892006,Gsc2,goosecoid homebox 2,protein coding gene
+GSX1,current symbol,MGI:95842,Gsx1,GS homeobox 1,protein coding gene
+GSX2,current symbol,MGI:95843,Gsx2,GS homeobox 2,protein coding gene
+HDX,current symbol,MGI:2685226,Hdx,highly divergent homeobox,protein coding gene
+HESX1,current symbol,MGI:96071,Hesx1,homeobox gene expressed in ES cells,protein coding gene
+HHEX,current symbol,MGI:96086,Hhex,hematopoietically expressed homeobox,protein coding gene
+HLX,current symbol,MGI:96109,Hlx,H2.0-like homeobox,protein coding gene
+HMBOX1,current symbol,MGI:2445066,Hmbox1,homeobox containing 1,protein coding gene
+HMX1,current symbol,MGI:107178,Hmx1,H6 homeobox 1,protein coding gene
+HMX2,current symbol,MGI:107159,Hmx2,H6 homeobox 2,protein coding gene
+HMX3,current symbol,MGI:107160,Hmx3,H6 homeobox 3,protein coding gene
+HNF1A,current symbol,MGI:98504,Hnf1a,HNF1 homeobox A,protein coding gene
+HNF1B,current symbol,MGI:98505,Hnf1b,HNF1 homeobox B,protein coding gene
+HOMEZ,current symbol,MGI:2678023,Homez,homeodomain leucine zipper-encoding gene,protein coding gene
+HOXA1,current symbol,MGI:96170,Hoxa1,homeobox A1,protein coding gene
+HOXA10,current symbol,MGI:96171,Hoxa10,homeobox A10,protein coding gene
+HOXA10,rat synonym,MGI:96172,Hoxa11,homeobox A11,protein coding gene
+HOXA11,rat synonym,MGI:96174,Hoxa2,homeobox A2,protein coding gene
+HOXA11,current symbol,MGI:96172,Hoxa11,homeobox A11,protein coding gene
+HOXA13,current symbol,MGI:96173,Hoxa13,homeobox A13,protein coding gene
+HOXA2,current symbol,MGI:96174,Hoxa2,homeobox A2,protein coding gene
+HOXA3,current symbol,MGI:96175,Hoxa3,homeobox A3,protein coding gene
+HOXA4,current symbol,MGI:96176,Hoxa4,homeobox A4,protein coding gene
+HOXA5,current symbol,MGI:96177,Hoxa5,homeobox A5,protein coding gene
+HOXA6,current symbol,MGI:96178,Hoxa6,homeobox A6,protein coding gene
+HOXA7,current symbol,MGI:96179,Hoxa7,homeobox A7,protein coding gene
+HOXA9,current symbol,MGI:96180,Hoxa9,homeobox A9,protein coding gene
+HOXB1,current symbol,MGI:96182,Hoxb1,homeobox B1,protein coding gene
+HOXB13,current symbol,MGI:107730,Hoxb13,homeobox B13,protein coding gene
+HOXB2,current symbol,MGI:96183,Hoxb2,homeobox B2,protein coding gene
+HOXB3,current symbol,MGI:96184,Hoxb3,homeobox B3,protein coding gene
+HOXB4,current symbol,MGI:96185,Hoxb4,homeobox B4,protein coding gene
+HOXB5,current symbol,MGI:96186,Hoxb5,homeobox B5,protein coding gene
+HOXB6,current symbol,MGI:96187,Hoxb6,homeobox B6,protein coding gene
+HOXB7,current symbol,MGI:96188,Hoxb7,homeobox B7,protein coding gene
+HOXB8,current symbol,MGI:96189,Hoxb8,homeobox B8,protein coding gene
+HOXB9,current symbol,MGI:96190,Hoxb9,homeobox B9,protein coding gene
+HOXC10,current symbol,MGI:96192,Hoxc10,homeobox C10,protein coding gene
+HOXC11,current symbol,MGI:96193,Hoxc11,homeobox C11,protein coding gene
+HOXC12,current symbol,MGI:96194,Hoxc12,homeobox C12,protein coding gene
+HOXC13,current symbol,MGI:99560,Hoxc13,homeobox C13,protein coding gene
+HOXC4,current symbol,MGI:96195,Hoxc4,homeobox C4,protein coding gene
+HOXC5,current symbol,MGI:96196,Hoxc5,homeobox C5,protein coding gene
+HOXC6,current symbol,MGI:96197,Hoxc6,homeobox C6,protein coding gene
+HOXC8,current symbol,MGI:96198,Hoxc8,homeobox C8,protein coding gene
+HOXC8,rat synonym,MGI:96199,Hoxc9,homeobox C9,protein coding gene
+HOXC9,current symbol,MGI:96199,Hoxc9,homeobox C9,protein coding gene
+HOXD1,current symbol,MGI:96201,Hoxd1,homeobox D1,protein coding gene
+HOXD10,current symbol,MGI:96202,Hoxd10,homeobox D10,protein coding gene
+HOXD11,current symbol,MGI:96203,Hoxd11,homeobox D11,protein coding gene
+HOXD12,current symbol,MGI:96204,Hoxd12,homeobox D12,protein coding gene
+HOXD13,current symbol,MGI:96205,Hoxd13,homeobox D13,protein coding gene
+HOXD3,current symbol,MGI:96207,Hoxd3,homeobox D3,protein coding gene
+HOXD4,current symbol,MGI:96208,Hoxd4,homeobox D4,protein coding gene
+HOXD8,current symbol,MGI:96209,Hoxd8,homeobox D8,protein coding gene
+HOXD9,current symbol,MGI:96210,Hoxd9,homeobox D9,protein coding gene
+IRX1,current symbol,MGI:1197515,Irx1,Iroquois homeobox 1,protein coding gene
+IRX2,current symbol,MGI:1197526,Irx2,Iroquois homeobox 2,protein coding gene
+IRX3,current symbol,MGI:1197522,Irx3,Iroquois related homeobox 3,protein coding gene
+IRX4,current symbol,MGI:1355275,Irx4,Iroquois homeobox 4,protein coding gene
+IRX5,current symbol,MGI:1859086,Irx5,Iroquois homeobox 5,protein coding gene
+IRX6,synonym,MGI:1197526,Irx2,Iroquois homeobox 2,protein coding gene
+IRX6,current symbol,MGI:1927642,Irx6,Iroquois homeobox 6,protein coding gene
+ISL1,current symbol,MGI:101791,Isl1,"ISL1 transcription factor, LIM/homeodomain",protein coding gene
+ISL2,current symbol,MGI:109156,Isl2,insulin related protein 2 (islet 2),protein coding gene
+ISX,current symbol,MGI:1918847,Isx,intestine specific homeobox,protein coding gene
+LBX1,current symbol,MGI:104867,Lbx1,ladybird homeobox 1,protein coding gene
+LBX2,current symbol,MGI:1342288,Lbx2,ladybird homeobox 2,protein coding gene
+LEUTX,,No associated gene,,,
+LHX1,current symbol,MGI:99783,Lhx1,LIM homeobox protein 1,protein coding gene
+LHX2,current symbol,MGI:96785,Lhx2,LIM homeobox protein 2,protein coding gene
+LHX3,current symbol,MGI:102673,Lhx3,LIM homeobox protein 3,protein coding gene
+LHX4,current symbol,MGI:101776,Lhx4,LIM homeobox protein 4,protein coding gene
+LHX5,current symbol,MGI:107792,Lhx5,LIM homeobox protein 5,protein coding gene
+LHX6,current symbol,MGI:1306803,Lhx6,LIM homeobox protein 6,protein coding gene
+LHX8,current symbol,MGI:1096343,Lhx8,LIM homeobox protein 8,protein coding gene
+LHX9,current symbol,MGI:1316721,Lhx9,LIM homeobox protein 9,protein coding gene
+LMX1A,current symbol,MGI:1888519,Lmx1a,LIM homeobox transcription factor 1 alpha,protein coding gene
+LMX1B,current symbol,MGI:1100513,Lmx1b,LIM homeobox transcription factor 1 beta,protein coding gene
+MEIS1,current symbol,MGI:104717,Meis1,Meis homeobox 1,protein coding gene
+MEIS2,current symbol,MGI:108564,Meis2,Meis homeobox 2,protein coding gene
+MEIS3,current symbol,MGI:108519,Meis3,Meis homeobox 3,protein coding gene
+MEOX1,current symbol,MGI:103220,Meox1,mesenchyme homeobox 1,protein coding gene
+MEOX2,current symbol,MGI:103219,Meox2,mesenchyme homeobox 2,protein coding gene
+MIXL1,current symbol,MGI:1351322,Mixl1,Mix paired-like homeobox,protein coding gene
+MKX,current symbol,MGI:2687286,Mkx,mohawk homeobox,protein coding gene
+MNX1,current symbol,MGI:109160,Mnx1,motor neuron and pancreas homeobox 1,protein coding gene
+MSX1,current symbol,MGI:97168,Msx1,msh homeobox 1,protein coding gene
+MSX2,current symbol,MGI:97169,Msx2,msh homeobox 2,protein coding gene
+NANOG,current symbol,MGI:1919200,Nanog,Nanog homeobox,protein coding gene
+NANOGNB,,No associated gene,,,
+NANOGP8,human symbol,MGI:1919200,Nanog,Nanog homeobox,protein coding gene
+NKX1-1,current symbol,MGI:109346,Nkx1-1,NK1 homeobox 1,protein coding gene
+NKX1-2,current symbol,MGI:104806,Nkx1-2,NK1 homeobox 2,protein coding gene
+NKX2-1,current symbol,MGI:108067,Nkx2-1,NK2 homeobox 1,protein coding gene
+NKX2-2,current symbol,MGI:97347,Nkx2-2,NK2 homeobox 2,protein coding gene
+NKX2-3,current symbol,MGI:97348,Nkx2-3,NK2 homeobox 3,protein coding gene
+NKX2-4,current symbol,MGI:97349,Nkx2-4,NK2 homeobox 4,protein coding gene
+NKX2-5,current symbol,MGI:97350,Nkx2-5,NK2 homeobox 5,protein coding gene
+NKX2-6,current symbol,MGI:97351,Nkx2-6,NK2 homeobox 6,protein coding gene
+NKX2-8,human symbol,MGI:1270158,Nkx2-9,NK2 homeobox 9,protein coding gene
+NKX3-1,current symbol,MGI:97352,Nkx3-1,NK3 homeobox 1,protein coding gene
+NKX3-2,current symbol,MGI:108015,Nkx3-2,NK3 homeobox 2,protein coding gene
+NKX6-1,current symbol,MGI:1206039,Nkx6-1,NK6 homeobox 1,protein coding gene
+NKX6-2,current symbol,MGI:1352738,Nkx6-2,NK6 homeobox 2,protein coding gene
+NKX6-3,current symbol,MGI:1921811,Nkx6-3,NK6 homeobox 3,protein coding gene
+NOBOX,current symbol,MGI:108011,Nobox,NOBOX oogenesis homeobox,protein coding gene
+NOTO,current symbol,MGI:3053002,Noto,notochord homeobox,protein coding gene
+OTP,current symbol,MGI:99835,Otp,orthopedia homeobox,protein coding gene
+OTX1,current symbol,MGI:97450,Otx1,orthodenticle homeobox 1,protein coding gene
+OTX2,current symbol,MGI:97451,Otx2,orthodenticle homeobox 2,protein coding gene
+PBX1,current symbol,MGI:97495,Pbx1,pre B cell leukemia homeobox 1,protein coding gene
+PBX2,current symbol,MGI:1341793,Pbx2,pre B cell leukemia homeobox 2,protein coding gene
+PBX3,current symbol,MGI:97496,Pbx3,pre B cell leukemia homeobox 3,protein coding gene
+PBX4,current symbol,MGI:1931321,Pbx4,pre B cell leukemia homeobox 4,protein coding gene
+PDX1,synonym,MGI:1351627,Pdhx,"pyruvate dehydrogenase complex, component X",protein coding gene
+PDX1,current symbol,MGI:102851,Pdx1,pancreatic and duodenal homeobox 1,protein coding gene
+PHOX2A,current symbol,MGI:106633,Phox2a,paired-like homeobox 2a,protein coding gene
+PHOX2B,current symbol,MGI:1100882,Phox2b,paired-like homeobox 2b,protein coding gene
+PITX1,current symbol,MGI:107374,Pitx1,paired-like homeodomain transcription factor 1,protein coding gene
+PITX2,current symbol,MGI:109340,Pitx2,paired-like homeodomain transcription factor 2,protein coding gene
+PITX3,current symbol,MGI:1100498,Pitx3,paired-like homeodomain transcription factor 3,protein coding gene
+PKNOX1,current symbol,MGI:1201409,Pknox1,Pbx/knotted 1 homeobox,protein coding gene
+PKNOX2,current symbol,MGI:2445415,Pknox2,Pbx/knotted 1 homeobox 2,protein coding gene
+PROP1,current symbol,MGI:109330,Prop1,paired like homeodomain factor 1,protein coding gene
+PRRX1,current symbol,MGI:97712,Prrx1,paired related homeobox 1,protein coding gene
+PRRX2,current symbol,MGI:98218,Prrx2,paired related homeobox 2,protein coding gene
+RAX,synonym,MGI:1344375,Prkra,"protein kinase, interferon inducible double stranded RNA dependent activator",protein coding gene
+RAX,current symbol,MGI:109632,Rax,retina and anterior neural fold homeobox,protein coding gene
+RAX2,,No associated gene,,,
+RHOXF1,human symbol,MGI:3580249,Rhox10,reproductive homeobox 10,protein coding gene
+RHOXF1,human symbol,MGI:2681831,Rhox11,reproductive homeobox 11,protein coding gene
+RHOXF1,human symbol,MGI:2685994,Rhox12,reproductive homeobox 12,protein coding gene
+RHOXF1,human symbol,MGI:1920864,Rhox13,reproductive homeobox 13,protein coding gene
+RHOXF2,human symbol,MGI:3613394,Rhox4g,reproductive homeobox 4G,protein coding gene
+RHOXF2B,rat symbol,MGI:3580237,Rhox1,reproductive homeobox 1,protein coding gene
+RHOXF2B,rat symbol,MGI:1922449,Rhox2a,reproductive homeobox 2A,protein coding gene
+RHOXF2B,rat symbol,MGI:3770262,Rhox2b,reproductive homeobox 2B,protein coding gene
+RHOXF2B,rat symbol,MGI:3770266,Rhox2c,reproductive homeobox 2C,protein coding gene
+RHOXF2B,rat symbol,MGI:3648779,Rhox2d,reproductive homeobox 2D,protein coding gene
+RHOXF2B,rat symbol,MGI:3770272,Rhox2e,reproductive homeobox 2E,protein coding gene
+RHOXF2B,rat symbol,MGI:3770275,Rhox2f,reproductive homeobox 2F,protein coding gene
+RHOXF2B,human symbol,MGI:3648776,Rhox2g,reproductive homeobox 2G,protein coding gene
+RHOXF2B,rat symbol,MGI:3713490,Rhox2h,reproductive homeobox 2H,protein coding gene
+RHOXF2B,human symbol,MGI:2676626,Rhox3a,reproductive homeobox 3A,protein coding gene
+RHOXF2B,human symbol,MGI:5434440,Rhox3a2,reproductive homeobox 3A2,protein coding gene
+RHOXF2B,human symbol,MGI:3770268,Rhox3c,reproductive homeobox 3C,protein coding gene
+RHOXF2B,human symbol,MGI:3770274,Rhox3e,reproductive homeobox 3E,protein coding gene
+RHOXF2B,human symbol,MGI:3613394,Rhox4g,reproductive homeobox 4G,protein coding gene
+RHOXF2B,human symbol,MGI:2681831,Rhox11,reproductive homeobox 11,protein coding gene
+SEBOX,current symbol,MGI:108012,Sebox,SEBOX homeobox,protein coding gene
+SHOX,,No associated gene,,,
+SHOX2,current symbol,MGI:1201673,Shox2,SHOX homeobox 2,protein coding gene
+SIX1,current symbol,MGI:102780,Six1,sine oculis-related homeobox 1,protein coding gene
+SIX2,current symbol,MGI:102778,Six2,sine oculis-related homeobox 2,protein coding gene
+SIX3,current symbol,MGI:102764,Six3,sine oculis-related homeobox 3,protein coding gene
+SIX4,current symbol,MGI:106034,Six4,sine oculis-related homeobox 4,protein coding gene
+SIX5,current symbol,MGI:106220,Six5,sine oculis-related homeobox 5,protein coding gene
+SIX6,current symbol,MGI:1341840,Six6,sine oculis-related homeobox 6,protein coding gene
+TGIF1,current symbol,MGI:1194497,Tgif1,TGFB-induced factor homeobox 1,protein coding gene
+TGIF2,current symbol,MGI:1915299,Tgif2,TGFB-induced factor homeobox 2,protein coding gene
+TGIF2LX,old symbol,MGI:2387796,Tgif2lx1,"TGFB-induced factor homeobox 2-like, X-linked 1",protein coding gene
+TGIF2LX,human symbol,MGI:3800824,Tgif2lx2,"TGFB-induced factor homeobox 2-like, X-linked 2",protein coding gene
+TGIF2LY,human symbol,MGI:2387796,Tgif2lx1,"TGFB-induced factor homeobox 2-like, X-linked 1",protein coding gene
+TGIF2LY,human symbol,MGI:3800824,Tgif2lx2,"TGFB-induced factor homeobox 2-like, X-linked 2",protein coding gene
+TLX1,current symbol,MGI:98769,Tlx1,"T cell leukemia, homeobox 1",protein coding gene
+TLX2,current symbol,MGI:1350935,Tlx2,"T cell leukemia, homeobox 2",protein coding gene
+TLX3,current symbol,MGI:1351209,Tlx3,"T cell leukemia, homeobox 3",protein coding gene
+TPRX1,,No associated gene,,,
+UNCX,current symbol,MGI:108013,Uncx,UNC homeobox,protein coding gene
+VAX1,current symbol,MGI:1277163,Vax1,ventral anterior homeobox 1,protein coding gene
+VAX2,current symbol,MGI:1346018,Vax2,ventral anterior homeobox 2,protein coding gene
+VENTX,rat symbol,MGI:1918718,Obox1,oocyte specific homeobox 1,protein coding gene
+VENTX,rat symbol,MGI:2149033,Obox2,oocyte specific homeobox 2,protein coding gene
+VENTX,rat symbol,MGI:2149035,Obox5,oocyte specific homeobox 5,protein coding gene
+VENTX,rat symbol,MGI:3646231,Obox7,oocyte specific homeobox 7,protein coding gene
+VSX1,current symbol,MGI:1890816,Vsx1,visual system homeobox 1,protein coding gene
+VSX2,current symbol,MGI:88401,Vsx2,visual system homeobox 2,protein coding gene
+ZFHX2,current symbol,MGI:2686934,Zfhx2,zinc finger homeobox 2,protein coding gene
+ZHX1,current symbol,MGI:109271,Zhx1,zinc fingers and homeoboxes 1,protein coding gene
+ZHX2,current symbol,MGI:2683087,Zhx2,zinc fingers and homeoboxes 2,protein coding gene
+ZHX3,current symbol,MGI:2444772,Zhx3,zinc fingers and homeoboxes 3,protein coding gene
+PAX2,current symbol,MGI:97486,Pax2,paired box 2,protein coding gene
+PAX3,current symbol,MGI:97487,Pax3,paired box 3,protein coding gene
+PAX4,current symbol,MGI:97488,Pax4,paired box 4,protein coding gene
+PAX6,current symbol,MGI:97490,Pax6,paired box 6,protein coding gene
+PAX7,current symbol,MGI:97491,Pax7,paired box 7,protein coding gene
+POU1F1,current symbol,MGI:97588,Pou1f1,"POU domain, class 1, transcription factor 1",protein coding gene
+POU2F1,current symbol,MGI:101898,Pou2f1,"POU domain, class 2, transcription factor 1",protein coding gene
+POU2F2,current symbol,MGI:101897,Pou2f2,"POU domain, class 2, transcription factor 2",protein coding gene
+POU2F3,current symbol,MGI:102565,Pou2f3,"POU domain, class 2, transcription factor 3",protein coding gene
+POU3F1,current symbol,MGI:101896,Pou3f1,"POU domain, class 3, transcription factor 1",protein coding gene
+POU3F2,current symbol,MGI:101895,Pou3f2,"POU domain, class 3, transcription factor 2",protein coding gene
+POU3F3,current symbol,MGI:102564,Pou3f3,"POU domain, class 3, transcription factor 3",protein coding gene
+POU3F4,current symbol,MGI:101894,Pou3f4,"POU domain, class 3, transcription factor 4",protein coding gene
+POU4F1,current symbol,MGI:102525,Pou4f1,"POU domain, class 4, transcription factor 1",protein coding gene
+POU4F2,current symbol,MGI:102524,Pou4f2,"POU domain, class 4, transcription factor 2",protein coding gene
+POU4F3,current symbol,MGI:102523,Pou4f3,"POU domain, class 4, transcription factor 3",protein coding gene
+POU5F1,current symbol,MGI:101893,Pou5f1,"POU domain, class 5, transcription factor 1",protein coding gene
+POU5F1B,human symbol,MGI:101893,Pou5f1,"POU domain, class 5, transcription factor 1",protein coding gene
+POU5F2,current symbol,MGI:1922757,Pou5f2,"POU domain class 5, transcription factor 2",protein coding gene
+POU6F1,current symbol,MGI:102935,Pou6f1,"POU domain, class 6, transcription factor 1",protein coding gene
+POU6F2,current symbol,MGI:2443631,Pou6f2,"POU domain, class 6, transcription factor 2",protein coding gene
+HSF1,current symbol,MGI:96238,Hsf1,heat shock factor 1,protein coding gene
+HSF2,current symbol,MGI:96239,Hsf2,heat shock factor 2,protein coding gene
+HSF4,current symbol,MGI:1347058,Hsf4,heat shock transcription factor 4,protein coding gene
+HSF5,current symbol,MGI:2685585,Hsf5,heat shock transcription factor family member 5,protein coding gene
+HSFX1,,No associated gene,,,
+HSFX2,,No associated gene,,,
+HSFY1,rat synonym,MGI:1918316,Hsfy2,"heat shock transcription factor, Y-linked 2",protein coding gene
+HSFY2,current symbol,MGI:1918316,Hsfy2,"heat shock transcription factor, Y-linked 2",protein coding gene
+IRF1,current symbol,MGI:96590,Irf1,interferon regulatory factor 1,protein coding gene
+IRF2,current symbol,MGI:96591,Irf2,interferon regulatory factor 2,protein coding gene
+IRF3,current symbol,MGI:1859179,Irf3,interferon regulatory factor 3,protein coding gene
+IRF4,current symbol,MGI:1096873,Irf4,interferon regulatory factor 4,protein coding gene
+IRF5,current symbol,MGI:1350924,Irf5,interferon regulatory factor 5,protein coding gene
+IRF6,current symbol,MGI:1859211,Irf6,interferon regulatory factor 6,protein coding gene
+IRF7,current symbol,MGI:1859212,Irf7,interferon regulatory factor 7,protein coding gene
+IRF8,current symbol,MGI:96395,Irf8,interferon regulatory factor 8,protein coding gene
+IRF9,current symbol,MGI:107587,Irf9,interferon regulatory factor 9,protein coding gene
+MSANTD1,current symbol,MGI:2684990,Msantd1,Myb/SANT-like DNA-binding domain containing 1,protein coding gene
+MSANTD3,current symbol,MGI:1913915,Msantd3,Myb/SANT-like DNA-binding domain containing 3,protein coding gene
+NAIF1,current symbol,MGI:1918504,Naif1,nuclear apoptosis inducing factor 1,protein coding gene
+BORCS8-MEF2B,human symbol,MGI:104526,Mef2b,myocyte enhancer factor 2B,protein coding gene
+MEF2A,current symbol,MGI:99532,Mef2a,myocyte enhancer factor 2A,protein coding gene
+MEF2B,current symbol,MGI:104526,Mef2b,myocyte enhancer factor 2B,protein coding gene
+MEF2C,current symbol,MGI:99458,Mef2c,myocyte enhancer factor 2C,protein coding gene
+MEF2D,current symbol,MGI:99533,Mef2d,myocyte enhancer factor 2D,protein coding gene
+SRF,current symbol,MGI:106658,Srf,serum response factor,protein coding gene
+BAZ2B,current symbol,MGI:2442782,Baz2b,"bromodomain adjacent to zinc finger domain, 2B",protein coding gene
+MBD2,human synonym,MGI:2442042,Dpep2,dipeptidase 2,protein coding gene
+MBD2,current symbol,MGI:1333813,Mbd2,methyl-CpG binding domain protein 2,protein coding gene
+MBD3,human synonym,MGI:1919104,Dpep3,dipeptidase 3,protein coding gene
+MBD3,current symbol,MGI:1333812,Mbd3,methyl-CpG binding domain protein 3,protein coding gene
+MBD4,current symbol,MGI:1333850,Mbd4,methyl-CpG binding domain protein 4,protein coding gene
+MBD6,current symbol,MGI:106378,Mbd6,methyl-CpG binding domain protein 6,protein coding gene
+PIN1,human synonym,MGI:1922394,Pdzd2,PDZ domain containing 2,protein coding gene
+PIN1,current symbol,MGI:1346036,Pin1,"peptidyl-prolyl cis/trans isomerase, NIMA-interacting 1",protein coding gene
+PIN1,human symbol,MGI:3649546,Pin1rt1,"peptidyl-prolyl cis/trans isomerase, NIMA-interacting 1, retrogene 1",protein coding gene
+SETDB1,current symbol,MGI:1934229,Setdb1,"SET domain, bifurcated 1",protein coding gene
+SETDB2,current symbol,MGI:2685139,Setdb2,"SET domain, bifurcated 2",protein coding gene
+BAZ2A,current symbol,MGI:2151152,Baz2a,"bromodomain adjacent to zinc finger domain, 2A",protein coding gene
+MECP2,current symbol,MGI:99918,Mecp2,methyl CpG binding protein 2,protein coding gene
+MECP2,rat synonym,MGI:2384565,Prr14,proline rich 14,protein coding gene
+MBD1,human synonym,MGI:94917,Dpep1,dipeptidase 1,protein coding gene
+MBD1,current symbol,MGI:1333811,Mbd1,methyl-CpG binding domain protein 1,protein coding gene
+MTERF1,synonym,MGI:1918240,Mterf1a,mitochondrial transcription termination factor 1a,protein coding gene
+MTERF1,human symbol,MGI:3704243,Mterf1b,mitochondrial transcription termination factor 1b,protein coding gene
+MTERF1,human symbol,MGI:1340032,Mthfs,"5, 10-methenyltetrahydrofolate synthetase",protein coding gene
+MTERF2,current symbol,MGI:1921488,Mterf2,mitochondrial transcription termination factor 2,protein coding gene
+MTERF3,current symbol,MGI:1913660,Mterf3,mitochondrial transcription termination factor 3,protein coding gene
+MTERF4,current symbol,MGI:1918355,Mterf4,mitochondrial transcription termination factor 4,protein coding gene
+CDC5L,current symbol,MGI:1918952,Cdc5l,cell division cycle 5-like,protein coding gene
+CDC5L,human symbol,MGI:5591876,Cdc5lrt1,"cell division cycle 5 like, retrotransposed 1",protein coding gene
+CDC5L,human symbol,MGI:5591961,Cdc5lrt4,"cell division cycle 5 like, retrotransposed 4",protein coding gene
+CDC5L,human symbol,MGI:3643524,Cdc5lrt5,"cell division cycle 5 like, retrotransposed 5",protein coding gene
+CDC5L,human symbol,MGI:3647148,Cdc5lrt6,"cell division cycle 5 like, retrotransposed 6",protein coding gene
+CDC5L,human symbol,MGI:3647146,Cdc5lrt7,"cell division cycle 5 like, retrotransposed 7",protein coding gene
+CDC5L,human symbol,MGI:3647143,Cdc5lrt8,"cell division cycle 5 like, retrotransposed 8",protein coding gene
+CDC5L,human symbol,MGI:3644213,Cdc5lrt9,"cell division cycle 5 like, retrotransposed 9",protein coding gene
+CDC5L,human symbol,MGI:3644216,Cdc5lrt10,"cell division cycle 5 like, retrotransposed 10",protein coding gene
+DMTF1,current symbol,MGI:1344415,Dmtf1,cyclin D binding myb like transcription factor 1,protein coding gene
+DMTF1,zebrafish symbol,MGI:3045322,Dmtf1l,cyclin D binding myb like transcription factor 1 like,protein coding gene
+MSANTD4,current symbol,MGI:1925350,Msantd4,Myb/SANT-like DNA-binding domain containing 4 with coiled-coils,protein coding gene
+MYB,current symbol,MGI:97249,Myb,"Myb proto-oncogene, transcription factor",protein coding gene
+MYBL1,current symbol,MGI:99925,Mybl1,Myb proto-oncogene like 1,protein coding gene
+MYBL2,current symbol,MGI:101785,Mybl2,Myb proto-oncogene like  2,protein coding gene
+MYPOP,human synonym,MGI:1339710,Myh2,"myosin, heavy polypeptide 2, skeletal muscle, adult",protein coding gene
+MYPOP,current symbol,MGI:2446472,Mypop,"Myb-related transcription factor, partner of profilin",protein coding gene
+MYSM1,current symbol,MGI:2444584,Mysm1,"myb-like, SWIRM and MPN domains 1",protein coding gene
+SNAPC4,current symbol,MGI:2443935,Snapc4,"small nuclear RNA activating complex, polypeptide 4",protein coding gene
+TERB1,current symbol,MGI:2443187,Terb1,telomere repeat binding bouquet formation protein 1,protein coding gene
+TERF1,current symbol,MGI:109634,Terf1,telomeric repeat binding factor 1,protein coding gene
+TERF2,current symbol,MGI:1195972,Terf2,telomeric repeat binding factor 2,protein coding gene
+TTF1,human synonym,MGI:108067,Nkx2-1,NK2 homeobox 1,protein coding gene
+TTF1,current symbol,MGI:105044,Ttf1,"transcription termination factor, RNA polymerase I",protein coding gene
+ZZZ3,current symbol,MGI:1920453,Zzz3,"zinc finger, ZZ domain containing 3",protein coding gene
+MYRF,current symbol,MGI:2684944,Myrf,myelin regulatory factor,protein coding gene
+MYRFL,current symbol,MGI:2685085,Myrfl,myelin regulatory factor-like,protein coding gene
+NFX1,current symbol,MGI:1921414,Nfx1,"nuclear transcription factor, X-box binding 1",protein coding gene
+NFXL1,current symbol,MGI:1923646,Nfxl1,"nuclear transcription factor, X-box binding-like 1",protein coding gene
+AR,synonym,MGI:1353494,Akr1b1,aldo-keto reductase family 1 member B,protein coding gene
+AR,current symbol,MGI:88064,Ar,androgen receptor,protein coding gene
+AR,synonym,MGI:88068,Areg,amphiregulin,protein coding gene
+AR,synonym,MGI:88587,Cyp19a1,"cytochrome P450, family 19, subfamily a, polypeptide 1",protein coding gene
+AR,rat synonym,MGI:104724,Fdxr,ferredoxin reductase,protein coding gene
+ESR1,current symbol,MGI:1352467,Esr1,estrogen receptor 1 (alpha),protein coding gene
+ESR2,current symbol,MGI:109392,Esr2,estrogen receptor 2 (beta),protein coding gene
+ESRRA,current symbol,MGI:1346831,Esrra,"estrogen related receptor, alpha",protein coding gene
+ESRRB,current symbol,MGI:1346832,Esrrb,"estrogen related receptor, beta",protein coding gene
+ESRRG,current symbol,MGI:1347056,Esrrg,estrogen-related receptor gamma,protein coding gene
+HNF4A,human synonym,MGI:98504,Hnf1a,HNF1 homeobox A,protein coding gene
+HNF4A,current symbol,MGI:109128,Hnf4a,"hepatic nuclear factor 4, alpha",protein coding gene
+HNF4G,current symbol,MGI:1353604,Hnf4g,"hepatocyte nuclear factor 4, gamma",protein coding gene
+NR0B1,current symbol,MGI:1352460,Nr0b1,"nuclear receptor subfamily 0, group B, member 1",protein coding gene
+NR1D1,current symbol,MGI:2444210,Nr1d1,"nuclear receptor subfamily 1, group D, member 1",protein coding gene
+NR1D2,current symbol,MGI:2449205,Nr1d2,"nuclear receptor subfamily 1, group D, member 2",protein coding gene
+NR1H2,current symbol,MGI:1352463,Nr1h2,"nuclear receptor subfamily 1, group H, member 2",protein coding gene
+NR1H3,current symbol,MGI:1352462,Nr1h3,"nuclear receptor subfamily 1, group H, member 3",protein coding gene
+NR1H4,current symbol,MGI:1352464,Nr1h4,"nuclear receptor subfamily 1, group H, member 4",protein coding gene
+NR1I2,current symbol,MGI:1337040,Nr1i2,"nuclear receptor subfamily 1, group I, member 2",protein coding gene
+NR1I3,current symbol,MGI:1346307,Nr1i3,"nuclear receptor subfamily 1, group I, member 3",protein coding gene
+NR2C1,current symbol,MGI:1352465,Nr2c1,"nuclear receptor subfamily 2, group C, member 1",protein coding gene
+NR2C2,current symbol,MGI:1352466,Nr2c2,"nuclear receptor subfamily 2, group C, member 2",protein coding gene
+NR2E1,current symbol,MGI:1100526,Nr2e1,"nuclear receptor subfamily 2, group E, member 1",protein coding gene
+NR2E3,current symbol,MGI:1346317,Nr2e3,"nuclear receptor subfamily 2, group E, member 3",protein coding gene
+NR2F1,current symbol,MGI:1352451,Nr2f1,"nuclear receptor subfamily 2, group F, member 1",protein coding gene
+NR2F2,current symbol,MGI:1352452,Nr2f2,"nuclear receptor subfamily 2, group F, member 2",protein coding gene
+NR2F6,current symbol,MGI:1352453,Nr2f6,"nuclear receptor subfamily 2, group F, member 6",protein coding gene
+NR3C1,current symbol,MGI:95824,Nr3c1,"nuclear receptor subfamily 3, group C, member 1",protein coding gene
+NR3C2,current symbol,MGI:99459,Nr3c2,"nuclear receptor subfamily 3, group C, member 2",protein coding gene
+NR4A1,current symbol,MGI:1352454,Nr4a1,"nuclear receptor subfamily 4, group A, member 1",protein coding gene
+NR4A2,current symbol,MGI:1352456,Nr4a2,"nuclear receptor subfamily 4, group A, member 2",protein coding gene
+NR4A3,current symbol,MGI:1352457,Nr4a3,"nuclear receptor subfamily 4, group A, member 3",protein coding gene
+NR5A1,current symbol,MGI:1346833,Nr5a1,"nuclear receptor subfamily 5, group A, member 1",protein coding gene
+NR5A2,current symbol,MGI:1346834,Nr5a2,"nuclear receptor subfamily 5, group A, member 2",protein coding gene
+NR6A1,current symbol,MGI:1352459,Nr6a1,"nuclear receptor subfamily 6, group A, member 1",protein coding gene
+PGR,current symbol,MGI:97567,Pgr,progesterone receptor,protein coding gene
+PPARA,current symbol,MGI:104740,Ppara,peroxisome proliferator activated receptor alpha,protein coding gene
+PPARD,current symbol,MGI:101884,Ppard,peroxisome proliferator activator receptor delta,protein coding gene
+PPARG,current symbol,MGI:97747,Pparg,peroxisome proliferator activated receptor gamma,protein coding gene
+RARA,current symbol,MGI:97856,Rara,"retinoic acid receptor, alpha",protein coding gene
+RARB,current symbol,MGI:97857,Rarb,"retinoic acid receptor, beta",protein coding gene
+RARG,current symbol,MGI:97858,Rarg,"retinoic acid receptor, gamma",protein coding gene
+RORA,current symbol,MGI:104661,Rora,RAR-related orphan receptor alpha,protein coding gene
+RORB,current symbol,MGI:1343464,Rorb,RAR-related orphan receptor beta,protein coding gene
+RORC,current symbol,MGI:104856,Rorc,RAR-related orphan receptor gamma,protein coding gene
+RXRA,current symbol,MGI:98214,Rxra,retinoid X receptor alpha,protein coding gene
+RXRB,current symbol,MGI:98215,Rxrb,retinoid X receptor beta,protein coding gene
+RXRG,current symbol,MGI:98216,Rxrg,retinoid X receptor gamma,protein coding gene
+THRA,current symbol,MGI:98742,Thra,thyroid hormone receptor alpha,protein coding gene
+THRB,current symbol,MGI:98743,Thrb,thyroid hormone receptor beta,protein coding gene
+VDR,current symbol,MGI:103076,Vdr,"vitamin D (1,25-dihydroxyvitamin D3) receptor",protein coding gene
+AEBP1,current symbol,MGI:1197012,Aebp1,AE binding protein 1,protein coding gene
+ARHGAP35,current symbol,MGI:1929494,Arhgap35,Rho GTPase activating protein 35,protein coding gene
+BPTF,current symbol,MGI:2444008,Bptf,bromodomain PHD finger transcription factor,protein coding gene
+BRF2,current symbol,MGI:1913903,Brf2,"BRF2, RNA polymerase III transcription initiation factor 50kDa subunit",protein coding gene
+BRF2,synonym,MGI:107945,Zfp36l2,"zinc finger protein 36, C3H type-like 2",protein coding gene
+CARF,current symbol,MGI:2182269,Carf,calcium response factor,protein coding gene
+CARF,synonym,MGI:1918175,Cdkn2aip,CDKN2A interacting protein,protein coding gene
+CARF,human synonym,MGI:2142624,Peds1,plasmanylethanolamine desaturase 1,protein coding gene
+CC2D1A,current symbol,MGI:2384831,Cc2d1a,coiled-coil and C2 domain containing 1A,protein coding gene
+CEBPZ,current symbol,MGI:109386,Cebpz,CCAAT/enhancer binding protein zeta,protein coding gene
+CEBPZ,human synonym,MGI:109247,Ddit3,DNA-damage inducible transcript 3,protein coding gene
+CENPA,current symbol,MGI:88375,Cenpa,centromere protein A,protein coding gene
+CENPS,current symbol,MGI:1917178,Cenps,centromere protein S,protein coding gene
+CENPT,current symbol,MGI:2443939,Cenpt,centromere protein T,protein coding gene
+CENPX,current symbol,MGI:894324,Cenpx,centromere protein X,protein coding gene
+CGGBP1,current symbol,MGI:2146370,Cggbp1,CGG triplet repeat binding protein 1,protein coding gene
+CHCHD3,current symbol,MGI:1913325,Chchd3,coiled-coil-helix-coiled-coil-helix domain containing 3,protein coding gene
+CPEB1,current symbol,MGI:108442,Cpeb1,cytoplasmic polyadenylation element binding protein 1,protein coding gene
+CSRNP1,current symbol,MGI:2387989,Csrnp1,cysteine-serine-rich nuclear protein 1,protein coding gene
+CSRNP2,current symbol,MGI:2386852,Csrnp2,cysteine-serine-rich nuclear protein 2,protein coding gene
+CSRNP3,current symbol,MGI:1925021,Csrnp3,cysteine-serine-rich nuclear protein 3,protein coding gene
+DACH1,current symbol,MGI:1277991,Dach1,dachshund family transcription factor 1,protein coding gene
+DACH2,current symbol,MGI:1890446,Dach2,dachshund family transcription factor 2,protein coding gene
+DR1,current symbol,MGI:1100515,Dr1,down-regulator of transcription 1,protein coding gene
+DR1,synonym,MGI:3809473,"Tg(HLA-DRA*0101,HLA-DRB1*0101)1Dmz","transgene insertion 1, Dennis M Zaller",transgene
+DRAP1,current symbol,MGI:1913806,Drap1,DR1 associated protein 1,protein coding gene
+GLMP,current symbol,MGI:1913318,Glmp,glycosylated lysosomal membrane protein,protein coding gene
+GPBP1,current symbol,MGI:1920524,Gpbp1,GC-rich promoter binding protein 1,protein coding gene
+GPBP1L1,current symbol,MGI:1924360,Gpbp1l1,GC-rich promoter binding protein 1-like 1,protein coding gene
+GTF2B,current symbol,MGI:2385191,Gtf2b,general transcription factor IIB,protein coding gene
+KCNIP3,current symbol,MGI:1929258,Kcnip3,"Kv channel interacting protein 3, calsenilin",protein coding gene
+LTF,current symbol,MGI:96837,Ltf,lactotransferrin,protein coding gene
+MTF2,current symbol,MGI:105050,Mtf2,metal response element binding transcription factor 2,protein coding gene
+NACC2,current symbol,MGI:1915241,Nacc2,"nucleus accumbens associated 2, BEN and BTB (POZ) domain containing",protein coding gene
+NFE4,,No associated gene,,,
+NFYB,current symbol,MGI:97317,Nfyb,nuclear transcription factor-Y beta,protein coding gene
+NFYC,current symbol,MGI:107901,Nfyc,nuclear transcription factor-Y gamma,protein coding gene
+NKRF,current symbol,MGI:1924536,Nkrf,NF-kappaB repressing factor,protein coding gene
+NME2,current symbol,MGI:97356,Nme2,NME/NM23 nucleoside diphosphate kinase 2,protein coding gene
+NRF1,synonym,MGI:99421,Nfe2l1,"nuclear factor, erythroid derived 2,-like 1",protein coding gene
+NRF1,current symbol,MGI:1332235,Nrf1,nuclear respiratory factor 1,protein coding gene
+PA2G4,current symbol,MGI:894684,Pa2g4,proliferation-associated 2G4,protein coding gene
+PCGF2,current symbol,MGI:99161,Pcgf2,polycomb group ring finger 2,protein coding gene
+PCGF6,current symbol,MGI:1918291,Pcgf6,polycomb group ring finger 6,protein coding gene
+PHF1,current symbol,MGI:98647,Phf1,PHD finger protein 1,protein coding gene
+PHF19,current symbol,MGI:1921266,Phf19,PHD finger protein 19,protein coding gene
+PLSCR1,current symbol,MGI:893575,Plscr1,phospholipid scramblase 1,protein coding gene
+PLSCR1,human symbol,MGI:1925709,Plscr1l1,phospholipid scramblase 1 like 1,protein coding gene
+PLSCR1,human symbol,MGI:1270860,Plscr2,phospholipid scramblase 2,protein coding gene
+POU2AF1,current symbol,MGI:105086,Pou2af1,"POU domain, class 2, associating factor 1",protein coding gene
+PREB,current symbol,MGI:1355326,Preb,prolactin regulatory element binding,protein coding gene
+PURA,current symbol,MGI:103079,Pura,purine rich element binding protein A,protein coding gene
+PURB,current symbol,MGI:1338779,Purb,purine rich element binding protein B,protein coding gene
+PURG,current symbol,MGI:1922279,Purg,purine-rich element binding protein G,protein coding gene
+RAG1,current symbol,MGI:97848,Rag1,recombination activating 1,protein coding gene
+RBCK1,current symbol,MGI:1344372,Rbck1,RanBP-type and C3HC4-type zinc finger containing 1,protein coding gene
+REXO4,current symbol,MGI:2684957,Rexo4,"REX4, 3'-5' exonuclease",protein coding gene
+SAFB,current symbol,MGI:2146974,Safb,scaffold attachment factor B,protein coding gene
+SAFB,zebrafish symbol,MGI:2146808,Safb2,scaffold attachment factor B2,protein coding gene
+SAFB2,current symbol,MGI:2146808,Safb2,scaffold attachment factor B2,protein coding gene
+SCMH1,current symbol,MGI:1352762,Scmh1,Scm polycomb group homolog 1,protein coding gene
+SKI,current symbol,MGI:98310,Ski,ski proto-oncogene,protein coding gene
+SKIL,current symbol,MGI:106203,Skil,SKI-like proto-oncogene,protein coding gene
+SKOR1,current symbol,MGI:2443473,Skor1,SKI family transcriptional corepressor 1,protein coding gene
+SMYD3,current symbol,MGI:1916976,Smyd3,SET and MYND domain containing 3,protein coding gene
+SNAPC2,current symbol,MGI:1914861,Snapc2,"small nuclear RNA activating complex, polypeptide 2",protein coding gene
+SNAPC5,current symbol,MGI:1914282,Snapc5,"small nuclear RNA activating complex, polypeptide 5",protein coding gene
+SON,current symbol,MGI:98353,Son,Son DNA binding protein,protein coding gene
+SPEN,human synonym,MGI:2443205,Rbm15,RNA binding motif protein 15,protein coding gene
+SPEN,current symbol,MGI:1891706,Spen,spen family transcription repressor,protein coding gene
+SPZ1,current symbol,MGI:1930801,Spz1,spermatogenic leucine zipper 1,protein coding gene
+TCF20,current symbol,MGI:108399,Tcf20,transcription factor 20,protein coding gene
+TCF20,zebrafish symbol,MGI:2145729,Zfp957,zinc finger protein 957,protein coding gene
+TET2,current symbol,MGI:2443298,Tet2,tet methylcytosine dioxygenase 2,protein coding gene
+THYN1,current symbol,MGI:1925112,Thyn1,thymocyte nuclear protein 1,protein coding gene
+TMF1,current symbol,MGI:2684999,Tmf1,TATA element modulatory factor 1,protein coding gene
+TOPORS,current symbol,MGI:2146189,Topors,"topoisomerase I binding, arginine/serine-rich",protein coding gene
+TSC22D1,current symbol,MGI:109127,Tsc22d1,"TSC22 domain family, member 1",protein coding gene
+XPA,current symbol,MGI:99135,Xpa,"xeroderma pigmentosum, complementation group A",protein coding gene
+TP53,human symbol,MGI:98834,Trp53,transformation related protein 53,protein coding gene
+TP63,old symbol,MGI:98535,Tcp1,t-complex protein 1,protein coding gene
+TP63,human symbol,MGI:1330810,Trp63,transformation related protein 63,protein coding gene
+TP73,human symbol,MGI:1336991,Trp73,transformation related protein 73,protein coding gene
+PAX1,current symbol,MGI:97485,Pax1,paired box 1,protein coding gene
+PAX5,current symbol,MGI:97489,Pax5,paired box 5,protein coding gene
+PAX8,current symbol,MGI:97492,Pax8,paired box 8,protein coding gene
+PAX9,current symbol,MGI:97493,Pax9,paired box 9,protein coding gene
+LCOR,current symbol,MGI:2443930,Lcor,ligand dependent nuclear receptor corepressor,protein coding gene
+LCORL,current symbol,MGI:2651932,Lcorl,ligand dependent nuclear receptor corepressor-like,protein coding gene
+PROX1,synonym,MGI:109258,Nprl3,nitrogen permease regulator-like 3,protein coding gene
+PROX1,current symbol,MGI:97772,Prox1,prospero homeobox 1,protein coding gene
+PROX2,current symbol,MGI:1920672,Prox2,prospero homeobox 2,protein coding gene
+NFAT5,current symbol,MGI:1859333,Nfat5,nuclear factor of activated T cells 5,protein coding gene
+NFATC1,current symbol,MGI:102469,Nfatc1,"nuclear factor of activated T cells, cytoplasmic, calcineurin dependent 1",protein coding gene
+NFATC2,current symbol,MGI:102463,Nfatc2,"nuclear factor of activated T cells, cytoplasmic, calcineurin dependent 2",protein coding gene
+NFATC3,current symbol,MGI:103296,Nfatc3,"nuclear factor of activated T cells, cytoplasmic, calcineurin dependent 3",protein coding gene
+NFATC4,current symbol,MGI:1920431,Nfatc4,"nuclear factor of activated T cells, cytoplasmic, calcineurin dependent 4",protein coding gene
+NFKB1,current symbol,MGI:97312,Nfkb1,"nuclear factor of kappa light polypeptide gene enhancer in B cells 1, p105",protein coding gene
+NFKB2,current symbol,MGI:1099800,Nfkb2,"nuclear factor of kappa light polypeptide gene enhancer in B cells 2, p49/p100",protein coding gene
+REL,current symbol,MGI:97897,Rel,"Rel proto-oncogene, NFKB subunit",protein coding gene
+RELA,current symbol,MGI:103290,Rela,"Rela proto-oncogene, NFKB subunit",protein coding gene
+RELB,current symbol,MGI:103289,Relb,"Relb proto-oncogene, NFKB subunit",protein coding gene
+RFX1,current symbol,MGI:105982,Rfx1,"regulatory factor X, 1 (influences HLA class II expression)",protein coding gene
+RFX2,current symbol,MGI:106583,Rfx2,"regulatory factor X, 2 (influences HLA class II expression)",protein coding gene
+RFX3,current symbol,MGI:106582,Rfx3,"regulatory factor X, 3 (influences HLA class II expression)",protein coding gene
+RFX4,current symbol,MGI:1918387,Rfx4,"regulatory factor X, 4 (influences HLA class II expression)",protein coding gene
+RFX5,current symbol,MGI:1858421,Rfx5,"regulatory factor X, 5 (influences HLA class II expression)",protein coding gene
+RFX6,current symbol,MGI:2445208,Rfx6,"regulatory factor X, 6",protein coding gene
+RFX7,current symbol,MGI:2442675,Rfx7,"regulatory factor X, 7",protein coding gene
+RFX8,current symbol,MGI:3588206,Rfx8,regulatory factor X 8,protein coding gene
+RUNX1,current symbol,MGI:99852,Runx1,runt related transcription factor 1,protein coding gene
+RUNX2,current symbol,MGI:99829,Runx2,runt related transcription factor 2,protein coding gene
+RUNX3,current symbol,MGI:102672,Runx3,runt related transcription factor 3,protein coding gene
+AIRE,current symbol,MGI:1338803,Aire,autoimmune regulator,protein coding gene
+DEAF1,synonym,MGI:2146159,Alg10,"ALG10 alpha-1,2-glucosyltransferase",protein coding gene
+DEAF1,current symbol,MGI:1858496,Deaf1,"DEAF1, transcription factor",protein coding gene
+GMEB1,current symbol,MGI:2135604,Gmeb1,glucocorticoid modulatory element binding protein 1,protein coding gene
+GMEB2,current symbol,MGI:2652836,Gmeb2,glucocorticoid modulatory element binding protein 2,protein coding gene
+SKOR2,current symbol,MGI:3645984,Skor2,SKI family transcriptional corepressor 2,protein coding gene
+SP100,human symbol,MGI:1891441,Csprs,component of Sp100-rs,protein coding gene
+SP100,current symbol,MGI:109561,Sp100,nuclear antigen Sp100,protein coding gene
+SP110,human synonym,MGI:97631,Pmp22,peripheral myelin protein 22,protein coding gene
+SP110,current symbol,MGI:1923364,Sp110,Sp110 nuclear body protein,protein coding gene
+SP140,current symbol,MGI:3702467,Sp140,Sp140 nuclear body protein,protein coding gene
+SP140,rat symbol,MGI:3037746,Sp140l1,Sp140 nuclear body protein like 1,protein coding gene
+SP140,rat symbol,MGI:3612702,Sp140l2,Sp140 nuclear body protein like 2,protein coding gene
+SP140L,human symbol,MGI:3702467,Sp140,Sp140 nuclear body protein,protein coding gene
+NFIA,current symbol,MGI:108056,Nfia,nuclear factor I/A,protein coding gene
+NFIB,current symbol,MGI:103188,Nfib,nuclear factor I/B,protein coding gene
+NFIC,human synonym,MGI:6098105,Gm48552,"predicted gene, 48552",protein coding gene
+NFIC,current symbol,MGI:109591,Nfic,nuclear factor I/C,protein coding gene
+NFIX,current symbol,MGI:97311,Nfix,nuclear factor I/X,protein coding gene
+SMAD1,human synonym,MGI:2449057,Gars1,glycyl-tRNA synthetase 1,protein coding gene
+SMAD1,current symbol,MGI:109452,Smad1,SMAD family member 1,protein coding gene
+SMAD3,current symbol,MGI:1201674,Smad3,SMAD family member 3,protein coding gene
+SMAD4,current symbol,MGI:894293,Smad4,SMAD family member 4,protein coding gene
+SMAD5,current symbol,MGI:1328787,Smad5,SMAD family member 5,protein coding gene
+SMAD9,current symbol,MGI:1859993,Smad9,SMAD family member 9,protein coding gene
+STAT1,current symbol,MGI:103063,Stat1,signal transducer and activator of transcription 1,protein coding gene
+STAT2,current symbol,MGI:103039,Stat2,signal transducer and activator of transcription 2,protein coding gene
+STAT3,current symbol,MGI:103038,Stat3,signal transducer and activator of transcription 3,protein coding gene
+STAT4,synonym,MGI:1924885,Socs6,suppressor of cytokine signaling 6,protein coding gene
+STAT4,rat symbol,MGI:103063,Stat1,signal transducer and activator of transcription 1,protein coding gene
+STAT4,current symbol,MGI:103062,Stat4,signal transducer and activator of transcription 4,protein coding gene
+STAT5A,current symbol,MGI:103036,Stat5a,signal transducer and activator of transcription 5A,protein coding gene
+STAT5A,zebrafish symbol,MGI:103035,Stat5b,signal transducer and activator of transcription 5B,protein coding gene
+STAT5B,zebrafish symbol,MGI:103036,Stat5a,signal transducer and activator of transcription 5A,protein coding gene
+STAT5B,current symbol,MGI:103035,Stat5b,signal transducer and activator of transcription 5B,protein coding gene
+STAT6,current symbol,MGI:103034,Stat6,signal transducer and activator of transcription 6,protein coding gene
+EOMES,current symbol,MGI:1201683,Eomes,eomesodermin,protein coding gene
+MGA,current symbol,MGI:1352483,Mga,MAX gene associated,protein coding gene
+MGA,human synonym,MGI:1203495,Mgam,maltase-glucoamylase,protein coding gene
+T,current symbol,MGI:98472,T,"brachyury, T-box transcription factor T",protein coding gene
+T,current symbol,MGI:105076,t,t-complex,heritable phenotypic marker
+T,synonym,MGI:98661,te,lighthead,heritable phenotypic marker
+TBR1,current symbol,MGI:107404,Tbr1,T-box brain transcription factor 1,protein coding gene
+TBX1,current symbol,MGI:98493,Tbx1,T-box 1,protein coding gene
+TBX10,current symbol,MGI:1261436,Tbx10,T-box 10,protein coding gene
+TBX15,current symbol,MGI:1277234,Tbx15,T-box 15,protein coding gene
+TBX18,current symbol,MGI:1923615,Tbx18,T-box18,protein coding gene
+TBX19,current symbol,MGI:1891158,Tbx19,T-box 19,protein coding gene
+TBX2,current symbol,MGI:98494,Tbx2,T-box 2,protein coding gene
+TBX20,current symbol,MGI:1888496,Tbx20,T-box 20,protein coding gene
+TBX21,current symbol,MGI:1888984,Tbx21,T-box 21,protein coding gene
+TBX22,current symbol,MGI:2389465,Tbx22,T-box 22,protein coding gene
+TBX3,current symbol,MGI:98495,Tbx3,T-box 3,protein coding gene
+TBX4,current symbol,MGI:102556,Tbx4,T-box 4,protein coding gene
+TBX5,current symbol,MGI:102541,Tbx5,T-box 5,protein coding gene
+TBX6,current symbol,MGI:102539,Tbx6,T-box 6,protein coding gene
+TBP,current symbol,MGI:101838,Tbp,TATA box binding protein,protein coding gene
+TBPL1,current symbol,MGI:1339946,Tbpl1,TATA box binding protein-like 1,protein coding gene
+TBPL2,current symbol,MGI:2684058,Tbpl2,TATA box binding protein like 2,protein coding gene
+LIN54,current symbol,MGI:2140902,Lin54,lin-54 DREAM MuvB core complex component,protein coding gene
+TEAD1,current symbol,MGI:101876,Tead1,TEA domain family member 1,protein coding gene
+TEAD2,current symbol,MGI:104904,Tead2,TEA domain family member 2,protein coding gene
+TEAD3,current symbol,MGI:109241,Tead3,TEA domain family member 3,protein coding gene
+TEAD4,current symbol,MGI:106907,Tead4,TEA domain family member 4,protein coding gene
+THAP1,current symbol,MGI:1921004,Thap1,"THAP domain containing, apoptosis associated protein 1",protein coding gene
+THAP10,,No associated gene,,,
+THAP11,current symbol,MGI:1930964,Thap11,THAP domain containing 11,protein coding gene
+THAP12,current symbol,MGI:1920231,Thap12,THAP domain containing 12,protein coding gene
+THAP2,current symbol,MGI:1914066,Thap2,"THAP domain containing, apoptosis associated protein 2",protein coding gene
+THAP3,current symbol,MGI:1917126,Thap3,"THAP domain containing, apoptosis associated protein 3",protein coding gene
+THAP4,current symbol,MGI:1914276,Thap4,THAP domain containing 4,protein coding gene
+THAP5,,No associated gene,,,
+THAP6,current symbol,MGI:1922436,Thap6,THAP domain containing 6,pseudogene
+THAP7,current symbol,MGI:1916259,Thap7,THAP domain containing 7,protein coding gene
+THAP8,old symbol,MGI:1922879,1700020L13Rik,RIKEN cDNA 1700020L13 gene,protein coding gene
+THAP9,,No associated gene,,,
