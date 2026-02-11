@@ -16,7 +16,7 @@ def calc_deri(t,theta, m, sigmas, lambda_ = 0.05):
     """ 
     
     exp = torch.mm(theta.transpose(0,1), t) + m.unsqueeze(1)    
-    pi = torch.exp(-exp)/ ( 1+torch.exp(-exp))  
+    pi = torch.sigmoid(-exp)
     error = pi - sigmas
 
     ''' 
