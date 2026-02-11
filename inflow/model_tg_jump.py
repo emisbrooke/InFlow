@@ -28,7 +28,6 @@ class GeneModel:
          
         theta = (init_max - init_min) * torch.rand(self.nTF, self.nG, dtype=torch.double) + init_min
         theta = theta / torch.linalg.norm(theta)
-        theta[idxs,idxs] = 0
         
         m = (init_max - init_min) * torch.rand(self.nG, dtype=torch.double) + init_min
         m = m / torch.linalg.norm(m)
