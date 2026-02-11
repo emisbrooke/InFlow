@@ -13,7 +13,7 @@ reload(tf)
 A file to learn the TF part of the model. It is very similar to the TG one, but the sampling and generating samples is different
 '''
 
-class TFModel:
+class GeneModel:
     def __init__(self, age, tf_data, data, gene_type='TF', init_min=-1, init_max=1):
         #self.data_sets = data_sets
         '''
@@ -67,7 +67,8 @@ class TFModel:
 
 
     def train(self, steps=int(10e7), thresh=0.5, patience=1000, min_delta_ll=50, optimizer='adam', use_gpu_if_avail=True, 
-              alpha=.01, beta1=.9, beta2=.999, eps=1e-8, verbose=True, log_int=500, lambda_=5, eta=3e-4):
+              alpha=.01, beta1=.9, beta2=.999, eps=1e-8, verbose=True, log_int=500, lambda_=5, eta=3e-4,
+              autosave=True):
         '''
         A function to train our model. It is a function of the class GeneModel
         steps: default=10e7, max number of training steps
@@ -81,6 +82,7 @@ class TFModel:
         log_int: number of iterations between storing learned parameters
         lambda_: default=5, the weight of Lasso regularization
         eta: default=3e-4, standard learning rate
+        autosave: default=True, periodically save state with numpy backups
         '''
 
         t0 = time.time() # to keep track of model speed
@@ -144,14 +146,16 @@ class TFModel:
                     print(f'After {step} iterations:')
                     print(f'Likelihood = {Larr[step]}, penalty={lambda_ * torch.sum(torch.abs(theta))}, tng={tng}, lambda={lambda_}')
                 self.Larr = Larr[:step + 1]; self.pi=pi; self.sigma=sigma; self.theta=theta; self.m=m
-                self.save_state()
+                if autosave:
+                    self.save_state()
 
         t1 = time.time()
         if verbose:
             print(f'Inference is over in {(t1-t0):.4f} seconds, {tot_steps} steps\nStep on avg takes {(t1-t0)/tot_steps:.4f} seconds')
         
         self.Larr = Larr[:tot_steps]; self.pi=pi; self.sigma=sigma; self.theta=theta; self.m=m
-        self.save_state()
+        if autosave:
+            self.save_state()
         
 
     def save_state(self):
