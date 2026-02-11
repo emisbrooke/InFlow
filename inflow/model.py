@@ -1,6 +1,8 @@
 import torch
 import numpy as np
 import time
+import math
+import warnings
 import inference_funcs_tf as tf
 import inference_funcs_tg as tg
 from importlib import reload
@@ -31,7 +33,10 @@ class TFModel:
         if self.gene_type not in {"TF", "TG"}:
             raise ValueError("gene_type must be either 'TF' or 'TG'")
         if self.nG == self.nTF and self.gene_type != 'TF':
-            raise ValueError("Input data appears to be TFs, but gene_type is TG")
+            warnings.warn(
+                "Input dimensions are ambiguous (nG == nTF). Continuing with TG mode as requested.",
+                stacklevel=2,
+            )
         if self.nG != self.nTF and self.gene_type == 'TF':
             raise ValueError("Input data appears to be TGs, but gene_type is TF")
 
@@ -121,7 +126,7 @@ class TFModel:
             if optimizer == 'adam' or optimizer == 'yogi':
                 m, theta, mm, mtheta, vm, vtheta = self.inf.adaptive_newparams(
                     m, theta, mm, mtheta, vm, vtheta, 
-                    dLdm, dLdtheta, beta1=beta1, beta2=beta2, alpha=alpha, eps=eps, optimizer=optimizer
+                    dLdm, dLdtheta, beta1=beta1, beta2=beta2, alpha=alpha, i=step, eps=eps, optimizer=optimizer
                 )
                 
             else:
@@ -197,7 +202,8 @@ class TFModel:
             nSamples = nChain
         stored_samples = []
             
-        iters = (nSamples // nChain) * int_save + (int_burn - int_save) # number of iterations needed to obtain samples
+        n_collect = math.ceil(nSamples / nChain)
+        iters = n_collect * int_save + (int_burn - int_save) # number of iterations needed to obtain samples
         print('iters is ', iters, int_burn, int_save, nSamples)
 
 
@@ -230,6 +236,8 @@ class TFModel:
 class HybridStopping:
     '''
         defines ways that learning will be halted
+        1. Early stop if relative gradient falls below threshold
+        2. Patience-based stop if likelihood plateaus
     '''
     def __init__(self, gradient_thresh=0.03, patience=1000, min_delta=100):
         self.gradient_thresh = gradient_thresh

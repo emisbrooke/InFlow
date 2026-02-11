@@ -15,10 +15,10 @@ def calc_deri(t, theta, m, sigmas, lambda_ = 0.05):
             dLdm: radient of likelihood w.r.t. m
     """ 
     nTF = t.shape[0]
-    idxs = torch.arange(nTF) # To keep the diagonal entries 0 (can't regulate themselves)
+    idxs = torch.arange(nTF, device=theta.device) # To keep the diagonal entries 0 (can't regulate themselves)
     
     exp = torch.mm(theta.transpose(0,1), t) + m.unsqueeze(1)    
-    pi = torch.exp(-exp)/ ( 1+torch.exp(-exp))  # Newly calculate probabilites
+    pi = torch.sigmoid(-exp)  # Newly calculate probabilites
     error = pi - sigmas # Error between predicted and actual
     
 
