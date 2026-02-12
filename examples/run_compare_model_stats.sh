@@ -15,4 +15,5 @@ python inflow/compare_model_stats.py \
   --tf-save-interval 1000 \
   --tf-batch-size 1000 \
   --tf-n-chains 256 \
-  --device cuda
+  --device cuda \
+  --plot-dir outputs/model_plots
