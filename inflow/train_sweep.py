@@ -7,7 +7,7 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from model import TFModel
+from model import GeneModel
 
 
 DTYPE_MAP = {
@@ -89,7 +89,7 @@ def run_one_job(args, tissue: str, age: int, gene_type: str, lambda_value: float
         torch.manual_seed(args.seed + restart_idx)
         np.random.seed(args.seed + restart_idx)
 
-        model = TFModel(age=age, tf_data=tf_data, data=data, gene_type=gene_type)
+        model = GeneModel(age=age, tf_data=tf_data, data=data, gene_type=gene_type)
         model.train(
             steps=args.steps,
             thresh=args.thresh,
