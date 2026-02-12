@@ -1,0 +1,13 @@
+# tissue age gene_type steps n_restarts lambda1 [lambda2 lambda3 ...]
+# Lines beginning with # are ignored.
+# Example: brain 3 TF 5000 10 0 1 2 3 4 5
+
+brain 3 TF 5000 10 0 1 2 3
+brain 24 TF 5000 10 0 1 2 3
+brain 3 TG 5000 10 0 1 2 3
+brain 24 TG 5000 10 0 1 2 3
+
+liver 3 TF 5000 10 0 1 2 3
+liver 24 TF 5000 10 0 1 2 3
+liver 3 TG 5000 10 0 1 2 3
+liver 24 TG 5000 10 0 1 2 3
