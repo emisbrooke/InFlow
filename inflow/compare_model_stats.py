@@ -150,6 +150,7 @@ def parse_args():
     p.add_argument("--corr-plot-max-pairs", type=int, default=20000, help="Max number of correlation pairs to plot per model.")
     p.add_argument("--plot-dpi", type=int, default=150)
     p.add_argument("--plot-seed", type=int, default=0)
+    p.add_argument("--skip-existing-plots", action="store_true", help="Skip model evaluation when plot file already exists in --plot-dir.")
     p.add_argument("--checkpoint-path", type=Path, default=Path("outputs/model_stats.checkpoint.jsonl"))
     p.add_argument("--no-resume", action="store_true", help="Ignore existing checkpoint file and recompute all models.")
     p.add_argument("--fail-fast", action="store_true")
@@ -294,6 +295,11 @@ def main():
         if path_str in completed:
             print(f"[{model_idx}/{len(paths)}] SKIP (checkpoint) {path}")
             continue
+        if args.plot_dir is not None and args.skip_existing_plots:
+            existing_plot_path = args.plot_dir / f"{path.stem}_stats.png"
+            if existing_plot_path.exists():
+                print(f"[{model_idx}/{len(paths)}] SKIP (plot exists) {path}")
+                continue
         try:
             model_t0 = time.perf_counter()
             print(f"[{model_idx}/{len(paths)}] START {path}")
