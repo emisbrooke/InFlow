@@ -1,0 +1,7 @@
+# model_path n_samples tf_burn tf_save_interval tf_n_chains tf_batch_size corr_plot_max_pairs
+# One model per line (use paths relative to repo root or absolute paths).
+
+outputs/models/model_brain_3m_TF_lam0.pt 1000 2000 200 512 2000 20000
+outputs/models/model_brain_24m_TF_lam0.pt 1000 2000 200 512 2000 20000
+outputs/models/model_liver_3m_TF_lam0.pt 1000 2000 200 512 2000 20000
+outputs/models/model_liver_24m_TF_lam0.pt 1000 2000 200 512 2000 20000
