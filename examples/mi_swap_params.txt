@@ -1,0 +1,5 @@
+# tissue lambda iters n_tf_samples int_burn int_save mc_batch_size ages_csv
+# ages_csv format: 3,24 or 3,18,24
+
+brain 1.0 10 30000 200000 500 500 3,24
+liver 1.0 10 30000 200000 500 500 3,24
