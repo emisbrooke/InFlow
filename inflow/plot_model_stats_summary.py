@@ -40,13 +40,18 @@ def main():
     if missing:
         raise ValueError(f"Missing required columns: {sorted(missing)}")
 
+    if "theta_threshold" not in df.columns:
+        df["theta_threshold"] = 0.0
+    df["theta_threshold"] = pd.to_numeric(df["theta_threshold"], errors="coerce").fillna(0.0)
+    df["threshold_tag"] = df["theta_threshold"].map(lambda x: f"th={x:g}")
     df["group"] = df["tissue"].astype(str) + "_" + df["age_m"].astype(str) + "m_" + df["gene_type"].astype(str)
+    df["group_with_threshold"] = df["group"] + "_" + df["threshold_tag"]
 
     save_lineplot(
         df=df,
         x="lambda",
         y="mean_pearson",
-        hue="group",
+        hue="group_with_threshold",
         title="Mean PCC vs Lambda",
         out_path=args.out_dir / "mean_pcc_vs_lambda.png",
         ylabel="Mean PCC",
@@ -55,7 +60,7 @@ def main():
         df=df,
         x="lambda",
         y="corr_pearson_upper",
-        hue="group",
+        hue="group_with_threshold",
         title="Correlation PCC vs Lambda",
         out_path=args.out_dir / "corr_pcc_vs_lambda.png",
         ylabel="Corr PCC",
@@ -64,7 +69,7 @@ def main():
         df=df,
         x="lambda",
         y="mean_mae",
-        hue="group",
+        hue="group_with_threshold",
         title="Mean MAE vs Lambda",
         out_path=args.out_dir / "mean_mae_vs_lambda.png",
         ylabel="Mean MAE",
@@ -73,17 +78,36 @@ def main():
         df=df,
         x="lambda",
         y="corr_mae",
-        hue="group",
+        hue="group_with_threshold",
         title="Correlation MAE vs Lambda",
         out_path=args.out_dir / "corr_mae_vs_lambda.png",
         ylabel="Corr MAE",
     )
 
-    # Quick best-lambda table by corr PCC
+    # Optional structure plots (present in newer compare_model_stats outputs)
+    structure_cols = [
+        ("theta_nonzero_frac", "Nonzero Fraction vs Lambda", "Nonzero Fraction", "theta_nonzero_frac_vs_lambda.png"),
+        ("theta_top1pct_out_degree_share", "Top 1% Out-Degree Share vs Lambda", "Top1% Out-Degree Share", "theta_top1pct_share_vs_lambda.png"),
+        ("theta_isolated_regulator_frac", "Isolated Regulator Fraction vs Lambda", "Isolated Regulator Fraction", "theta_isolated_regulator_frac_vs_lambda.png"),
+        ("theta_avg_out_degree", "Average Out-Degree vs Lambda", "Average Out-Degree", "theta_avg_out_degree_vs_lambda.png"),
+    ]
+    for col, title, ylabel, fname in structure_cols:
+        if col in df.columns:
+            save_lineplot(
+                df=df,
+                x="lambda",
+                y=col,
+                hue="group_with_threshold",
+                title=title,
+                out_path=args.out_dir / fname,
+                ylabel=ylabel,
+            )
+
+    # Quick best-lambda table by corr PCC (per tissue/age/gene_type/threshold)
     best = (
         df.sort_values("corr_pearson_upper", ascending=False)
-        .groupby(["tissue", "age_m", "gene_type"], as_index=False)
-        .first()[["tissue", "age_m", "gene_type", "lambda", "corr_pearson_upper", "mean_pearson"]]
+        .groupby(["tissue", "age_m", "gene_type", "theta_threshold"], as_index=False)
+        .first()[["tissue", "age_m", "gene_type", "theta_threshold", "lambda", "corr_pearson_upper", "mean_pearson"]]
     )
     best.to_csv(args.out_dir / "best_lambda_by_group.csv", index=False)
     print(f"Wrote summary plots and table to {args.out_dir}")
