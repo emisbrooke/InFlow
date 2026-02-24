@@ -103,13 +103,31 @@ def main():
                 ylabel=ylabel,
             )
 
-    # Quick best-lambda table by corr PCC (per tissue/age/gene_type/threshold)
-    best = (
-        df.sort_values("corr_pearson_upper", ascending=False)
-        .groupby(["tissue", "age_m", "gene_type", "theta_threshold"], as_index=False)
+    # Ranking preference:
+    # 1) maximize corr_pearson_upper
+    # 2) maximize mean_pearson
+    # 3) (if present) minimize theta_nonzero_frac to prefer sparser models as tie-breaker
+    sort_cols = ["corr_pearson_upper", "mean_pearson"]
+    asc = [False, False]
+    if "theta_nonzero_frac" in df.columns:
+        sort_cols.append("theta_nonzero_frac")
+        asc.append(True)
+
+    ranked = df.sort_values(sort_cols, ascending=asc)
+
+    # Best per group while comparing thresholds directly (single winner with both lambda + threshold)
+    best_overall = (
+        ranked.groupby(["tissue", "age_m", "gene_type"], as_index=False)
         .first()[["tissue", "age_m", "gene_type", "theta_threshold", "lambda", "corr_pearson_upper", "mean_pearson"]]
     )
-    best.to_csv(args.out_dir / "best_lambda_by_group.csv", index=False)
+    best_overall.to_csv(args.out_dir / "best_lambda_by_group.csv", index=False)
+
+    # Also keep threshold-stratified best-lambda table
+    best_by_threshold = (
+        ranked.groupby(["tissue", "age_m", "gene_type", "theta_threshold"], as_index=False)
+        .first()[["tissue", "age_m", "gene_type", "theta_threshold", "lambda", "corr_pearson_upper", "mean_pearson"]]
+    )
+    best_by_threshold.to_csv(args.out_dir / "best_lambda_by_group_and_threshold.csv", index=False)
     print(f"Wrote summary plots and table to {args.out_dir}")
 
 

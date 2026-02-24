@@ -178,6 +178,7 @@ def parse_args():
     p.add_argument("--tf-batch-size", type=int, default=1000)
     p.add_argument("--tf-n-chains", type=int, default=256)
     p.add_argument("--theta-threshold", type=float, default=0.0, help="Set |theta| below this value to zero before sampling and metrics.")
+    p.add_argument("--theta-thresholds", nargs="+", type=float, default=None, help="Evaluate each model at multiple thresholds.")
     p.add_argument("--device", choices=["auto", "cuda", "cpu"], default="auto")
     p.add_argument("--verbose", action="store_true")
     p.add_argument("--progress-every", type=int, default=10, help="Print TF sampling progress every N batches when --verbose is set.")
@@ -231,7 +232,11 @@ def load_checkpoint_rows(path: Path):
             if "model_path" not in row:
                 continue
             rows.append(row)
-            completed.add(str(row["model_path"]))
+            row_id = row.get("row_id")
+            if row_id is None:
+                # Backward compatibility with older checkpoints that had one row per model.
+                row_id = f"{row['model_path']}|th=0"
+            completed.add(str(row_id))
     return rows, completed
 
 
@@ -292,6 +297,10 @@ def maybe_save_plot(
     plt.close(fig)
 
 
+def threshold_tag(x: float) -> str:
+    return f"{x:g}".replace("-", "m").replace(".", "p")
+
+
 def main():
     args = parse_args()
     if args.device == "cuda":
@@ -313,6 +322,13 @@ def main():
     paths = resolve_model_paths(args)
     if not paths:
         raise FileNotFoundError("No model files found.")
+    if args.theta_thresholds is None:
+        theta_thresholds = [float(args.theta_threshold)]
+    else:
+        theta_thresholds = [float(x) for x in args.theta_thresholds]
+    # preserve order while deduplicating
+    seen = set()
+    theta_thresholds = [x for x in theta_thresholds if not (x in seen or seen.add(x))]
 
     args.out_csv.parent.mkdir(parents=True, exist_ok=True)
     args.checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
@@ -326,19 +342,7 @@ def main():
         args.plot_dir.mkdir(parents=True, exist_ok=True)
 
     for model_idx, path in enumerate(paths, start=1):
-        path_str = str(path)
-        if path_str in completed:
-            print(f"[{model_idx}/{len(paths)}] SKIP (checkpoint) {path}")
-            continue
-        if args.plot_dir is not None and args.skip_existing_plots:
-            existing_plot_path = args.plot_dir / f"{path.stem}_stats.png"
-            if existing_plot_path.exists():
-                print(f"[{model_idx}/{len(paths)}] SKIP (plot exists) {path}")
-                continue
         try:
-            model_t0 = time.perf_counter()
-            print(f"[{model_idx}/{len(paths)}] START {path}")
-
             load_t0 = time.perf_counter()
             payload = torch.load(path, map_location="cpu")
             meta = payload.get("meta", {})
@@ -360,88 +364,106 @@ def main():
                 raise FileNotFoundError(f"Observed data not found: {obs_path}")
             observed = torch.as_tensor(np.load(obs_path), dtype=torch.double, device=device)
             target_samples = args.n_samples if args.n_samples > 0 else observed.shape[1]
+            m = payload["m"].to(dtype=torch.double, device=device)
+            theta_base = payload["theta"].to(dtype=torch.double, device=device)
+            if gene_type == "TG":
+                tf_path = build_data_path(args.data_dir, tissue, age, "TF")
+                if not tf_path.exists():
+                    raise FileNotFoundError(f"TF conditioning data not found for TG model: {tf_path}")
+                tf_data_for_tg = torch.as_tensor(np.load(tf_path), dtype=torch.double, device=device)
+            else:
+                tf_data_for_tg = None
             if device.type == "cuda":
                 torch.cuda.synchronize()
             load_dt = time.perf_counter() - load_t0
 
-            theta = payload["theta"].to(dtype=torch.double, device=device)
-            m = payload["m"].to(dtype=torch.double, device=device)
-            theta = apply_theta_threshold(theta, args.theta_threshold)
-            net_stats = theta_structure_metrics(theta)
+            for th_idx, th in enumerate(theta_thresholds, start=1):
+                row_id = f"{path}|th={threshold_tag(th)}"
+                if row_id in completed:
+                    print(f"[{model_idx}/{len(paths)}][{th_idx}/{len(theta_thresholds)}] SKIP (checkpoint) {path} th={th:g}")
+                    continue
+                if args.plot_dir is not None and args.skip_existing_plots:
+                    existing_plot_path = args.plot_dir / f"{path.stem}_th{threshold_tag(th)}_stats.png"
+                    if existing_plot_path.exists():
+                        print(f"[{model_idx}/{len(paths)}][{th_idx}/{len(theta_thresholds)}] SKIP (plot exists) {path} th={th:g}")
+                        continue
 
-            sample_t0 = time.perf_counter()
-            if gene_type == "TF":
-                tf_data = observed
-                generated = sample_tf_gibbs(
-                    theta=theta,
-                    m=m,
-                    tf_data=tf_data,
-                    n_samples=target_samples,
-                    int_burn=args.tf_burn,
-                    int_save=args.tf_save_interval,
-                    batch_size=args.tf_batch_size,
-                    n_chains=args.tf_n_chains,
-                    verbose=args.verbose,
-                    progress_every=max(1, args.progress_every),
+                model_t0 = time.perf_counter()
+                print(f"[{model_idx}/{len(paths)}][{th_idx}/{len(theta_thresholds)}] START {path} th={th:g}")
+
+                theta = apply_theta_threshold(theta_base, th)
+                net_stats = theta_structure_metrics(theta)
+
+                sample_t0 = time.perf_counter()
+                if gene_type == "TF":
+                    tf_data = observed
+                    generated = sample_tf_gibbs(
+                        theta=theta,
+                        m=m,
+                        tf_data=tf_data,
+                        n_samples=target_samples,
+                        int_burn=args.tf_burn,
+                        int_save=args.tf_save_interval,
+                        batch_size=args.tf_batch_size,
+                        n_chains=args.tf_n_chains,
+                        verbose=args.verbose,
+                        progress_every=max(1, args.progress_every),
+                    )
+                elif gene_type == "TG":
+                    generated = sample_tg_from_tf(theta, m, tf_data_for_tg, target_samples)
+                else:
+                    raise ValueError(f"Unsupported gene_type: {gene_type}")
+                if device.type == "cuda":
+                    torch.cuda.synchronize()
+                sample_dt = time.perf_counter() - sample_t0
+
+                metric_t0 = time.perf_counter()
+                mean_obs, mean_gen, corr_obs_upper, corr_gen_upper = get_summary_vectors(observed, generated)
+                metrics = compute_metrics(mean_obs, mean_gen, corr_obs_upper, corr_gen_upper)
+                if device.type == "cuda":
+                    torch.cuda.synchronize()
+                metric_dt = time.perf_counter() - metric_t0
+
+                if args.plot_dir is not None:
+                    plot_path = args.plot_dir / f"{path.stem}_th{threshold_tag(th)}_stats.png"
+                    maybe_save_plot(
+                        plot_path=plot_path,
+                        mean_obs=mean_obs,
+                        mean_gen=mean_gen,
+                        corr_obs_upper=corr_obs_upper,
+                        corr_gen_upper=corr_gen_upper,
+                        corr_plot_max_pairs=max(1000, args.corr_plot_max_pairs),
+                        plot_seed=args.plot_seed,
+                        plot_dpi=args.plot_dpi,
+                        title_prefix=f"{tissue} {age}m {gene_type} lambda={meta.get('lambda', 'NA')} th={th:g}",
+                    )
+                row = {
+                    "row_id": row_id,
+                    "model_path": str(path),
+                    "tissue": tissue,
+                    "age_m": age,
+                    "gene_type": gene_type,
+                    "lambda": meta.get("lambda", math.nan),
+                    "steps_run": meta.get("steps_run", math.nan),
+                    "final_penalized_obj": payload.get("final_penalized_obj", math.nan),
+                    "n_genes": int(observed.shape[0]),
+                    "n_cells_observed": int(observed.shape[1]),
+                    "n_cells_generated": int(generated.shape[1]),
+                    "theta_threshold": float(th),
+                }
+                row.update(metrics)
+                row.update(net_stats)
+                rows.append(row)
+                append_checkpoint_row(args.checkpoint_path, row)
+                completed.add(row_id)
+                total_dt = time.perf_counter() - model_t0
+                print(
+                    f"[{model_idx}/{len(paths)}][{th_idx}/{len(theta_thresholds)}] OK {path} th={th:g} | "
+                    f"load={load_dt:.2f}s sample={sample_dt:.2f}s metrics={metric_dt:.2f}s total={total_dt:.2f}s"
                 )
-            elif gene_type == "TG":
-                tf_path = build_data_path(args.data_dir, tissue, age, "TF")
-                if not tf_path.exists():
-                    raise FileNotFoundError(f"TF conditioning data not found for TG model: {tf_path}")
-                tf_data = torch.as_tensor(np.load(tf_path), dtype=torch.double, device=device)
-                generated = sample_tg_from_tf(theta, m, tf_data, target_samples)
-            else:
-                raise ValueError(f"Unsupported gene_type: {gene_type}")
-            if device.type == "cuda":
-                torch.cuda.synchronize()
-            sample_dt = time.perf_counter() - sample_t0
 
-            metric_t0 = time.perf_counter()
-            mean_obs, mean_gen, corr_obs_upper, corr_gen_upper = get_summary_vectors(observed, generated)
-            metrics = compute_metrics(mean_obs, mean_gen, corr_obs_upper, corr_gen_upper)
-            if device.type == "cuda":
-                torch.cuda.synchronize()
-            metric_dt = time.perf_counter() - metric_t0
-
-            if args.plot_dir is not None:
-                plot_path = args.plot_dir / f"{path.stem}_stats.png"
-                maybe_save_plot(
-                    plot_path=plot_path,
-                    mean_obs=mean_obs,
-                    mean_gen=mean_gen,
-                    corr_obs_upper=corr_obs_upper,
-                    corr_gen_upper=corr_gen_upper,
-                    corr_plot_max_pairs=max(1000, args.corr_plot_max_pairs),
-                    plot_seed=args.plot_seed,
-                    plot_dpi=args.plot_dpi,
-                    title_prefix=f"{tissue} {age}m {gene_type} lambda={meta.get('lambda', 'NA')}",
-                )
-            row = {
-                "model_path": str(path),
-                "tissue": tissue,
-                "age_m": age,
-                "gene_type": gene_type,
-                "lambda": meta.get("lambda", math.nan),
-                "steps_run": meta.get("steps_run", math.nan),
-                "final_penalized_obj": payload.get("final_penalized_obj", math.nan),
-                "n_genes": int(observed.shape[0]),
-                "n_cells_observed": int(observed.shape[1]),
-                "n_cells_generated": int(generated.shape[1]),
-                "theta_threshold": args.theta_threshold,
-            }
-            row.update(metrics)
-            row.update(net_stats)
-            rows.append(row)
-            append_checkpoint_row(args.checkpoint_path, row)
-            completed.add(path_str)
-            total_dt = time.perf_counter() - model_t0
-            print(
-                f"[{model_idx}/{len(paths)}] OK {path} | "
-                f"load={load_dt:.2f}s sample={sample_dt:.2f}s metrics={metric_dt:.2f}s total={total_dt:.2f}s"
-            )
-
-            if device.type == "cuda":
-                torch.cuda.empty_cache()
+                if device.type == "cuda":
+                    torch.cuda.empty_cache()
         except Exception as exc:
             print(f"FAIL {path}: {exc}")
             if args.fail_fast:
