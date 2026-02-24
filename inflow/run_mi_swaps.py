@@ -37,6 +37,9 @@ def parse_args():
     p.add_argument("--int-save", type=int, default=500)
     p.add_argument("--mc-batch-size", type=int, default=500)
     p.add_argument("--reuse-tf-samples-per-iter", action="store_true", help="Generate source TF samples once per (iter, src_age) and reuse across dst ages.")
+    p.add_argument("--theta-threshold", type=float, default=0.0, help="Hard-threshold |theta| below this value to zero before MI.")
+    p.add_argument("--seed", type=int, default=0, help="Random seed for reproducible sampling.")
+    p.add_argument("--dry-run-check", action="store_true", help="Print resolved inputs (files/shapes) and exit without computing MI.")
     p.add_argument("--overwrite", action="store_true")
     p.add_argument("--verbose", action="store_true")
     return p.parse_args()
@@ -58,10 +61,29 @@ def load_payload(path: Path):
     return torch.load(path, map_location="cpu")
 
 
+def apply_theta_threshold(theta: torch.Tensor, threshold: float) -> torch.Tensor:
+    if threshold <= 0:
+        return theta
+    out = theta.clone()
+    out[torch.abs(out) < threshold] = 0
+    return out
+
+
+def nonzero_fraction(theta: torch.Tensor) -> float:
+    total = theta.numel()
+    if total == 0:
+        return 0.0
+    return float((theta != 0).sum().item() / total)
+
+
 def main():
     args = parse_args()
     t0 = time.time()
     args.out_dir.mkdir(parents=True, exist_ok=True)
+    np.random.seed(args.seed)
+    torch.manual_seed(args.seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(args.seed)
     device = resolve_device(args.device)
     use_gpu = device.type == "cuda"
     if args.verbose:
@@ -76,19 +98,68 @@ def main():
     tg_model = {}
     tf_data = {}
     tg_data = {}
+    tf_model_paths = {}
+    tg_model_paths = {}
+    tf_data_paths = {}
+    tg_data_paths = {}
     for age in ages:
         tf_model_path = model_path(args.models_dir, args.tissue, age, "TF", args.lam)
         tg_model_path = model_path(args.models_dir, args.tissue, age, "TG", args.lam)
+        tf_model_paths[age] = tf_model_path
+        tg_model_paths[age] = tg_model_path
         tf_payload = load_payload(tf_model_path)
         tg_payload = load_payload(tg_model_path)
 
-        tf_model[age] = {"theta": tf_payload["theta"], "m": tf_payload["m"]}
-        tg_model[age] = {"theta": tg_payload["theta"], "m": tg_payload["m"]}
+        theta_tf_raw = tf_payload["theta"]
+        theta_tg_raw = tg_payload["theta"]
+        theta_tf = apply_theta_threshold(theta_tf_raw, args.theta_threshold)
+        theta_tg = apply_theta_threshold(theta_tg_raw, args.theta_threshold)
+        tf_model[age] = {
+            "theta": theta_tf,
+            "m": tf_payload["m"],
+            "theta_nz_frac_raw": nonzero_fraction(theta_tf_raw),
+            "theta_nz_frac_used": nonzero_fraction(theta_tf),
+        }
+        tg_model[age] = {
+            "theta": theta_tg,
+            "m": tg_payload["m"],
+            "theta_nz_frac_raw": nonzero_fraction(theta_tg_raw),
+            "theta_nz_frac_used": nonzero_fraction(theta_tg),
+        }
 
-        tf_np = np.load(data_path(args.data_dir, args.tissue, age, "TF"))
-        tg_np = np.load(data_path(args.data_dir, args.tissue, age, "TG"))
+        tf_data_path = data_path(args.data_dir, args.tissue, age, "TF")
+        tg_data_path = data_path(args.data_dir, args.tissue, age, "TG")
+        tf_data_paths[age] = tf_data_path
+        tg_data_paths[age] = tg_data_path
+        tf_np = np.load(tf_data_path)
+        tg_np = np.load(tg_data_path)
         tf_data[age] = tf_np
         tg_data[age] = tg_np
+
+    if args.dry_run_check:
+        print("=== DRY RUN CHECK ===")
+        print(f"tissue={args.tissue} lambda={args.lam} ages={ages}")
+        for age in ages:
+            print(f"[age={age}m]")
+            print(f"  tf_model: {tf_model_paths[age]}")
+            print(f"  tg_model: {tg_model_paths[age]}")
+            print(f"  tf_data:  {tf_data_paths[age]} shape={tf_data[age].shape}")
+            print(f"  tg_data:  {tg_data_paths[age]} shape={tg_data[age].shape}")
+            print(f"  theta_tf shape={tuple(tf_model[age]['theta'].shape)} m_tf shape={tuple(tf_model[age]['m'].shape)}")
+            print(f"  theta_tg shape={tuple(tg_model[age]['theta'].shape)} m_tg shape={tuple(tg_model[age]['m'].shape)}")
+            print(
+                f"  tf theta nz frac raw/used: "
+                f"{tf_model[age]['theta_nz_frac_raw']:.4f}/{tf_model[age]['theta_nz_frac_used']:.4f}"
+            )
+            print(
+                f"  tg theta nz frac raw/used: "
+                f"{tg_model[age]['theta_nz_frac_raw']:.4f}/{tg_model[age]['theta_nz_frac_used']:.4f}"
+            )
+        print("Planned swaps:")
+        for src_age in ages:
+            for dst_age in ages:
+                print(f"  src={src_age}m -> dst={dst_age}m")
+        return
 
     for src_age in ages:
         for dst_age in ages:
@@ -161,7 +232,10 @@ def main():
                 "iters": args.iters,
                 "n_genes": int(nG),
                 "n_tf_samples": args.n_tf_samples,
+                "theta_threshold": args.theta_threshold,
                 "device": str(device),
+                "source_tf_theta_nonzero_fraction": tf_model[src_age]["theta_nz_frac_used"],
+                "target_tg_theta_nonzero_fraction": tg_model[dst_age]["theta_nz_frac_used"],
                 "mean_mi_per_gene_mean": float(mi_runs.mean(dim=0).mean().item()),
                 "mean_mi_per_gene_std": float(mi_runs.mean(dim=0).std().item()),
                 "mean_entropy_per_gene_mean": float(ent_runs.mean(dim=0).mean().item()),

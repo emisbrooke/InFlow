@@ -132,6 +132,40 @@ def compute_metrics(mean_obs: torch.Tensor, mean_gen: torch.Tensor, corr_obs_upp
     }
 
 
+def apply_theta_threshold(theta: torch.Tensor, threshold: float) -> torch.Tensor:
+    if threshold <= 0:
+        return theta
+    out = theta.clone()
+    out[torch.abs(out) < threshold] = 0
+    return out
+
+
+def theta_structure_metrics(theta: torch.Tensor) -> dict:
+    nz = theta != 0
+    n_reg, n_tgt = nz.shape
+    total = max(1, n_reg * n_tgt)
+
+    out_deg = nz.sum(dim=1).to(torch.double)
+    in_deg = nz.sum(dim=0).to(torch.double)
+    total_edges = float(nz.sum().item())
+
+    top_k = max(1, math.ceil(0.01 * n_reg))
+    if total_edges > 0:
+        top_share = float(torch.topk(out_deg, k=min(top_k, n_reg)).values.sum().item() / total_edges)
+    else:
+        top_share = math.nan
+
+    return {
+        "theta_nonzero_frac": float(total_edges / total),
+        "theta_avg_out_degree": float(out_deg.mean().item()),
+        "theta_avg_in_degree": float(in_deg.mean().item()),
+        "theta_isolated_regulator_frac": float((out_deg == 0).double().mean().item()),
+        "theta_isolated_target_frac": float((in_deg == 0).double().mean().item()),
+        "theta_max_out_degree": float(out_deg.max().item()) if n_reg > 0 else math.nan,
+        "theta_top1pct_out_degree_share": top_share,
+    }
+
+
 def parse_args():
     p = argparse.ArgumentParser(description="Compare model-generated vs observed summary statistics.")
     p.add_argument("--models-dir", type=Path, default=Path("outputs/models"))
@@ -143,6 +177,7 @@ def parse_args():
     p.add_argument("--tf-save-interval", type=int, default=1000)
     p.add_argument("--tf-batch-size", type=int, default=1000)
     p.add_argument("--tf-n-chains", type=int, default=256)
+    p.add_argument("--theta-threshold", type=float, default=0.0, help="Set |theta| below this value to zero before sampling and metrics.")
     p.add_argument("--device", choices=["auto", "cuda", "cpu"], default="auto")
     p.add_argument("--verbose", action="store_true")
     p.add_argument("--progress-every", type=int, default=10, help="Print TF sampling progress every N batches when --verbose is set.")
@@ -331,6 +366,8 @@ def main():
 
             theta = payload["theta"].to(dtype=torch.double, device=device)
             m = payload["m"].to(dtype=torch.double, device=device)
+            theta = apply_theta_threshold(theta, args.theta_threshold)
+            net_stats = theta_structure_metrics(theta)
 
             sample_t0 = time.perf_counter()
             if gene_type == "TF":
@@ -390,8 +427,10 @@ def main():
                 "n_genes": int(observed.shape[0]),
                 "n_cells_observed": int(observed.shape[1]),
                 "n_cells_generated": int(generated.shape[1]),
+                "theta_threshold": args.theta_threshold,
             }
             row.update(metrics)
+            row.update(net_stats)
             rows.append(row)
             append_checkpoint_row(args.checkpoint_path, row)
             completed.add(path_str)
@@ -411,7 +450,7 @@ def main():
     if not rows:
         raise RuntimeError("No successful model evaluations.")
 
-    fieldnames = list(rows[0].keys())
+    fieldnames = sorted({k for r in rows for k in r.keys()})
     with args.out_csv.open("w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
