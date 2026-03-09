@@ -4,6 +4,7 @@ from importlib import reload
 import numpy as np
 import torch
 import h5py
+from pathlib import Path
 from importlib import reload
 import pandas as pd
 from scipy import sparse
@@ -11,6 +12,40 @@ import seaborn as sns
 import networkx as nx
 import os
 import matplotlib.pyplot as plt
+
+
+def lambda_tag(lambda_value: float) -> str:
+    return f"{lambda_value:g}".replace("-", "m").replace(".", "p")
+
+
+def data_path(data_dir: Path, tissue: str, age: int, gene_type: str) -> Path:
+    preferred = data_dir / f"{tissue}_{gene_type.lower()}_data_binary_{age}m_droplet_union.npy"
+    if preferred.exists():
+        return preferred
+    legacy = data_dir / f"data_bin_filt_{tissue}_{age}m_{gene_type.upper()}.npy"
+    return legacy
+
+
+def model_path(models_dir: Path, tissue: str, age: int, gene_type: str, lam: float) -> Path:
+    return models_dir / f"model_{tissue}_{age}m_{gene_type.upper()}_lam{lambda_tag(lam)}.pt"
+
+
+def load_pt_param(tissue: str, models_dir: str | Path, age: int, lam: float, gene_type: str = "TG"):
+    """
+    Load parameters from torch .pt model payloads:
+    model_{tissue}_{age}m_{gene_type}_lam{lambda_tag(lam)}.pt
+    """
+    p = model_path(Path(models_dir), tissue, age, gene_type, lam)
+    if not p.exists():
+        raise FileNotFoundError(f"Missing model file: {p}")
+    payload = torch.load(p, map_location="cpu")
+    theta = payload["theta"]
+    m = payload["m"]
+    if isinstance(theta, torch.Tensor):
+        theta = theta.detach().cpu().numpy()
+    if isinstance(m, torch.Tensor):
+        m = m.detach().cpu().numpy()
+    return theta, m
 
 
 def load_h5_param(t, directory_path, age, lam, n_iters = 10):
@@ -94,7 +129,7 @@ def correct_sparsity(theta_dense, theta_sparse, nTF, niters=100):
         sp_new = np.where(theta_sp != 0)[0].shape[0]/theta_sp.flatten().shape[0]
         sp_old = np.where(theta_sparse != 0)[0].shape[0]/theta_sparse.flatten().shape[0]
 
-        if (sp_new != sp_old):
+        if not np.isclose(sp_new, sp_old, atol=1e-12):
             print(f'YIKES on TFs {sp_new}, {sp_old}')
             break
 
@@ -206,7 +241,7 @@ GET MOTIFS AND GIVE A DB
 ##############################################################################################################
 ##############################################################################################################
 
-def analyze_3_node_feedback(theta_dense, theta_sparse, nG, niters, names_tf, age_sparse = 24, age_dense = 3, niters=100):
+def analyze_3_node_feedback(theta_dense, theta_sparse, nG, niters, names_tf, age_sparse=24, age_dense=3):
     '''
     Inputs:
         theta_dense: the theta of the denser age
@@ -237,8 +272,8 @@ def analyze_3_node_feedback(theta_dense, theta_sparse, nG, niters, names_tf, age
         M3 = theta_sp
         M24 = theta_sparse
         matrices = {
-            3:  sparse.csr_matrix(M3) if not sparse.isspmatrix_csr(M3)  else M3,
-            24: sparse.csr_matrix(M24) if not sparse.isspmatrix_csr(M24) else M24
+            age_dense: sparse.csr_matrix(M3) if not sparse.isspmatrix_csr(M3) else M3,
+            age_sparse: sparse.csr_matrix(M24) if not sparse.isspmatrix_csr(M24) else M24,
         }
 
         graphs_by_age = {}
@@ -257,7 +292,7 @@ def analyze_3_node_feedback(theta_dense, theta_sparse, nG, niters, names_tf, age
 
         records = []
         for age, G in graphs_by_age.items():
-            for A, B, C in find_input_feedback(G):
+            for A, B, C in find_IFL(G):
                 sAB = '+' if G[A][B]['weight'] > 0 else '-'
                 sBC = '+' if G[B][C]['weight'] > 0 else '-'
                 sCB = '+' if G[C][B]['weight'] > 0 else '-'
@@ -296,11 +331,11 @@ def analyze_3_node_feedback(theta_dense, theta_sparse, nG, niters, names_tf, age
         age = row['age']
         pattern = row['pattern']
         count = row['count']
-        counts_df.loc[(counts_df['age'] == age) & (counts_df['pattern'] == pattern), 'count'] /= niters+1
+        counts_df.loc[(counts_df['age'] == age) & (counts_df['pattern'] == pattern), 'count'] /= niters
 
     return motif_df, counts_df, graphs_by_age
 
-def analyze_IFFL(theta_dense, theta_sparse, nG, niters, names_tf, age_sparse = 24, age_dense = 3, niters=100):
+def analyze_IFFL(theta_dense, theta_sparse, nG, niters, names_tf, age_sparse=24, age_dense=3):
 
     '''
     Inputs:
@@ -332,8 +367,8 @@ def analyze_IFFL(theta_dense, theta_sparse, nG, niters, names_tf, age_sparse = 2
         M3 = theta_sp
         M24 = theta_sparse
         matrices = {
-            3:  sparse.csr_matrix(M3) if not sparse.isspmatrix_csr(M3)  else M3,
-            24: sparse.csr_matrix(M24) if not sparse.isspmatrix_csr(M24) else M24
+            age_dense: sparse.csr_matrix(M3) if not sparse.isspmatrix_csr(M3) else M3,
+            age_sparse: sparse.csr_matrix(M24) if not sparse.isspmatrix_csr(M24) else M24,
         }
 
         graphs_by_age = {}
@@ -390,13 +425,13 @@ def analyze_IFFL(theta_dense, theta_sparse, nG, niters, names_tf, age_sparse = 2
         age = row['age']
         pattern = row['pattern']
         count = row['count']
-        counts_df.loc[(counts_df['age'] == age) & (counts_df['pattern'] == pattern), 'count'] /= niters+1
+        counts_df.loc[(counts_df['age'] == age) & (counts_df['pattern'] == pattern), 'count'] /= niters
 
     return motif_df, counts_df, graphs_by_age
 
 
 
-def analyze_IFL(theta_dense, theta_sparse, nG, niters, names_tf, age_sparse = 24, age_dense = 3, niters=100):
+def analyze_IFL(theta_dense, theta_sparse, nG, niters, names_tf, age_sparse=24, age_dense=3):
     '''
     Inputs:
         theta_dense: the theta of the denser age
@@ -426,8 +461,8 @@ def analyze_IFL(theta_dense, theta_sparse, nG, niters, names_tf, age_sparse = 24
         # Convert to CSR if not already
         M3 = theta_sp
         matrices = {
-            3:  sparse.csr_matrix(M3) if not sparse.isspmatrix_csr(M3)  else M3,
-            24: sparse.csr_matrix(M24) if not sparse.isspmatrix_csr(M24) else M24
+            age_dense: sparse.csr_matrix(M3) if not sparse.isspmatrix_csr(M3) else M3,
+            age_sparse: sparse.csr_matrix(M24) if not sparse.isspmatrix_csr(M24) else M24,
         }
 
         graphs_by_age = {}
@@ -490,7 +525,7 @@ def analyze_IFL(theta_dense, theta_sparse, nG, niters, names_tf, age_sparse = 24
         age = row['age']
         pattern = row['pattern']
         count = row['count']
-        counts_df.loc[(counts_df['age'] == age) & (counts_df['pattern'] == pattern), 'count'] /= niters+1                                      
+        counts_df.loc[(counts_df['age'] == age) & (counts_df['pattern'] == pattern), 'count'] /= niters
 
     return motif_df, counts_df, graphs_by_age   
 
@@ -799,8 +834,8 @@ def analyze_struct_2nodes(theta_dense, theta_sparse, nG, niters, names_tf, age_s
         # Convert to CSR if not already
         M3 = theta_sp
         matrices = {
-            3:  sparse.csr_matrix(M3) if not sparse.isspmatrix_csr(M3)  else M3,
-            24: sparse.csr_matrix(M24) if not sparse.isspmatrix_csr(M24) else M24
+            age_dense: sparse.csr_matrix(M3) if not sparse.isspmatrix_csr(M3) else M3,
+            age_sparse: sparse.csr_matrix(M24) if not sparse.isspmatrix_csr(M24) else M24,
         }
 
         graphs_by_age = {}
@@ -821,7 +856,7 @@ def analyze_struct_2nodes(theta_dense, theta_sparse, nG, niters, names_tf, age_s
         records = []
         if no_parents == True:
             for age, G in graphs_by_age.items():
-                for A, B in find_two_cycles_no_parent(G):
+                for A, B in find_two_cycles(G):
                     # pull weights just once
                     w_ab = G[A][B]['weight']
                     w_ba = G[B][A]['weight']
@@ -879,7 +914,6 @@ def analyze_struct_2nodes(theta_dense, theta_sparse, nG, niters, names_tf, age_s
         age = row['age']
         pattern = row['pattern']
         count = row['count']
-        counts_df.loc[(counts_df['age'] == age) & (counts_df['pattern'] == pattern), 'count'] /= niters+1
+        counts_df.loc[(counts_df['age'] == age) & (counts_df['pattern'] == pattern), 'count'] /= niters
 
     return motif_df, counts_df, graphs_by_age
-

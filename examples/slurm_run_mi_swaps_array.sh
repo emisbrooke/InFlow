@@ -15,7 +15,7 @@
 #SBATCH --time=12:00:00
 #SBATCH --output=logs/inflow_mi_swap_%A_%a.out
 
-set -euo pipefail
+set -eo pipefail
 
 pwd
 hostname
@@ -23,7 +23,9 @@ date
 
 module reset
 module load miniconda
+set +u
 conda activate aging
+set -u
 
 REPO_ROOT="${SLURM_SUBMIT_DIR:-$PWD}"
 cd "$REPO_ROOT"
@@ -44,9 +46,9 @@ if [[ -z "${LINE}" ]]; then
 fi
 
 # Columns:
-# tissue lambda iters n_tf_samples int_burn int_save mc_batch_size ages_csv
+# tissue lambda theta_threshold iters n_tf_samples int_burn int_save mc_batch_size ages_csv
 # ages_csv format: 3,24 or 3,18,24
-read -r TISSUE LAM ITERS N_SAMPLES INT_BURN INT_SAVE BATCH_SIZE AGES_CSV <<< "$LINE"
+read -r TISSUE LAM THRESH ITERS N_SAMPLES INT_BURN INT_SAVE BATCH_SIZE AGES_CSV <<< "$LINE"
 
 AGES_ARGS=()
 IFS=',' read -r -a AGE_ARR <<< "$AGES_CSV"
@@ -54,12 +56,13 @@ for a in "${AGE_ARR[@]}"; do
   AGES_ARGS+=("$a")
 done
 
-echo "Running task ${TASK_ID}: tissue=${TISSUE} lambda=${LAM} ages=${AGES_CSV}"
+echo "Running task ${TASK_ID}: tissue=${TISSUE} lambda=${LAM} theta_threshold=${THRESH} ages=${AGES_CSV}"
 
 python inflow/run_mi_swaps.py \
   --tissue "${TISSUE}" \
   --ages "${AGES_ARGS[@]}" \
   --lambda "${LAM}" \
+  --theta-threshold "${THRESH}" \
   --iters "${ITERS}" \
   --n-tf-samples "${N_SAMPLES}" \
   --int-burn "${INT_BURN}" \

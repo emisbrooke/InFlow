@@ -3,19 +3,26 @@
 # Usage:
 #   sbatch --array=1-$(awk 'NF && $1 !~ /^#/' examples/train_params.txt | wc -l) \
 #     examples/slurm_train_sweep_array.sh
+#
+#   sbatch --array=1-$(awk 'NF && $1 !~ /^#/' examples/train_params_selected.txt | wc -l) \
+#     examples/slurm_train_sweep_array.sh examples/train_params_selected.txt
+#
+#   PARAM_FILE=examples/train_params_selected.txt \
+#   sbatch --array=1-$(awk 'NF && $1 !~ /^#/' examples/train_params_selected.txt | wc -l) \
+#     examples/slurm_train_sweep_array.sh
 
 #SBATCH --job-name=inflow_train
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=brooke.emison@yale.edu
-#SBATCH --partition=scavenge_gpu
-#SBATCH --gpus=a100:1
+#SBATCH --partition=gpu_h200
+#SBATCH --gpus=h200:1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=10G
 #SBATCH --time=06:00:00
 #SBATCH --output=logs/inflow_train_%A_%a.out
 
-set -euo pipefail
+set -eo pipefail
 
 pwd
 hostname
@@ -23,14 +30,17 @@ date
 
 module reset
 module load miniconda
+set +u
 conda activate aging
+set -u
 
 REPO_ROOT="${SLURM_SUBMIT_DIR:-$PWD}"
 cd "$REPO_ROOT"
 
 mkdir -p logs outputs/models
 
-PARAM_FILE="examples/train_params.txt"
+# Param file precedence: first CLI argument > PARAM_FILE env var > default
+PARAM_FILE="${1:-${PARAM_FILE:-examples/train_params.txt}}"
 if [[ ! -f "$PARAM_FILE" ]]; then
   echo "Missing parameter file: $PARAM_FILE"
   exit 1

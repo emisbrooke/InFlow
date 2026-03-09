@@ -15,7 +15,7 @@
 #SBATCH --time=08:00:00
 #SBATCH --output=logs/inflow_stats_%A_%a.out
 
-set -euo pipefail
+set -eo pipefail
 
 pwd
 hostname
@@ -23,7 +23,9 @@ date
 
 module reset
 module load miniconda
+set +u
 conda activate aging
+set -u
 
 REPO_ROOT="${SLURM_SUBMIT_DIR:-$PWD}"
 cd "$REPO_ROOT"

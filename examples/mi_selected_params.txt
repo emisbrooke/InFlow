@@ -1,0 +1,5 @@
+# tissue select_age source_ages_csv gene_type target_ages_csv iters n_tf_samples int_burn int_save mc_batch_size [seed]
+# target_ages_csv format: 3,24
+
+Brain_Myeloid 3 3,24 TF 3,24 10 30000 60000 500 1200 0
+Pancreas 3 3,24 TF 3,24 10 30000 60000 500 1200 0
