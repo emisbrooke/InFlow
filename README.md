@@ -204,6 +204,7 @@ Figures in the paper are assembled from these outputs in `examples/figs_notebook
 and `examples/structure_analysis_notebook.ipynb`.
 
 ---
+This code can also be found at: [![DOI](https://zenodo.org/badge/1301918291.svg)](https://doi.org/10.5281/zenodo.21383284)
 
 ### Citation
 
