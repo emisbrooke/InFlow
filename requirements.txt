@@ -1,0 +1,19 @@
+# Core: model training, MI, swaps, and structure analysis
+torch
+numpy
+pandas
+scipy
+h5py
+networkx
+tqdm
+
+# Plotting (compare_model_stats, figure notebooks)
+matplotlib
+seaborn
+
+# Figure notebooks only
+statsmodels
+adjustText
+
+# Data preparation notebook only (examples/write_filtered_data.ipynb)
+scanpy
